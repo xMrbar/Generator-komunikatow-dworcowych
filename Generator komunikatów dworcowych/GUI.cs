@@ -107,5 +107,9 @@ namespace GeneratorKomunikatów
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Gold;
         }
+        public static void napisyCzerowne()
+        {
+
+        }
     }
 }
