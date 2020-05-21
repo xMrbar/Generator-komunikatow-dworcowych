@@ -101,7 +101,13 @@
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
-            this.wygladStrony = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rubrykiTXT = new System.Windows.Forms.Label();
+            this.napisyTXT = new System.Windows.Forms.Label();
+            this.tloTXT = new System.Windows.Forms.Label();
+            this.kolorRubryki = new System.Windows.Forms.ComboBox();
+            this.kolorNapisyStrony = new System.Windows.Forms.ComboBox();
+            this.kolorTloStrony = new System.Windows.Forms.ComboBox();
             this.wygladtxt = new System.Windows.Forms.Label();
             this.GongName = new System.Windows.Forms.ComboBox();
             this.GongTxt = new System.Windows.Forms.Label();
@@ -1018,7 +1024,13 @@
             // tabPageOpcje
             // 
             this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPageOpcje.Controls.Add(this.wygladStrony);
+            this.tabPageOpcje.Controls.Add(this.comboBox1);
+            this.tabPageOpcje.Controls.Add(this.rubrykiTXT);
+            this.tabPageOpcje.Controls.Add(this.napisyTXT);
+            this.tabPageOpcje.Controls.Add(this.tloTXT);
+            this.tabPageOpcje.Controls.Add(this.kolorRubryki);
+            this.tabPageOpcje.Controls.Add(this.kolorNapisyStrony);
+            this.tabPageOpcje.Controls.Add(this.kolorTloStrony);
             this.tabPageOpcje.Controls.Add(this.wygladtxt);
             this.tabPageOpcje.Controls.Add(this.GongName);
             this.tabPageOpcje.Controls.Add(this.GongTxt);
@@ -1031,20 +1043,74 @@
             resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
             this.tabPageOpcje.Name = "tabPageOpcje";
             // 
-            // wygladStrony
+            // comboBox1
             // 
-            this.wygladStrony.DisplayMember = "12";
-            this.wygladStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wygladStrony.FormattingEnabled = true;
-            resources.ApplyResources(this.wygladStrony, "wygladStrony");
-            this.wygladStrony.Items.AddRange(new object[] {
-            resources.GetString("wygladStrony.Items"),
-            resources.GetString("wygladStrony.Items1"),
-            resources.GetString("wygladStrony.Items2"),
-            resources.GetString("wygladStrony.Items3")});
-            this.wygladStrony.Name = "wygladStrony";
-            this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.wygladStrony_SelectedIndexChanged);
-            this.wygladStrony.Text = "różowy";
+            this.comboBox1.DisplayMember = "12";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3")});
+            this.comboBox1.Name = "comboBox1";
+            // 
+            // rubrykiTXT
+            // 
+            resources.ApplyResources(this.rubrykiTXT, "rubrykiTXT");
+            this.rubrykiTXT.ForeColor = System.Drawing.Color.Black;
+            this.rubrykiTXT.Name = "rubrykiTXT";
+            // 
+            // napisyTXT
+            // 
+            resources.ApplyResources(this.napisyTXT, "napisyTXT");
+            this.napisyTXT.ForeColor = System.Drawing.Color.Black;
+            this.napisyTXT.Name = "napisyTXT";
+            // 
+            // tloTXT
+            // 
+            resources.ApplyResources(this.tloTXT, "tloTXT");
+            this.tloTXT.ForeColor = System.Drawing.Color.Black;
+            this.tloTXT.Name = "tloTXT";
+            // 
+            // kolorRubryki
+            // 
+            this.kolorRubryki.DisplayMember = "12";
+            this.kolorRubryki.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kolorRubryki.FormattingEnabled = true;
+            resources.ApplyResources(this.kolorRubryki, "kolorRubryki");
+            this.kolorRubryki.Items.AddRange(new object[] {
+            resources.GetString("kolorRubryki.Items"),
+            resources.GetString("kolorRubryki.Items1")});
+            this.kolorRubryki.Name = "kolorRubryki";
+            this.kolorRubryki.SelectedIndexChanged += new System.EventHandler(this.kolorRubryki_SelectedIndexChanged);
+            // 
+            // kolorNapisyStrony
+            // 
+            this.kolorNapisyStrony.DisplayMember = "12";
+            this.kolorNapisyStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kolorNapisyStrony.FormattingEnabled = true;
+            resources.ApplyResources(this.kolorNapisyStrony, "kolorNapisyStrony");
+            this.kolorNapisyStrony.Items.AddRange(new object[] {
+            resources.GetString("kolorNapisyStrony.Items"),
+            resources.GetString("kolorNapisyStrony.Items1"),
+            resources.GetString("kolorNapisyStrony.Items2")});
+            this.kolorNapisyStrony.Name = "kolorNapisyStrony";
+            this.kolorNapisyStrony.SelectedIndexChanged += new System.EventHandler(this.kolorNapisyStrony_SelectedIndexChanged);
+            // 
+            // kolorTloStrony
+            // 
+            this.kolorTloStrony.DisplayMember = "12";
+            this.kolorTloStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kolorTloStrony.FormattingEnabled = true;
+            resources.ApplyResources(this.kolorTloStrony, "kolorTloStrony");
+            this.kolorTloStrony.Items.AddRange(new object[] {
+            resources.GetString("kolorTloStrony.Items"),
+            resources.GetString("kolorTloStrony.Items1"),
+            resources.GetString("kolorTloStrony.Items2")});
+            this.kolorTloStrony.Name = "kolorTloStrony";
+            this.kolorTloStrony.SelectedIndexChanged += new System.EventHandler(this.kolorTloStrony_SelectedIndexChanged);
             // 
             // wygladtxt
             // 
@@ -1054,6 +1120,7 @@
             // 
             // GongName
             // 
+            this.GongName.BackColor = System.Drawing.SystemColors.Window;
             this.GongName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.GongName.FormattingEnabled = true;
             this.GongName.Items.AddRange(new object[] {
@@ -1203,7 +1270,6 @@
         public System.Windows.Forms.NumericUpDown Koniec1;
         public System.Windows.Forms.NumericUpDown Koniec3;
         public System.Windows.Forms.NumericUpDown Koniec2;
-        private System.Windows.Forms.ComboBox wygladStrony;
         public System.Windows.Forms.TabPage tabPageKomunikaty;
         public System.Windows.Forms.Label PrzyStOdjTXT;
         public System.Windows.Forms.Label labelTor;
@@ -1232,6 +1298,13 @@
         public System.Windows.Forms.Label Pomoc1_5;
         public System.Windows.Forms.Label Pomoc1_4;
         public System.Windows.Forms.Label Pomoc1_3;
+        public System.Windows.Forms.Label rubrykiTXT;
+        public System.Windows.Forms.Label napisyTXT;
+        public System.Windows.Forms.Label tloTXT;
+        public System.Windows.Forms.ComboBox kolorTloStrony;
+        public System.Windows.Forms.ComboBox kolorRubryki;
+        public System.Windows.Forms.ComboBox kolorNapisyStrony;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

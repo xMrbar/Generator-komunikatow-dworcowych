@@ -2820,41 +2820,236 @@
   <data name="&gt;&gt;NumerPociągu.ZOrder" xml:space="preserve">
     <value>66</value>
   </data>
-  <data name="wygladStrony.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="comboBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Disable</value>
   </data>
-  <data name="wygladStrony.Items" xml:space="preserve">
+  <data name="comboBox1.Items" xml:space="preserve">
     <value>biały</value>
   </data>
-  <data name="wygladStrony.Items1" xml:space="preserve">
+  <data name="comboBox1.Items1" xml:space="preserve">
     <value>różowy</value>
   </data>
-  <data name="wygladStrony.Items2" xml:space="preserve">
+  <data name="comboBox1.Items2" xml:space="preserve">
     <value>ciemny1</value>
   </data>
-  <data name="wygladStrony.Items3" xml:space="preserve">
+  <data name="comboBox1.Items3" xml:space="preserve">
     <value>ciemny2</value>
   </data>
-  <data name="wygladStrony.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>603, 108</value>
   </data>
-  <data name="wygladStrony.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 21</value>
   </data>
-  <data name="wygladStrony.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
-  <data name="&gt;&gt;wygladStrony.Name" xml:space="preserve">
-    <value>wygladStrony</value>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
   </data>
-  <data name="&gt;&gt;wygladStrony.Type" xml:space="preserve">
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;wygladStrony.Parent" xml:space="preserve">
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
   </data>
-  <data name="&gt;&gt;wygladStrony.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="rubrykiTXT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rubrykiTXT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="rubrykiTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rubrykiTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 222</value>
+  </data>
+  <data name="rubrykiTXT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="rubrykiTXT.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="rubrykiTXT.Text" xml:space="preserve">
+    <value>Rubryki:</value>
+  </data>
+  <data name="&gt;&gt;rubrykiTXT.Name" xml:space="preserve">
+    <value>rubrykiTXT</value>
+  </data>
+  <data name="&gt;&gt;rubrykiTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rubrykiTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;rubrykiTXT.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="napisyTXT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="napisyTXT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="napisyTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="napisyTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 183</value>
+  </data>
+  <data name="napisyTXT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="napisyTXT.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="napisyTXT.Text" xml:space="preserve">
+    <value>Napisy:</value>
+  </data>
+  <data name="&gt;&gt;napisyTXT.Name" xml:space="preserve">
+    <value>napisyTXT</value>
+  </data>
+  <data name="&gt;&gt;napisyTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;napisyTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;napisyTXT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tloTXT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tloTXT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="tloTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tloTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 144</value>
+  </data>
+  <data name="tloTXT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 17</value>
+  </data>
+  <data name="tloTXT.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="tloTXT.Text" xml:space="preserve">
+    <value>Tło:</value>
+  </data>
+  <data name="&gt;&gt;tloTXT.Name" xml:space="preserve">
+    <value>tloTXT</value>
+  </data>
+  <data name="&gt;&gt;tloTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tloTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;tloTXT.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="kolorRubryki.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="kolorRubryki.Items" xml:space="preserve">
+    <value>biały</value>
+  </data>
+  <data name="kolorRubryki.Items1" xml:space="preserve">
+    <value>ciemny</value>
+  </data>
+  <data name="kolorRubryki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 221</value>
+  </data>
+  <data name="kolorRubryki.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 21</value>
+  </data>
+  <data name="kolorRubryki.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;kolorRubryki.Name" xml:space="preserve">
+    <value>kolorRubryki</value>
+  </data>
+  <data name="&gt;&gt;kolorRubryki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kolorRubryki.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;kolorRubryki.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="kolorNapisyStrony.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="kolorNapisyStrony.Items" xml:space="preserve">
+    <value>białe</value>
+  </data>
+  <data name="kolorNapisyStrony.Items1" xml:space="preserve">
+    <value>czarne</value>
+  </data>
+  <data name="kolorNapisyStrony.Items2" xml:space="preserve">
+    <value>żółte</value>
+  </data>
+  <data name="kolorNapisyStrony.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 182</value>
+  </data>
+  <data name="kolorNapisyStrony.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 21</value>
+  </data>
+  <data name="kolorNapisyStrony.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;kolorNapisyStrony.Name" xml:space="preserve">
+    <value>kolorNapisyStrony</value>
+  </data>
+  <data name="&gt;&gt;kolorNapisyStrony.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kolorNapisyStrony.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;kolorNapisyStrony.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="kolorTloStrony.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="kolorTloStrony.Items" xml:space="preserve">
+    <value>biały</value>
+  </data>
+  <data name="kolorTloStrony.Items1" xml:space="preserve">
+    <value>różowy</value>
+  </data>
+  <data name="kolorTloStrony.Items2" xml:space="preserve">
+    <value>ciemny</value>
+  </data>
+  <data name="kolorTloStrony.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 143</value>
+  </data>
+  <data name="kolorTloStrony.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 21</value>
+  </data>
+  <data name="kolorTloStrony.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;kolorTloStrony.Name" xml:space="preserve">
+    <value>kolorTloStrony</value>
+  </data>
+  <data name="&gt;&gt;kolorTloStrony.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kolorTloStrony.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;kolorTloStrony.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="wygladtxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2869,13 +3064,13 @@
     <value>539, 109</value>
   </data>
   <data name="wygladtxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 17</value>
+    <value>59, 17</value>
   </data>
   <data name="wygladtxt.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="wygladtxt.Text" xml:space="preserve">
-    <value>Wygląd</value>
+    <value>Wygląd:</value>
   </data>
   <data name="&gt;&gt;wygladtxt.Name" xml:space="preserve">
     <value>wygladtxt</value>
@@ -2887,7 +3082,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;wygladtxt.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="GongName.Items" xml:space="preserve">
     <value>GONG 1</value>
@@ -2917,7 +3112,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;GongName.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="GongTxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2947,7 +3142,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;GongTxt.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="Pomoc1_5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2977,7 +3172,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="Pomoc1_4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3007,7 +3202,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="Pomoc1_3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3037,7 +3232,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="Pomoc1_2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3070,7 +3265,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="Pomoc1_1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3103,7 +3298,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="Pomoc1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3133,7 +3328,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

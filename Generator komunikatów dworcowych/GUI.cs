@@ -40,6 +40,9 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.White;
+            current.tloTXT.ForeColor = System.Drawing.Color.White;
+            current.napisyTXT.ForeColor = System.Drawing.Color.White;
+            current.rubrykiTXT.ForeColor = System.Drawing.Color.White;
         }
         public static void napisyCzarne (Generator_komunikatów_dworcowych.komunikaty current)
         {
@@ -73,6 +76,9 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Black;
+            current.tloTXT.ForeColor = System.Drawing.Color.Black;
+            current.napisyTXT.ForeColor = System.Drawing.Color.Black;
+            current.rubrykiTXT.ForeColor = System.Drawing.Color.Black;
         }
         public static void napisyZolte (Generator_komunikatów_dworcowych.komunikaty current) 
         {
@@ -106,6 +112,9 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Gold;
+            current.tloTXT.ForeColor = System.Drawing.Color.Gold;
+            current.napisyTXT.ForeColor = System.Drawing.Color.Gold;
+            current.rubrykiTXT.ForeColor = System.Drawing.Color.Gold;
         }
     }
 }

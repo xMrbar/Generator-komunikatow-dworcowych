@@ -160,31 +160,50 @@ namespace Generator_komunikatów_dworcowych
             }
         }
 
-        private void wygladStrony_SelectedIndexChanged(object sender, EventArgs e)
+        private void kolorTloStrony_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (wygladStrony.Text == "różowy")
+            if (kolorTloStrony.Text == "różowy")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
                 tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
-                GeneratorKomunikatów.GUI.napisyCzarne(this);
             }
-            else if (wygladStrony.Text == "biały")
+            else if (kolorTloStrony.Text == "biały")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.SeaShell;
                 tabPageKomunikaty.BackColor = System.Drawing.Color.SeaShell;
-                GeneratorKomunikatów.GUI.napisyCzarne(this);
             }
-            else if (wygladStrony.Text == "ciemny1")
+            else if (kolorTloStrony.Text == "ciemny")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            }
+        }
+
+        private void kolorNapisyStrony_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kolorNapisyStrony.Text == "białe")
+            {
                 GeneratorKomunikatów.GUI.napisyBiale(this);
             }
-            else
+            else if (kolorNapisyStrony.Text == "czarne")
             {
-                tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
-                tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+                GeneratorKomunikatów.GUI.napisyCzarne(this);
+            }
+            else if (kolorNapisyStrony.Text == "żółte")
+            {
                 GeneratorKomunikatów.GUI.napisyZolte(this);
+            }
+        }
+
+        private void kolorRubryki_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (kolorRubryki.Text == "biały")
+            {
+
+            }
+            else if (kolorRubryki.Text == "ciemny")
+            {
+
             }
         }
     }
