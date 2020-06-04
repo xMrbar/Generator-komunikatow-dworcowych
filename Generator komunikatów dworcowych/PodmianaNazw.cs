@@ -229,7 +229,7 @@
                     }
                     else if (kategoriaWprowadzona == "superREGIO")
                     {
-                        return "Opóźniony pociąg SUPERREGIO" + nazwaSkładu + " ";
+                        return "Opóźniony pociąg SUPERREGIO " + nazwaSkładu + " ";
                     }
                     else
                     {

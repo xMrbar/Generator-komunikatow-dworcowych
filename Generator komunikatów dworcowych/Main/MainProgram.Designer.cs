@@ -101,13 +101,7 @@
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.rubrykiTXT = new System.Windows.Forms.Label();
-            this.napisyTXT = new System.Windows.Forms.Label();
-            this.tloTXT = new System.Windows.Forms.Label();
-            this.kolorRubryki = new System.Windows.Forms.ComboBox();
-            this.kolorNapisyStrony = new System.Windows.Forms.ComboBox();
-            this.kolorTloStrony = new System.Windows.Forms.ComboBox();
+            this.wygladStrony = new System.Windows.Forms.ComboBox();
             this.wygladtxt = new System.Windows.Forms.Label();
             this.GongName = new System.Windows.Forms.ComboBox();
             this.GongTxt = new System.Windows.Forms.Label();
@@ -754,6 +748,7 @@
             // 
             // komunikatWygenerowanyBox
             // 
+            this.komunikatWygenerowanyBox.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.komunikatWygenerowanyBox, "komunikatWygenerowanyBox");
             this.komunikatWygenerowanyBox.Name = "komunikatWygenerowanyBox";
             this.komunikatWygenerowanyBox.ReadOnly = true;
@@ -912,6 +907,7 @@
             // 
             // numerPociąguBox
             // 
+            this.numerPociąguBox.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.numerPociąguBox, "numerPociąguBox");
             this.numerPociąguBox.Maximum = new decimal(new int[] {
             99999,
@@ -1024,13 +1020,7 @@
             // tabPageOpcje
             // 
             this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPageOpcje.Controls.Add(this.comboBox1);
-            this.tabPageOpcje.Controls.Add(this.rubrykiTXT);
-            this.tabPageOpcje.Controls.Add(this.napisyTXT);
-            this.tabPageOpcje.Controls.Add(this.tloTXT);
-            this.tabPageOpcje.Controls.Add(this.kolorRubryki);
-            this.tabPageOpcje.Controls.Add(this.kolorNapisyStrony);
-            this.tabPageOpcje.Controls.Add(this.kolorTloStrony);
+            this.tabPageOpcje.Controls.Add(this.wygladStrony);
             this.tabPageOpcje.Controls.Add(this.wygladtxt);
             this.tabPageOpcje.Controls.Add(this.GongName);
             this.tabPageOpcje.Controls.Add(this.GongTxt);
@@ -1043,74 +1033,19 @@
             resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
             this.tabPageOpcje.Name = "tabPageOpcje";
             // 
-            // comboBox1
+            // wygladStrony
             // 
-            this.comboBox1.DisplayMember = "12";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3")});
-            this.comboBox1.Name = "comboBox1";
-            // 
-            // rubrykiTXT
-            // 
-            resources.ApplyResources(this.rubrykiTXT, "rubrykiTXT");
-            this.rubrykiTXT.ForeColor = System.Drawing.Color.Black;
-            this.rubrykiTXT.Name = "rubrykiTXT";
-            // 
-            // napisyTXT
-            // 
-            resources.ApplyResources(this.napisyTXT, "napisyTXT");
-            this.napisyTXT.ForeColor = System.Drawing.Color.Black;
-            this.napisyTXT.Name = "napisyTXT";
-            // 
-            // tloTXT
-            // 
-            resources.ApplyResources(this.tloTXT, "tloTXT");
-            this.tloTXT.ForeColor = System.Drawing.Color.Black;
-            this.tloTXT.Name = "tloTXT";
-            // 
-            // kolorRubryki
-            // 
-            this.kolorRubryki.DisplayMember = "12";
-            this.kolorRubryki.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kolorRubryki.FormattingEnabled = true;
-            resources.ApplyResources(this.kolorRubryki, "kolorRubryki");
-            this.kolorRubryki.Items.AddRange(new object[] {
-            resources.GetString("kolorRubryki.Items"),
-            resources.GetString("kolorRubryki.Items1")});
-            this.kolorRubryki.Name = "kolorRubryki";
-            this.kolorRubryki.SelectedIndexChanged += new System.EventHandler(this.kolorRubryki_SelectedIndexChanged);
-            // 
-            // kolorNapisyStrony
-            // 
-            this.kolorNapisyStrony.DisplayMember = "12";
-            this.kolorNapisyStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kolorNapisyStrony.FormattingEnabled = true;
-            resources.ApplyResources(this.kolorNapisyStrony, "kolorNapisyStrony");
-            this.kolorNapisyStrony.Items.AddRange(new object[] {
-            resources.GetString("kolorNapisyStrony.Items"),
-            resources.GetString("kolorNapisyStrony.Items1"),
-            resources.GetString("kolorNapisyStrony.Items2")});
-            this.kolorNapisyStrony.Name = "kolorNapisyStrony";
-            this.kolorNapisyStrony.SelectedIndexChanged += new System.EventHandler(this.kolorNapisyStrony_SelectedIndexChanged);
-            // 
-            // kolorTloStrony
-            // 
-            this.kolorTloStrony.DisplayMember = "12";
-            this.kolorTloStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kolorTloStrony.FormattingEnabled = true;
-            resources.ApplyResources(this.kolorTloStrony, "kolorTloStrony");
-            this.kolorTloStrony.Items.AddRange(new object[] {
-            resources.GetString("kolorTloStrony.Items"),
-            resources.GetString("kolorTloStrony.Items1"),
-            resources.GetString("kolorTloStrony.Items2")});
-            this.kolorTloStrony.Name = "kolorTloStrony";
-            this.kolorTloStrony.SelectedIndexChanged += new System.EventHandler(this.kolorTloStrony_SelectedIndexChanged);
+            this.wygladStrony.DisplayMember = "12";
+            this.wygladStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wygladStrony.FormattingEnabled = true;
+            resources.ApplyResources(this.wygladStrony, "wygladStrony");
+            wygladStrony.Items.Insert(0, "różowy");
+            wygladStrony.Items.Insert(1, "biały");
+            wygladStrony.Items.Insert(2, "ciemny1");
+            wygladStrony.Items.Insert(3, "ciemny2");
+            this.wygladStrony.Name = "wygladStrony";
+            this.wygladStrony.SelectedIndex = 0;
+            this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // wygladtxt
             // 
@@ -1123,11 +1058,11 @@
             this.GongName.BackColor = System.Drawing.SystemColors.Window;
             this.GongName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.GongName.FormattingEnabled = true;
-            this.GongName.Items.AddRange(new object[] {
-            resources.GetString("GongName.Items"),
-            resources.GetString("GongName.Items1"),
-            resources.GetString("GongName.Items2")});
+            GongName.Items.Insert(0, "GONG 1");
+            GongName.Items.Insert(1, "GONG 2");
+            GongName.Items.Insert(2, "GONG 3");
             resources.ApplyResources(this.GongName, "GongName");
+            //this.GongName.SelectedIndex = 0;
             this.GongName.Name = "GongName";
             // 
             // GongTxt
@@ -1221,24 +1156,8 @@
         private System.Windows.Forms.ToolStripStatusLabel wersja;
         public System.Windows.Forms.Button dźwiękButton;
         private System.Windows.Forms.ComboBox comboPrzyStOdj;
-        private System.Windows.Forms.TextBox przezBox;
-        private System.Windows.Forms.RichTextBox komunikatWygenerowanyBox;
-        private System.Windows.Forms.TextBox nazwaPociąguBox;
-        private System.Windows.Forms.TextBox boxPeron;
-        private System.Windows.Forms.TextBox boxTor;
-        private System.Windows.Forms.TextBox box_stacja_końcowa;
-        private System.Windows.Forms.TextBox box_stacja_początkowa;
-        private System.Windows.Forms.NumericUpDown opóźnienieBox;
-        private System.Windows.Forms.Button generujBezZatrzymaniaButton;
-        private System.Windows.Forms.Button generujButton;
-        private System.Windows.Forms.Button wyczyscButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown minutyOdjazdu;
-        private System.Windows.Forms.NumericUpDown godzinyOdjazdu;
         private System.Windows.Forms.Label oddzieleniePrzyjazd;
-        private System.Windows.Forms.NumericUpDown minutyPrzyjazdu;
-        private System.Windows.Forms.NumericUpDown godzinaPrzyjazdu;
-        private System.Windows.Forms.NumericUpDown numerPociąguBox;
         private System.Windows.Forms.ComboBox naszaStacjaWRJ;
         private System.Windows.Forms.ComboBox comboKategoriaHandlowa;
         private System.Windows.Forms.ComboBox comboPrzewoźnik;
@@ -1298,13 +1217,23 @@
         public System.Windows.Forms.Label Pomoc1_5;
         public System.Windows.Forms.Label Pomoc1_4;
         public System.Windows.Forms.Label Pomoc1_3;
-        public System.Windows.Forms.Label rubrykiTXT;
-        public System.Windows.Forms.Label napisyTXT;
-        public System.Windows.Forms.Label tloTXT;
-        public System.Windows.Forms.ComboBox kolorTloStrony;
-        public System.Windows.Forms.ComboBox kolorRubryki;
-        public System.Windows.Forms.ComboBox kolorNapisyStrony;
-        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox wygladStrony;
+        public System.Windows.Forms.TextBox przezBox;
+        public System.Windows.Forms.RichTextBox komunikatWygenerowanyBox;
+        public System.Windows.Forms.TextBox nazwaPociąguBox;
+        public System.Windows.Forms.TextBox boxPeron;
+        public System.Windows.Forms.TextBox boxTor;
+        public System.Windows.Forms.TextBox box_stacja_końcowa;
+        public System.Windows.Forms.TextBox box_stacja_początkowa;
+        public System.Windows.Forms.NumericUpDown opóźnienieBox;
+        public System.Windows.Forms.Button generujBezZatrzymaniaButton;
+        public System.Windows.Forms.Button generujButton;
+        public System.Windows.Forms.Button wyczyscButton;
+        public System.Windows.Forms.NumericUpDown minutyOdjazdu;
+        public System.Windows.Forms.NumericUpDown godzinyOdjazdu;
+        public System.Windows.Forms.NumericUpDown minutyPrzyjazdu;
+        public System.Windows.Forms.NumericUpDown godzinaPrzyjazdu;
+        public System.Windows.Forms.NumericUpDown numerPociąguBox;
     }
 }
 

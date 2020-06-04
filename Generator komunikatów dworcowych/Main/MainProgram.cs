@@ -159,51 +159,31 @@ namespace Generator_komunikatów_dworcowych
                 GeneratorKomunikatów.Rezerwacja.ChowanieWszystkichRezerwacji(this);
             }
         }
-
-        private void kolorTloStrony_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (kolorTloStrony.Text == "różowy")
-            {
-                tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
-                tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
-            }
-            else if (kolorTloStrony.Text == "biały")
+            if (wygladStrony.Text == "biały")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.SeaShell;
                 tabPageKomunikaty.BackColor = System.Drawing.Color.SeaShell;
+                GUI.napisy.czarne(this);
             }
-            else if (kolorTloStrony.Text == "ciemny")
+            else if (wygladStrony.Text == "różowy")
+            {
+                tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
+                tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
+                GUI.napisy.czarne(this);
+            }
+            else if (wygladStrony.Text == "ciemny1")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+                GUI.napisy.biale(this);
             }
-        }
-
-        private void kolorNapisyStrony_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (kolorNapisyStrony.Text == "białe")
+            else if (wygladStrony.Text == "ciemny2")
             {
-                GeneratorKomunikatów.GUI.napisyBiale(this);
-            }
-            else if (kolorNapisyStrony.Text == "czarne")
-            {
-                GeneratorKomunikatów.GUI.napisyCzarne(this);
-            }
-            else if (kolorNapisyStrony.Text == "żółte")
-            {
-                GeneratorKomunikatów.GUI.napisyZolte(this);
-            }
-        }
-
-        private void kolorRubryki_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (kolorRubryki.Text == "biały")
-            {
-
-            }
-            else if (kolorRubryki.Text == "ciemny")
-            {
-
+                tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+                tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+                GUI.napisy.zolte(this);
             }
         }
     }

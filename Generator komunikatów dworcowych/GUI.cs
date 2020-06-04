@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeneratorKomunikatów
+﻿namespace GUI
 {
-    class GUI
+    class napisy
     {
-        public static void napisyBiale (Generator_komunikatów_dworcowych.komunikaty current)
+        public static void biale (Generator_komunikatów_dworcowych.komunikaty current)
         {
             current.NumerPociągu.ForeColor = System.Drawing.Color.White;
             current.naszaStacjaWRJtxt.ForeColor = System.Drawing.Color.White;
@@ -40,11 +34,8 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.White;
-            current.tloTXT.ForeColor = System.Drawing.Color.White;
-            current.napisyTXT.ForeColor = System.Drawing.Color.White;
-            current.rubrykiTXT.ForeColor = System.Drawing.Color.White;
         }
-        public static void napisyCzarne (Generator_komunikatów_dworcowych.komunikaty current)
+        public static void czarne (Generator_komunikatów_dworcowych.komunikaty current)
         {
             current.NumerPociągu.ForeColor = System.Drawing.Color.Black;
             current.naszaStacjaWRJtxt.ForeColor = System.Drawing.Color.Black;
@@ -76,11 +67,8 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Black;
-            current.tloTXT.ForeColor = System.Drawing.Color.Black;
-            current.napisyTXT.ForeColor = System.Drawing.Color.Black;
-            current.rubrykiTXT.ForeColor = System.Drawing.Color.Black;
         }
-        public static void napisyZolte (Generator_komunikatów_dworcowych.komunikaty current) 
+        public static void zolte (Generator_komunikatów_dworcowych.komunikaty current) 
         {
             current.NumerPociągu.ForeColor = System.Drawing.Color.Gold;
             current.naszaStacjaWRJtxt.ForeColor = System.Drawing.Color.Gold;
@@ -112,9 +100,93 @@ namespace GeneratorKomunikatów
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Gold;
-            current.tloTXT.ForeColor = System.Drawing.Color.Gold;
-            current.napisyTXT.ForeColor = System.Drawing.Color.Gold;
-            current.rubrykiTXT.ForeColor = System.Drawing.Color.Gold;
+        }
+    }
+    class Rubryki
+    {
+        public static void biale (Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            current.numerPociąguBox.BackColor = System.Drawing.Color.White;
+            current.box_stacja_początkowa.BackColor = System.Drawing.Color.White;
+            current.box_stacja_końcowa.BackColor = System.Drawing.Color.White;
+            current.przezBox.BackColor = System.Drawing.Color.White;
+            current.nazwaPociąguBox.BackColor = System.Drawing.Color.White;
+            current.wyczyscButton.BackColor = System.Drawing.Color.White;
+            current.generujButton.BackColor = System.Drawing.Color.White;
+            current.generujBezZatrzymaniaButton.BackColor = System.Drawing.Color.White;
+            current.dźwiękButton.BackColor = System.Drawing.Color.White;
+            current.komunikatWygenerowanyBox.BackColor = System.Drawing.Color.White;
+            current.godzinaPrzyjazdu.BackColor = System.Drawing.Color.White;
+            current.godzinyOdjazdu.BackColor = System.Drawing.Color.White;
+            current.minutyPrzyjazdu.BackColor = System.Drawing.Color.White;
+            current.minutyOdjazdu.BackColor = System.Drawing.Color.White;
+            current.boxPeron.BackColor = System.Drawing.Color.White;
+            current.boxTor.BackColor = System.Drawing.Color.White;
+            current.opóźnienieBox.BackColor = System.Drawing.Color.White;
+            current.ileWagonówWSkładzie.BackColor = System.Drawing.Color.White;
+            current.Początek1.BackColor = System.Drawing.Color.White;
+            current.Początek2.BackColor = System.Drawing.Color.White;
+            current.Początek3.BackColor = System.Drawing.Color.White;
+            current.Początek4.BackColor = System.Drawing.Color.White;
+            current.Początek5.BackColor = System.Drawing.Color.White;
+            current.Początek6.BackColor = System.Drawing.Color.White;
+            current.Początek7.BackColor = System.Drawing.Color.White;
+            current.Środek1.BackColor = System.Drawing.Color.White;
+            current.Środek2.BackColor = System.Drawing.Color.White;
+            current.Środek3.BackColor = System.Drawing.Color.White;
+            current.Środek4.BackColor = System.Drawing.Color.White;
+            current.Środek5.BackColor = System.Drawing.Color.White;
+            current.Środek6.BackColor = System.Drawing.Color.White;
+            current.Środek7.BackColor = System.Drawing.Color.White;
+            current.Koniec1.BackColor = System.Drawing.Color.White;
+            current.Koniec2.BackColor = System.Drawing.Color.White;
+            current.Koniec3.BackColor = System.Drawing.Color.White;
+            current.Koniec4.BackColor = System.Drawing.Color.White;
+            current.Koniec5.BackColor = System.Drawing.Color.White;
+            current.Koniec6.BackColor = System.Drawing.Color.White;
+            current.Koniec7.BackColor = System.Drawing.Color.White;
+
+        }
+        public static void ciemne(Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            current.numerPociąguBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.box_stacja_końcowa.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.przezBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.nazwaPociąguBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.wyczyscButton.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.generujButton.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.generujBezZatrzymaniaButton.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.dźwiękButton.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.komunikatWygenerowanyBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.godzinaPrzyjazdu.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.godzinyOdjazdu.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.minutyPrzyjazdu.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.minutyOdjazdu.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.boxPeron.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.boxTor.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.opóźnienieBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.ileWagonówWSkładzie.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek1.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek2.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek3.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek4.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek5.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek6.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Początek7.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek1.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek2.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek3.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek4.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek5.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek6.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Środek7.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec1.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec2.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec3.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec4.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec5.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec6.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.Koniec7.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
         }
     }
 }
