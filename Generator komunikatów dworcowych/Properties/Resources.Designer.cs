@@ -63,6 +63,15 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream gong_torun {
+            get {
+                return ResourceManager.GetStream("gong_torun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream gong_wroclaw {
             get {
                 return ResourceManager.GetStream("gong_wroclaw", resourceCulture);

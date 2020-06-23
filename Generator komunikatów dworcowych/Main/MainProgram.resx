@@ -125,7 +125,7 @@
     <value>97, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.4.4 [dev]</value>
+    <value>wersja 0.5.1 [dev]</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 539</value>
@@ -2020,10 +2020,10 @@
     <value>Disable</value>
   </data>
   <data name="wygladStrony.Items" xml:space="preserve">
-    <value>biały</value>
+    <value>różowy</value>
   </data>
   <data name="wygladStrony.Items1" xml:space="preserve">
-    <value>różowy</value>
+    <value>biały</value>
   </data>
   <data name="wygladStrony.Items2" xml:space="preserve">
     <value>ciemny1</value>

@@ -68,10 +68,28 @@ namespace Generator
                 changeState();
             }
         }
-        public static void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current)
+        public static void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
+            Stream s;
+
+            if (NazwaGongu == "GONG 1")
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong_wroclaw;
+            }
+            else if (NazwaGongu == "GONG 2")
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong1;
+            }
+            else
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong2;
+            }
+
+            SoundPlayer player = new SoundPlayer(s);
+
+            player.PlaySync();
 
             synth.Speak("Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!");
 
@@ -100,9 +118,9 @@ namespace Generator
             Thread test = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja));
             test.Start();
         }
-        public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current)
+        public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
-            Thread test1 = new Thread(() => Gadanie.SyntezatorBezPostoju(current));
+            Thread test1 = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu));
             test1.Start();
         }
     }

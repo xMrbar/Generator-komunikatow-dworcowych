@@ -89,8 +89,15 @@ namespace Generator_komunikatów_dworcowych
         {
             if (komunikatWygenerowanyBox.Text == "Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!")
             {
-                dźwiękButton.Enabled = false;
-                Generator.Wielowątkowość.NewThread1(this);
+                if (GongName.Text.Length > 0)
+                {
+                    dźwiękButton.Enabled = false;
+                    Generator.Wielowątkowość.NewThread1(this, GongName.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Proszę wybrać gong rozpoczynający zapowiedź", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

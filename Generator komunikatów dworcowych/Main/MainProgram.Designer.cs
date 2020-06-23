@@ -1039,12 +1039,12 @@
             this.wygladStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.wygladStrony.FormattingEnabled = true;
             resources.ApplyResources(this.wygladStrony, "wygladStrony");
-            wygladStrony.Items.Insert(0, "różowy");
-            wygladStrony.Items.Insert(1, "biały");
-            wygladStrony.Items.Insert(2, "ciemny1");
-            wygladStrony.Items.Insert(3, "ciemny2");
+            this.wygladStrony.Items.AddRange(new object[] {
+            resources.GetString("wygladStrony.Items"),
+            resources.GetString("wygladStrony.Items1"),
+            resources.GetString("wygladStrony.Items2"),
+            resources.GetString("wygladStrony.Items3")});
             this.wygladStrony.Name = "wygladStrony";
-            this.wygladStrony.SelectedIndex = 0;
             this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // wygladtxt
@@ -1058,11 +1058,11 @@
             this.GongName.BackColor = System.Drawing.SystemColors.Window;
             this.GongName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.GongName.FormattingEnabled = true;
-            GongName.Items.Insert(0, "GONG 1");
-            GongName.Items.Insert(1, "GONG 2");
-            GongName.Items.Insert(2, "GONG 3");
+            this.GongName.Items.AddRange(new object[] {
+            resources.GetString("GongName.Items"),
+            resources.GetString("GongName.Items1"),
+            resources.GetString("GongName.Items2")});
             resources.ApplyResources(this.GongName, "GongName");
-            //this.GongName.SelectedIndex = 0;
             this.GongName.Name = "GongName";
             // 
             // GongTxt

@@ -124,6 +124,9 @@
   <data name="gong2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\voice\gong2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gong_torun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\voice\gong-torun.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="gong_wroclaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\voice\gong-wroclaw.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

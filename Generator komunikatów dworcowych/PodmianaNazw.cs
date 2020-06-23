@@ -1,4 +1,7 @@
-﻿namespace PodmianaNazw
+﻿using System;
+using System.Windows.Forms.VisualStyles;
+
+namespace PodmianaNazw
 {
     class Podmiana
     {
