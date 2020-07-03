@@ -1061,7 +1061,8 @@
             this.GongName.Items.AddRange(new object[] {
             resources.GetString("GongName.Items"),
             resources.GetString("GongName.Items1"),
-            resources.GetString("GongName.Items2")});
+            resources.GetString("GongName.Items2"),
+            resources.GetString("GongName.Items3")});
             resources.ApplyResources(this.GongName, "GongName");
             this.GongName.Name = "GongName";
             // 

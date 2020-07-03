@@ -5,6 +5,7 @@ namespace Generator_komunikatów_dworcowych
 {
     public partial class komunikaty : Form
     {
+
         public komunikaty()
         {
             InitializeComponent();

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator komunikatów", "Generator komunikatów dworcowych\Generator komunikatów.csproj", "{6D4D3D55-D6E9-4165-B00E-8BD9971067D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator komunikatów", "Generator_komunikatow_dworcowych\Generator komunikatów.csproj", "{6D4D3D55-D6E9-4165-B00E-8BD9971067D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

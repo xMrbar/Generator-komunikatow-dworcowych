@@ -34,9 +34,13 @@ namespace Generator
             {
                 s = GeneratorKomunikatów.Properties.Resources.gong1;
             }
-            else
+            else if (NazwaGongu == "GONG 3")
             {
                 s = GeneratorKomunikatów.Properties.Resources.gong2;
+            }
+            else
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong_torun;
             }
 
             SoundPlayer player = new SoundPlayer(s);
@@ -82,9 +86,13 @@ namespace Generator
             {
                 s = GeneratorKomunikatów.Properties.Resources.gong1;
             }
-            else
+            else if (NazwaGongu == "GONG 3")
             {
                 s = GeneratorKomunikatów.Properties.Resources.gong2;
+            }
+            else
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong_torun;
             }
 
             SoundPlayer player = new SoundPlayer(s);

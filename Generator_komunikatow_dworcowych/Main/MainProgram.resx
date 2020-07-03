@@ -2094,6 +2094,9 @@
   <data name="GongName.Items2" xml:space="preserve">
     <value>GONG 3</value>
   </data>
+  <data name="GongName.Items3" xml:space="preserve">
+    <value>GONG 4</value>
+  </data>
   <data name="GongName.Location" type="System.Drawing.Point, System.Drawing">
     <value>603, 23</value>
   </data>
