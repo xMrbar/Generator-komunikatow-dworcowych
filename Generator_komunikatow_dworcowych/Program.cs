@@ -19,7 +19,6 @@ namespace Generator_komunikatów_dworcowych
             {
                 await mgr.UpdateApp();
             }
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new komunikaty());
