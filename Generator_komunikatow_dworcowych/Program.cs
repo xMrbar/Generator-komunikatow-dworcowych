@@ -15,7 +15,7 @@ namespace Generator_komunikatów_dworcowych
         [STAThread]
         static async Task Main()
         {
-            using (var mgr = new UpdateManager("C:\\Users\\Bar\\source\\repos\\Generator_komunikatow_dworcowych\\Generator_komunikatow_dworcowych\\Releases"))
+            using (var mgr = new UpdateManager(@"C:\\Users\\Bar\\source\\repos\\Generator_komunikatow_dworcowych\\Generator_komunikatow_dworcowych\\Releases"))
             {
                 await mgr.UpdateApp();
             }
