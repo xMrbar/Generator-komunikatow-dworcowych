@@ -93,6 +93,7 @@ namespace Generator_komunikatów_dworcowych
                 if (GongName.Text.Length > 0)
                 {
                     dźwiękButton.Enabled = false;
+                    dzwiekTestButton.Enabled = false;
                     Generator.Wielowątkowość.NewThread1(this, GongName.Text);
                 }
                 else
@@ -117,6 +118,7 @@ namespace Generator_komunikatów_dworcowych
                                 string rezerwacja = PodmianaNazw.Podmiana.RezerwacjaMowa(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
 
                                 dźwiękButton.Enabled = false;
+                                dzwiekTestButton.Enabled = false;
                                 Generator.Wielowątkowość.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja);
                             }
                             else
@@ -192,6 +194,20 @@ namespace Generator_komunikatów_dworcowych
                 tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 GUI.napisy.zolte(this);
+            }
+        }
+
+        private void dzwiekTestButton_Click(object sender, EventArgs e)
+        {
+            if (GongName.Text.Length > 0)
+            {
+                dźwiękButton.Enabled = false;
+                dzwiekTestButton.Enabled = false;
+                Generator.Wielowątkowość.NewThread2(this, GongName.Text);
+            }
+            else
+            {
+                MessageBox.Show("Proszę wybrać gong rozpoczynający zapowiedź", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -61,6 +61,7 @@ namespace Generator
             MethodInvoker changeState = delegate ()
             {
                 current.dźwiękButton.Enabled = true;
+                current.dzwiekTestButton.Enabled = true;
             };
 
             if (current.InvokeRequired)
@@ -106,6 +107,49 @@ namespace Generator
             MethodInvoker changeState = delegate ()
             {
                 current.dźwiękButton.Enabled = true;
+                current.dzwiekTestButton.Enabled = true;
+            };
+
+            if (current.InvokeRequired)
+            {
+                current.Invoke(changeState);
+            }
+            else
+            {
+                changeState();
+            }
+        }
+        public static void TestowyDzwiekGongu(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
+        {
+            SpeechSynthesizer synth = new SpeechSynthesizer();
+            synth.SetOutputToDefaultAudioDevice();
+            Stream s;
+
+            if (NazwaGongu == "GONG 1")
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong_wroclaw;
+            }
+            else if (NazwaGongu == "GONG 2")
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong1;
+            }
+            else if (NazwaGongu == "GONG 3")
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong2;
+            }
+            else
+            {
+                s = GeneratorKomunikatów.Properties.Resources.gong_torun;
+            }
+
+            SoundPlayer player = new SoundPlayer(s);
+
+            player.PlaySync();
+
+            MethodInvoker changeState = delegate ()
+            {
+                current.dźwiękButton.Enabled = true;
+                current.dzwiekTestButton.Enabled = true;
             };
 
             if (current.InvokeRequired)
@@ -130,6 +174,11 @@ namespace Generator
         {
             Thread test1 = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu));
             test1.Start();
+        }
+        public static void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
+        {
+            Thread test2 = new Thread(() => Gadanie.TestowyDzwiekGongu(current, NazwaGongu));
+            test2.Start();
         }
     }
 }

@@ -111,6 +111,7 @@
             this.Pomoc1_2 = new System.Windows.Forms.Label();
             this.Pomoc1_1 = new System.Windows.Forms.Label();
             this.Pomoc1 = new System.Windows.Forms.Label();
+            this.dzwiekTestButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabPageKomunikaty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec5)).BeginInit();
@@ -1020,6 +1021,7 @@
             // tabPageOpcje
             // 
             this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPageOpcje.Controls.Add(this.dzwiekTestButton);
             this.tabPageOpcje.Controls.Add(this.wygladStrony);
             this.tabPageOpcje.Controls.Add(this.wygladtxt);
             this.tabPageOpcje.Controls.Add(this.GongName);
@@ -1100,6 +1102,14 @@
             // 
             resources.ApplyResources(this.Pomoc1, "Pomoc1");
             this.Pomoc1.Name = "Pomoc1";
+            // 
+            // dzwiekTestButton
+            // 
+            this.dzwiekTestButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.dzwiekTestButton, "dzwiekTestButton");
+            this.dzwiekTestButton.Name = "dzwiekTestButton";
+            this.dzwiekTestButton.UseVisualStyleBackColor = false;
+            this.dzwiekTestButton.Click += new System.EventHandler(this.dzwiekTestButton_Click);
             // 
             // komunikaty
             // 
@@ -1235,6 +1245,7 @@
         public System.Windows.Forms.NumericUpDown minutyPrzyjazdu;
         public System.Windows.Forms.NumericUpDown godzinaPrzyjazdu;
         public System.Windows.Forms.NumericUpDown numerPociąguBox;
+        public System.Windows.Forms.Button dzwiekTestButton;
     }
 }
 
