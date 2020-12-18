@@ -64,17 +64,4 @@ namespace insideSF
             }
         }
     }
-
-    class Actual
-    {
-        public static void Aktualizacje()
-        {
-            const string strona = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
-            const string wersja = "0.5.1a";
-
-            var request = HttpWebRequest.CreateHttp(strona);
-            request.Method = WebRequestMethods.Http.Get;
-            request.Accept = "application/json";
-        }
-    }
 }
