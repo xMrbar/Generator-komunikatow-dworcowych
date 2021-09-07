@@ -5,6 +5,11 @@ namespace Generator_komunikatów_dworcowych
 {
     public partial class komunikaty : Form
     {
+        string początek;
+        string relacja;
+        string torIPeron;
+        string godziny;
+        string rezerwacja;
 
         public komunikaty()
         {
@@ -20,13 +25,9 @@ namespace Generator_komunikatów_dworcowych
                     if (insideSF.SF.koniecTylkoPrzyjazd(naszaStacjaWRJ.Text, comboPrzyStOdj.Text) == "0")
                     {
 
-                        string początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
-                        string relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked);
-                        string torIPeron = PodmianaNazw.Podmiana.torIPeron(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
-                        string godziny = PodmianaNazw.Podmiana.godzina(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
-                        string rezerwacja = PodmianaNazw.Podmiana.Rezerwacja(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+                        StringSet();
 
-                        if (pociągMaOpóźnienie.Checked == false)
+                        if (!pociągMaOpóźnienie.Checked)
                         {
                             komunikatWygenerowanyBox.Clear();
                             komunikatWygenerowanyBox.AppendText(Generator.Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja));
@@ -94,7 +95,7 @@ namespace Generator_komunikatów_dworcowych
                 {
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
-                    Generator.Wielowątkowość.NewThread1(this, GongName.Text);
+                    Generator.Wielowątkowość.NewThread1(this, GongName.Text, isGongOn.Checked);
                 }
                 else
                 {
@@ -111,15 +112,11 @@ namespace Generator_komunikatów_dworcowych
                         {
                             if (GongName.Text.Length > 0)
                             {
-                                string początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
-                                string relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked);
-                                string torIPeron = PodmianaNazw.Podmiana.torIPeronMowa(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
-                                string godziny = PodmianaNazw.Podmiana.godzinaMowa(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
-                                string rezerwacja = PodmianaNazw.Podmiana.RezerwacjaMowa(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+                                StringSet();
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
-                                Generator.Wielowątkowość.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja);
+                                Generator.Wielowątkowość.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked);
                             }
                             else
                             {
@@ -209,6 +206,15 @@ namespace Generator_komunikatów_dworcowych
             {
                 MessageBox.Show("Proszę wybrać gong rozpoczynający zapowiedź", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void StringSet()
+        {
+            początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+            relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked);
+            torIPeron = PodmianaNazw.Podmiana.torIPeron(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
+            godziny = PodmianaNazw.Podmiana.godzina(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
+            rezerwacja = PodmianaNazw.Podmiana.Rezerwacja(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
         }
     }
 }

@@ -25,7 +25,7 @@
             current.przezTXT.ForeColor = System.Drawing.Color.White;
             current.stacjaPoczątkowa.ForeColor = System.Drawing.Color.White;
             current.stacjaKońcowa.ForeColor = System.Drawing.Color.White;
-            current.Relacja.ForeColor = System.Drawing.Color.White;
+            //current.Relacja.ForeColor = System.Drawing.Color.White;
             current.GongTxt.ForeColor = System.Drawing.Color.White;
             current.wygladtxt.ForeColor = System.Drawing.Color.White;
             current.Pomoc1.ForeColor = System.Drawing.Color.White;
@@ -34,7 +34,9 @@
             current.Pomoc1_3.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.White;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.White;
+            current.isGongOn.ForeColor = System.Drawing.Color.White;
         }
+
         public static void czarne (Generator_komunikatów_dworcowych.komunikaty current)
         {
             current.NumerPociągu.ForeColor = System.Drawing.Color.Black;
@@ -58,7 +60,7 @@
             current.przezTXT.ForeColor = System.Drawing.Color.Black;
             current.stacjaPoczątkowa.ForeColor = System.Drawing.Color.Black;
             current.stacjaKońcowa.ForeColor = System.Drawing.Color.Black;
-            current.Relacja.ForeColor = System.Drawing.Color.Black;
+            //current.Relacja.ForeColor = System.Drawing.Color.Black;
             current.GongTxt.ForeColor = System.Drawing.Color.Black;
             current.wygladtxt.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1.ForeColor = System.Drawing.Color.Black;
@@ -67,7 +69,9 @@
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Black;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Black;
+            current.isGongOn.ForeColor = System.Drawing.Color.Black;
         }
+
         public static void zolte (Generator_komunikatów_dworcowych.komunikaty current) 
         {
             current.NumerPociągu.ForeColor = System.Drawing.Color.Gold;
@@ -91,7 +95,7 @@
             current.przezTXT.ForeColor = System.Drawing.Color.Gold;
             current.stacjaPoczątkowa.ForeColor = System.Drawing.Color.Gold;
             current.stacjaKońcowa.ForeColor = System.Drawing.Color.Gold;
-            current.Relacja.ForeColor = System.Drawing.Color.Gold;
+            //current.Relacja.ForeColor = System.Drawing.Color.Gold;
             current.GongTxt.ForeColor = System.Drawing.Color.Gold;
             current.wygladtxt.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1.ForeColor = System.Drawing.Color.Gold;
@@ -100,6 +104,7 @@
             current.Pomoc1_3.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_4.ForeColor = System.Drawing.Color.Gold;
             current.Pomoc1_5.ForeColor = System.Drawing.Color.Gold;
+            current.isGongOn.ForeColor = System.Drawing.Color.Gold;
         }
     }
     class Rubryki

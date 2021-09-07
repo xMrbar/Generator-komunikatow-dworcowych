@@ -31,7 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(komunikaty));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabPageOpcje = new System.Windows.Forms.TabPage();
+            this.dzwiekTestButton = new System.Windows.Forms.Button();
+            this.wygladStrony = new System.Windows.Forms.ComboBox();
+            this.wygladtxt = new System.Windows.Forms.Label();
+            this.GongName = new System.Windows.Forms.ComboBox();
+            this.GongTxt = new System.Windows.Forms.Label();
+            this.Pomoc1_5 = new System.Windows.Forms.Label();
+            this.Pomoc1_4 = new System.Windows.Forms.Label();
+            this.Pomoc1_3 = new System.Windows.Forms.Label();
+            this.Pomoc1_2 = new System.Windows.Forms.Label();
+            this.Pomoc1_1 = new System.Windows.Forms.Label();
+            this.Pomoc1 = new System.Windows.Forms.Label();
             this.tabPageKomunikaty = new System.Windows.Forms.TabPage();
+            this.isGongOn = new System.Windows.Forms.CheckBox();
             this.Koniec5 = new System.Windows.Forms.NumericUpDown();
             this.Koniec7 = new System.Windows.Forms.NumericUpDown();
             this.Koniec6 = new System.Windows.Forms.NumericUpDown();
@@ -97,22 +110,10 @@
             this.comboPrzewoźnik = new System.Windows.Forms.ComboBox();
             this.stacjaKońcowa = new System.Windows.Forms.Label();
             this.stacjaPoczątkowa = new System.Windows.Forms.Label();
-            this.Relacja = new System.Windows.Forms.Label();
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPageOpcje = new System.Windows.Forms.TabPage();
-            this.wygladStrony = new System.Windows.Forms.ComboBox();
-            this.wygladtxt = new System.Windows.Forms.Label();
-            this.GongName = new System.Windows.Forms.ComboBox();
-            this.GongTxt = new System.Windows.Forms.Label();
-            this.Pomoc1_5 = new System.Windows.Forms.Label();
-            this.Pomoc1_4 = new System.Windows.Forms.Label();
-            this.Pomoc1_3 = new System.Windows.Forms.Label();
-            this.Pomoc1_2 = new System.Windows.Forms.Label();
-            this.Pomoc1_1 = new System.Windows.Forms.Label();
-            this.Pomoc1 = new System.Windows.Forms.Label();
-            this.dzwiekTestButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
+            this.tabPageOpcje.SuspendLayout();
             this.tabPageKomunikaty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec7)).BeginInit();
@@ -143,7 +144,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzinaPrzyjazdu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).BeginInit();
             this.tabControl.SuspendLayout();
-            this.tabPageOpcje.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -160,10 +160,104 @@
             this.wersja.Name = "wersja";
             resources.ApplyResources(this.wersja, "wersja");
             // 
+            // tabPageOpcje
+            // 
+            this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPageOpcje.Controls.Add(this.dzwiekTestButton);
+            this.tabPageOpcje.Controls.Add(this.wygladStrony);
+            this.tabPageOpcje.Controls.Add(this.wygladtxt);
+            this.tabPageOpcje.Controls.Add(this.GongName);
+            this.tabPageOpcje.Controls.Add(this.GongTxt);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1_5);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1_4);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1_3);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1_2);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1_1);
+            this.tabPageOpcje.Controls.Add(this.Pomoc1);
+            resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
+            this.tabPageOpcje.Name = "tabPageOpcje";
+            // 
+            // dzwiekTestButton
+            // 
+            this.dzwiekTestButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.dzwiekTestButton, "dzwiekTestButton");
+            this.dzwiekTestButton.Name = "dzwiekTestButton";
+            this.dzwiekTestButton.UseVisualStyleBackColor = false;
+            this.dzwiekTestButton.Click += new System.EventHandler(this.dzwiekTestButton_Click);
+            // 
+            // wygladStrony
+            // 
+            this.wygladStrony.DisplayMember = "12";
+            this.wygladStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wygladStrony.FormattingEnabled = true;
+            resources.ApplyResources(this.wygladStrony, "wygladStrony");
+            this.wygladStrony.Items.AddRange(new object[] {
+            resources.GetString("wygladStrony.Items"),
+            resources.GetString("wygladStrony.Items1"),
+            resources.GetString("wygladStrony.Items2"),
+            resources.GetString("wygladStrony.Items3")});
+            this.wygladStrony.Name = "wygladStrony";
+            this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // wygladtxt
+            // 
+            resources.ApplyResources(this.wygladtxt, "wygladtxt");
+            this.wygladtxt.ForeColor = System.Drawing.Color.Black;
+            this.wygladtxt.Name = "wygladtxt";
+            // 
+            // GongName
+            // 
+            this.GongName.BackColor = System.Drawing.SystemColors.Window;
+            this.GongName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GongName.FormattingEnabled = true;
+            this.GongName.Items.AddRange(new object[] {
+            resources.GetString("GongName.Items"),
+            resources.GetString("GongName.Items1"),
+            resources.GetString("GongName.Items2"),
+            resources.GetString("GongName.Items3")});
+            resources.ApplyResources(this.GongName, "GongName");
+            this.GongName.Name = "GongName";
+            // 
+            // GongTxt
+            // 
+            resources.ApplyResources(this.GongTxt, "GongTxt");
+            this.GongTxt.Name = "GongTxt";
+            // 
+            // Pomoc1_5
+            // 
+            resources.ApplyResources(this.Pomoc1_5, "Pomoc1_5");
+            this.Pomoc1_5.Name = "Pomoc1_5";
+            // 
+            // Pomoc1_4
+            // 
+            resources.ApplyResources(this.Pomoc1_4, "Pomoc1_4");
+            this.Pomoc1_4.Name = "Pomoc1_4";
+            // 
+            // Pomoc1_3
+            // 
+            resources.ApplyResources(this.Pomoc1_3, "Pomoc1_3");
+            this.Pomoc1_3.Name = "Pomoc1_3";
+            // 
+            // Pomoc1_2
+            // 
+            resources.ApplyResources(this.Pomoc1_2, "Pomoc1_2");
+            this.Pomoc1_2.Name = "Pomoc1_2";
+            // 
+            // Pomoc1_1
+            // 
+            resources.ApplyResources(this.Pomoc1_1, "Pomoc1_1");
+            this.Pomoc1_1.Name = "Pomoc1_1";
+            // 
+            // Pomoc1
+            // 
+            resources.ApplyResources(this.Pomoc1, "Pomoc1");
+            this.Pomoc1.Name = "Pomoc1";
+            // 
             // tabPageKomunikaty
             // 
             this.tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
             resources.ApplyResources(this.tabPageKomunikaty, "tabPageKomunikaty");
+            this.tabPageKomunikaty.Controls.Add(this.isGongOn);
             this.tabPageKomunikaty.Controls.Add(this.Koniec5);
             this.tabPageKomunikaty.Controls.Add(this.Koniec7);
             this.tabPageKomunikaty.Controls.Add(this.Koniec6);
@@ -229,9 +323,14 @@
             this.tabPageKomunikaty.Controls.Add(this.comboPrzewoźnik);
             this.tabPageKomunikaty.Controls.Add(this.stacjaKońcowa);
             this.tabPageKomunikaty.Controls.Add(this.stacjaPoczątkowa);
-            this.tabPageKomunikaty.Controls.Add(this.Relacja);
             this.tabPageKomunikaty.Controls.Add(this.NumerPociągu);
             this.tabPageKomunikaty.Name = "tabPageKomunikaty";
+            // 
+            // isGongOn
+            // 
+            resources.ApplyResources(this.isGongOn, "isGongOn");
+            this.isGongOn.Name = "isGongOn";
+            this.isGongOn.UseVisualStyleBackColor = true;
             // 
             // Koniec5
             // 
@@ -999,11 +1098,6 @@
             resources.ApplyResources(this.stacjaPoczątkowa, "stacjaPoczątkowa");
             this.stacjaPoczątkowa.Name = "stacjaPoczątkowa";
             // 
-            // Relacja
-            // 
-            resources.ApplyResources(this.Relacja, "Relacja");
-            this.Relacja.Name = "Relacja";
-            // 
             // NumerPociągu
             // 
             resources.ApplyResources(this.NumerPociągu, "NumerPociągu");
@@ -1018,99 +1112,6 @@
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             // 
-            // tabPageOpcje
-            // 
-            this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPageOpcje.Controls.Add(this.dzwiekTestButton);
-            this.tabPageOpcje.Controls.Add(this.wygladStrony);
-            this.tabPageOpcje.Controls.Add(this.wygladtxt);
-            this.tabPageOpcje.Controls.Add(this.GongName);
-            this.tabPageOpcje.Controls.Add(this.GongTxt);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1_5);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1_4);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1_3);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1_2);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1_1);
-            this.tabPageOpcje.Controls.Add(this.Pomoc1);
-            resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
-            this.tabPageOpcje.Name = "tabPageOpcje";
-            // 
-            // wygladStrony
-            // 
-            this.wygladStrony.DisplayMember = "12";
-            this.wygladStrony.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wygladStrony.FormattingEnabled = true;
-            resources.ApplyResources(this.wygladStrony, "wygladStrony");
-            this.wygladStrony.Items.AddRange(new object[] {
-            resources.GetString("wygladStrony.Items"),
-            resources.GetString("wygladStrony.Items1"),
-            resources.GetString("wygladStrony.Items2"),
-            resources.GetString("wygladStrony.Items3")});
-            this.wygladStrony.Name = "wygladStrony";
-            this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // wygladtxt
-            // 
-            resources.ApplyResources(this.wygladtxt, "wygladtxt");
-            this.wygladtxt.ForeColor = System.Drawing.Color.Black;
-            this.wygladtxt.Name = "wygladtxt";
-            // 
-            // GongName
-            // 
-            this.GongName.BackColor = System.Drawing.SystemColors.Window;
-            this.GongName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GongName.FormattingEnabled = true;
-            this.GongName.Items.AddRange(new object[] {
-            resources.GetString("GongName.Items"),
-            resources.GetString("GongName.Items1"),
-            resources.GetString("GongName.Items2"),
-            resources.GetString("GongName.Items3")});
-            resources.ApplyResources(this.GongName, "GongName");
-            this.GongName.Name = "GongName";
-            // 
-            // GongTxt
-            // 
-            resources.ApplyResources(this.GongTxt, "GongTxt");
-            this.GongTxt.Name = "GongTxt";
-            // 
-            // Pomoc1_5
-            // 
-            resources.ApplyResources(this.Pomoc1_5, "Pomoc1_5");
-            this.Pomoc1_5.Name = "Pomoc1_5";
-            // 
-            // Pomoc1_4
-            // 
-            resources.ApplyResources(this.Pomoc1_4, "Pomoc1_4");
-            this.Pomoc1_4.Name = "Pomoc1_4";
-            // 
-            // Pomoc1_3
-            // 
-            resources.ApplyResources(this.Pomoc1_3, "Pomoc1_3");
-            this.Pomoc1_3.Name = "Pomoc1_3";
-            // 
-            // Pomoc1_2
-            // 
-            resources.ApplyResources(this.Pomoc1_2, "Pomoc1_2");
-            this.Pomoc1_2.Name = "Pomoc1_2";
-            // 
-            // Pomoc1_1
-            // 
-            resources.ApplyResources(this.Pomoc1_1, "Pomoc1_1");
-            this.Pomoc1_1.Name = "Pomoc1_1";
-            // 
-            // Pomoc1
-            // 
-            resources.ApplyResources(this.Pomoc1, "Pomoc1");
-            this.Pomoc1.Name = "Pomoc1";
-            // 
-            // dzwiekTestButton
-            // 
-            this.dzwiekTestButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.dzwiekTestButton, "dzwiekTestButton");
-            this.dzwiekTestButton.Name = "dzwiekTestButton";
-            this.dzwiekTestButton.UseVisualStyleBackColor = false;
-            this.dzwiekTestButton.Click += new System.EventHandler(this.dzwiekTestButton_Click);
-            // 
             // komunikaty
             // 
             resources.ApplyResources(this, "$this");
@@ -1124,6 +1125,8 @@
             this.Name = "komunikaty";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabPageOpcje.ResumeLayout(false);
+            this.tabPageOpcje.PerformLayout();
             this.tabPageKomunikaty.ResumeLayout(false);
             this.tabPageKomunikaty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec5)).EndInit();
@@ -1155,8 +1158,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzinaPrzyjazdu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).EndInit();
             this.tabControl.ResumeLayout(false);
-            this.tabPageOpcje.ResumeLayout(false);
-            this.tabPageOpcje.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1165,34 +1166,19 @@
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel wersja;
-        public System.Windows.Forms.Button dźwiękButton;
-        private System.Windows.Forms.ComboBox comboPrzyStOdj;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label oddzieleniePrzyjazd;
-        private System.Windows.Forms.ComboBox naszaStacjaWRJ;
-        private System.Windows.Forms.ComboBox comboKategoriaHandlowa;
-        private System.Windows.Forms.ComboBox comboPrzewoźnik;
-        private System.Windows.Forms.TabControl tabControl;
+        public System.Windows.Forms.TabPage tabPageOpcje;
+        public System.Windows.Forms.Button dzwiekTestButton;
+        public System.Windows.Forms.ComboBox wygladStrony;
+        public System.Windows.Forms.Label wygladtxt;
         private System.Windows.Forms.ComboBox GongName;
-        public System.Windows.Forms.Label WagonyPoczątekTXT;
-        public System.Windows.Forms.NumericUpDown ileWagonówWSkładzie;
-        public System.Windows.Forms.Label ileWagonowTXT;
-        public System.Windows.Forms.Label WagonyKoniecTXT;
-        public System.Windows.Forms.Label WagonyŚrodekTXT;
-        public System.Windows.Forms.NumericUpDown Początek5;
-        public System.Windows.Forms.NumericUpDown Początek7;
-        public System.Windows.Forms.NumericUpDown Początek6;
-        public System.Windows.Forms.NumericUpDown Początek4;
-        public System.Windows.Forms.NumericUpDown Początek3;
-        public System.Windows.Forms.NumericUpDown Początek2;
-        public System.Windows.Forms.NumericUpDown Początek1;
-        public System.Windows.Forms.NumericUpDown Środek3;
-        public System.Windows.Forms.NumericUpDown Środek2;
-        public System.Windows.Forms.NumericUpDown Środek5;
-        public System.Windows.Forms.NumericUpDown Środek7;
-        public System.Windows.Forms.NumericUpDown Środek6;
-        public System.Windows.Forms.NumericUpDown Środek4;
-        public System.Windows.Forms.NumericUpDown Środek1;
+        public System.Windows.Forms.Label GongTxt;
+        public System.Windows.Forms.Label Pomoc1_5;
+        public System.Windows.Forms.Label Pomoc1_4;
+        public System.Windows.Forms.Label Pomoc1_3;
+        public System.Windows.Forms.Label Pomoc1_2;
+        public System.Windows.Forms.Label Pomoc1_1;
+        public System.Windows.Forms.Label Pomoc1;
+        public System.Windows.Forms.TabPage tabPageKomunikaty;
         public System.Windows.Forms.NumericUpDown Koniec5;
         public System.Windows.Forms.NumericUpDown Koniec7;
         public System.Windows.Forms.NumericUpDown Koniec6;
@@ -1200,35 +1186,32 @@
         public System.Windows.Forms.NumericUpDown Koniec1;
         public System.Windows.Forms.NumericUpDown Koniec3;
         public System.Windows.Forms.NumericUpDown Koniec2;
-        public System.Windows.Forms.TabPage tabPageKomunikaty;
+        public System.Windows.Forms.NumericUpDown Środek1;
+        public System.Windows.Forms.NumericUpDown Początek1;
+        public System.Windows.Forms.NumericUpDown Środek3;
+        public System.Windows.Forms.NumericUpDown Środek2;
+        public System.Windows.Forms.NumericUpDown Środek5;
+        public System.Windows.Forms.NumericUpDown Środek7;
+        public System.Windows.Forms.NumericUpDown Środek6;
+        public System.Windows.Forms.NumericUpDown Środek4;
+        public System.Windows.Forms.NumericUpDown Początek5;
+        public System.Windows.Forms.NumericUpDown Początek7;
+        public System.Windows.Forms.NumericUpDown Początek6;
+        public System.Windows.Forms.NumericUpDown Początek4;
+        public System.Windows.Forms.NumericUpDown Początek3;
+        public System.Windows.Forms.NumericUpDown Początek2;
+        public System.Windows.Forms.Label WagonyKoniecTXT;
+        public System.Windows.Forms.Label WagonyŚrodekTXT;
+        public System.Windows.Forms.NumericUpDown ileWagonówWSkładzie;
+        public System.Windows.Forms.Label ileWagonowTXT;
+        public System.Windows.Forms.Label WagonyPoczątekTXT;
+        public System.Windows.Forms.CheckBox ifReserwation;
+        public System.Windows.Forms.Button dźwiękButton;
         public System.Windows.Forms.Label PrzyStOdjTXT;
+        private System.Windows.Forms.ComboBox comboPrzyStOdj;
         public System.Windows.Forms.Label labelTor;
         public System.Windows.Forms.Label labelPeron;
         public System.Windows.Forms.Label przezTXT;
-        public System.Windows.Forms.CheckBox pociągMaOpóźnienie;
-        public System.Windows.Forms.Label OpóźnienieTXT;
-        public System.Windows.Forms.Label nazwaPociąguTXT;
-        public System.Windows.Forms.Label GodzinaTXT;
-        public System.Windows.Forms.Label OdjazdGodzinaTXT;
-        public System.Windows.Forms.Label PrzyjazdGodzinaTXT;
-        public System.Windows.Forms.Label naszaStacjaWRJtxt;
-        public System.Windows.Forms.Label kategoriaHandlowa;
-        public System.Windows.Forms.Label przewoźnik;
-        public System.Windows.Forms.Label stacjaKońcowa;
-        public System.Windows.Forms.Label stacjaPoczątkowa;
-        public System.Windows.Forms.Label Relacja;
-        public System.Windows.Forms.TabPage tabPageOpcje;
-        public System.Windows.Forms.Label NumerPociągu;
-        public System.Windows.Forms.CheckBox ifReserwation;
-        public System.Windows.Forms.Label GongTxt;
-        public System.Windows.Forms.Label wygladtxt;
-        public System.Windows.Forms.Label Pomoc1;
-        public System.Windows.Forms.Label Pomoc1_2;
-        public System.Windows.Forms.Label Pomoc1_1;
-        public System.Windows.Forms.Label Pomoc1_5;
-        public System.Windows.Forms.Label Pomoc1_4;
-        public System.Windows.Forms.Label Pomoc1_3;
-        public System.Windows.Forms.ComboBox wygladStrony;
         public System.Windows.Forms.TextBox przezBox;
         public System.Windows.Forms.RichTextBox komunikatWygenerowanyBox;
         public System.Windows.Forms.TextBox nazwaPociąguBox;
@@ -1236,16 +1219,34 @@
         public System.Windows.Forms.TextBox boxTor;
         public System.Windows.Forms.TextBox box_stacja_końcowa;
         public System.Windows.Forms.TextBox box_stacja_początkowa;
+        public System.Windows.Forms.CheckBox pociągMaOpóźnienie;
+        public System.Windows.Forms.Label OpóźnienieTXT;
         public System.Windows.Forms.NumericUpDown opóźnienieBox;
+        public System.Windows.Forms.Label nazwaPociąguTXT;
         public System.Windows.Forms.Button generujBezZatrzymaniaButton;
         public System.Windows.Forms.Button generujButton;
         public System.Windows.Forms.Button wyczyscButton;
+        public System.Windows.Forms.Label GodzinaTXT;
+        public System.Windows.Forms.Label OdjazdGodzinaTXT;
+        private System.Windows.Forms.Label label2;
         public System.Windows.Forms.NumericUpDown minutyOdjazdu;
         public System.Windows.Forms.NumericUpDown godzinyOdjazdu;
+        public System.Windows.Forms.Label PrzyjazdGodzinaTXT;
+        private System.Windows.Forms.Label oddzieleniePrzyjazd;
         public System.Windows.Forms.NumericUpDown minutyPrzyjazdu;
         public System.Windows.Forms.NumericUpDown godzinaPrzyjazdu;
         public System.Windows.Forms.NumericUpDown numerPociąguBox;
-        public System.Windows.Forms.Button dzwiekTestButton;
+        public System.Windows.Forms.Label naszaStacjaWRJtxt;
+        private System.Windows.Forms.ComboBox naszaStacjaWRJ;
+        public System.Windows.Forms.Label kategoriaHandlowa;
+        public System.Windows.Forms.Label przewoźnik;
+        private System.Windows.Forms.ComboBox comboKategoriaHandlowa;
+        private System.Windows.Forms.ComboBox comboPrzewoźnik;
+        public System.Windows.Forms.Label stacjaKońcowa;
+        public System.Windows.Forms.Label stacjaPoczątkowa;
+        public System.Windows.Forms.Label NumerPociągu;
+        private System.Windows.Forms.TabControl tabControl;
+        public System.Windows.Forms.CheckBox isGongOn;
     }
 }
 
