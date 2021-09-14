@@ -152,6 +152,7 @@
             current.Koniec7.BackColor = System.Drawing.Color.White;
 
         }
+
         public static void ciemne(Generator_komunikatów_dworcowych.komunikaty current)
         {
             current.numerPociąguBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);

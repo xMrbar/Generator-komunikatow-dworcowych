@@ -91,7 +91,7 @@ namespace Generator_komunikatów_dworcowych
         {
             if (komunikatWygenerowanyBox.Text == "Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!")
             {
-                if (GongName.Text.Length > 0)
+                if (GongName.Text.Length > 0 || !isGongOn.Checked)
                 {
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
@@ -110,9 +110,9 @@ namespace Generator_komunikatów_dworcowych
                     {
                         if (insideSF.SF.koniecTylkoPrzyjazd(naszaStacjaWRJ.Text, comboPrzyStOdj.Text) == "0")
                         {
-                            if (GongName.Text.Length > 0)
+                            if (GongName.Text.Length > 0 || !isGongOn.Checked)
                             {
-                                StringSet();
+                                StringSetMowa();
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
@@ -166,6 +166,7 @@ namespace Generator_komunikatów_dworcowych
                 GeneratorKomunikatów.Rezerwacja.ChowanieWszystkichRezerwacji(this);
             }
         }
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (wygladStrony.Text == "biały")
@@ -173,24 +174,28 @@ namespace Generator_komunikatów_dworcowych
                 tabPageOpcje.BackColor = System.Drawing.Color.SeaShell;
                 tabPageKomunikaty.BackColor = System.Drawing.Color.SeaShell;
                 GUI.napisy.czarne(this);
+                //GUI.Rubryki.biale(this);
             }
             else if (wygladStrony.Text == "różowy")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
                 tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
                 GUI.napisy.czarne(this);
+                //GUI.Rubryki.biale(this);
             }
             else if (wygladStrony.Text == "ciemny1")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 GUI.napisy.biale(this);
+                //GUI.Rubryki.ciemne(this);
             }
             else if (wygladStrony.Text == "ciemny2")
             {
                 tabPageOpcje.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 tabPageKomunikaty.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
                 GUI.napisy.zolte(this);
+                //GUI.Rubryki.ciemne(this);
             }
         }
 
@@ -215,6 +220,15 @@ namespace Generator_komunikatów_dworcowych
             torIPeron = PodmianaNazw.Podmiana.torIPeron(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
             godziny = PodmianaNazw.Podmiana.godzina(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
             rezerwacja = PodmianaNazw.Podmiana.Rezerwacja(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+        }
+
+        private void StringSetMowa()
+        {
+            początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+            relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked);
+            torIPeron = PodmianaNazw.Podmiana.torIPeronMowa(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
+            godziny = PodmianaNazw.Podmiana.godzinaMowa(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
+            rezerwacja = PodmianaNazw.Podmiana.RezerwacjaMowa(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
         }
     }
 }
