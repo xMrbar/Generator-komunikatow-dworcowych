@@ -12,7 +12,6 @@ namespace Generator
         {
             return początek + relacja + torIPeron + rezerwacja + godziny;
         }
-
         public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
         {
             return początek + relacja + godziny + torIPeron + rezerwacja + ". Za opóźnienie pociągu przepraszamy.";
@@ -124,20 +123,20 @@ namespace Generator
     {
         public static void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn)
         {
-            Thread watekZapowiedziGlownej = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn));
-            watekZapowiedziGlownej.Start();
+            Thread test = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn));
+            test.Start();
         }
 
         public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn)
         {
-            Thread watekZapowiedziBezPostoju = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn));
-            watekZapowiedziBezPostoju.Start();
+            Thread test1 = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn));
+            test1.Start();
         }
 
         public static void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
-            Thread watekSprawdzeniaDzwiekuGongu = new Thread(() => Gadanie.TestowyDzwiekGongu(current, NazwaGongu));
-            watekSprawdzeniaDzwiekuGongu.Start();
+            Thread test2 = new Thread(() => Gadanie.TestowyDzwiekGongu(current, NazwaGongu));
+            test2.Start();
         }
     }
 }

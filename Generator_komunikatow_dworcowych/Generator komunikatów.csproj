@@ -45,7 +45,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
-    <Authors>Mr_bar</Authors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Messaging" />

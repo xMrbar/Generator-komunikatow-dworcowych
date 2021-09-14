@@ -34,7 +34,7 @@ namespace insideSF
             }
             else if (przewoźnik == "POLREGIO")
             {
-                if (kategoria == "Osobowy" || kategoria == "interREGIO" || kategoria == "superREGIO" || kategoria == "Os. Przyspieszony")
+                if (kategoria == "Osobowy" || kategoria == "interREGIO" || kategoria == "superREGIO")
                 {
                     return "0";
                 }
