@@ -1,64 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -122,16 +62,20 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 17</value>
+    <value>104, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.5.1a [dev]</value>
+    <value>wersja 0.5.1d [dev]</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 539</value>
+    <value>0, 625</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 16, 0</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 22</value>
+    <value>1381, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -144,7 +88,7 @@
     <value>statusStrip1</value>
   </data>
   <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -152,15 +96,18 @@
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dzwiekTestButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="dzwiekTestButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 14</value>
+    <value>908, 16</value>
+  </data>
+  <data name="dzwiekTestButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="dzwiekTestButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 37</value>
+    <value>79, 43</value>
   </data>
   <data name="dzwiekTestButton.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -172,7 +119,7 @@
     <value>dzwiekTestButton</value>
   </data>
   <data name="&gt;&gt;dzwiekTestButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dzwiekTestButton.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -196,10 +143,13 @@
     <value>ciemny2</value>
   </data>
   <data name="wygladStrony.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 108</value>
+    <value>704, 125</value>
+  </data>
+  <data name="wygladStrony.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="wygladStrony.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 21</value>
+    <value>178, 23</value>
   </data>
   <data name="wygladStrony.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -208,7 +158,7 @@
     <value>wygladStrony</value>
   </data>
   <data name="&gt;&gt;wygladStrony.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;wygladStrony.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -226,7 +176,10 @@
     <value>NoControl</value>
   </data>
   <data name="wygladtxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 109</value>
+    <value>629, 126</value>
+  </data>
+  <data name="wygladtxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="wygladtxt.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 17</value>
@@ -241,7 +194,7 @@
     <value>wygladtxt</value>
   </data>
   <data name="&gt;&gt;wygladtxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;wygladtxt.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -262,10 +215,13 @@
     <value>GONG 4</value>
   </data>
   <data name="GongName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 23</value>
+    <value>704, 27</value>
+  </data>
+  <data name="GongName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="GongName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 21</value>
+    <value>178, 23</value>
   </data>
   <data name="GongName.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -274,7 +230,7 @@
     <value>GongName</value>
   </data>
   <data name="&gt;&gt;GongName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GongName.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -292,7 +248,10 @@
     <value>NoControl</value>
   </data>
   <data name="GongTxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 24</value>
+    <value>629, 28</value>
+  </data>
+  <data name="GongTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="GongTxt.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 17</value>
@@ -307,7 +266,7 @@
     <value>GongTxt</value>
   </data>
   <data name="&gt;&gt;GongTxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GongTxt.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -325,7 +284,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 109</value>
+    <value>30, 126</value>
+  </data>
+  <data name="Pomoc1_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1_5.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 17</value>
@@ -340,7 +302,7 @@
     <value>Pomoc1_5</value>
   </data>
   <data name="&gt;&gt;Pomoc1_5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1_5.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -358,7 +320,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 92</value>
+    <value>30, 106</value>
+  </data>
+  <data name="Pomoc1_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1_4.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 17</value>
@@ -373,7 +338,7 @@
     <value>Pomoc1_4</value>
   </data>
   <data name="&gt;&gt;Pomoc1_4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1_4.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -391,7 +356,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 75</value>
+    <value>30, 87</value>
+  </data>
+  <data name="Pomoc1_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1_3.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 17</value>
@@ -406,7 +374,7 @@
     <value>Pomoc1_3</value>
   </data>
   <data name="&gt;&gt;Pomoc1_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1_3.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -424,7 +392,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 58</value>
+    <value>30, 67</value>
+  </data>
+  <data name="Pomoc1_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 17</value>
@@ -439,7 +410,7 @@
     <value>Pomoc1_2</value>
   </data>
   <data name="&gt;&gt;Pomoc1_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1_2.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -457,7 +428,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 41</value>
+    <value>30, 47</value>
+  </data>
+  <data name="Pomoc1_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 17</value>
@@ -472,7 +446,7 @@
     <value>Pomoc1_1</value>
   </data>
   <data name="&gt;&gt;Pomoc1_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1_1.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -490,7 +464,10 @@
     <value>NoControl</value>
   </data>
   <data name="Pomoc1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 24</value>
+    <value>9, 28</value>
+  </data>
+  <data name="Pomoc1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Pomoc1.Size" type="System.Drawing.Size, System.Drawing">
     <value>282, 17</value>
@@ -505,7 +482,7 @@
     <value>Pomoc1</value>
   </data>
   <data name="&gt;&gt;Pomoc1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Pomoc1.Parent" xml:space="preserve">
     <value>tabPageOpcje</value>
@@ -514,13 +491,16 @@
     <value>10</value>
   </data>
   <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 24</value>
+  </data>
+  <data name="tabPageOpcje.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="tabPageOpcje.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="tabPageOpcje.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 511</value>
+    <value>1373, 592</value>
   </data>
   <data name="tabPageOpcje.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -532,7 +512,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;tabPageOpcje.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPageOpcje.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -550,10 +530,13 @@
     <value>NoControl</value>
   </data>
   <data name="isGongOn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 432</value>
+    <value>597, 498</value>
+  </data>
+  <data name="isGongOn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="isGongOn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 17</value>
+    <value>88, 19</value>
   </data>
   <data name="isGongOn.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -565,7 +548,7 @@
     <value>isGongOn</value>
   </data>
   <data name="&gt;&gt;isGongOn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;isGongOn.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -574,10 +557,13 @@
     <value>0</value>
   </data>
   <data name="Koniec5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 252</value>
+    <value>1128, 291</value>
+  </data>
+  <data name="Koniec5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec5.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -589,7 +575,7 @@
     <value>Koniec5</value>
   </data>
   <data name="&gt;&gt;Koniec5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec5.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -598,10 +584,13 @@
     <value>1</value>
   </data>
   <data name="Koniec7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 252</value>
+    <value>1268, 291</value>
+  </data>
+  <data name="Koniec7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec7.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -613,7 +602,7 @@
     <value>Koniec7</value>
   </data>
   <data name="&gt;&gt;Koniec7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec7.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -622,10 +611,13 @@
     <value>2</value>
   </data>
   <data name="Koniec6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 252</value>
+    <value>1198, 291</value>
+  </data>
+  <data name="Koniec6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec6.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -637,7 +629,7 @@
     <value>Koniec6</value>
   </data>
   <data name="&gt;&gt;Koniec6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec6.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -646,10 +638,13 @@
     <value>3</value>
   </data>
   <data name="Koniec4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>907, 252</value>
+    <value>1058, 291</value>
+  </data>
+  <data name="Koniec4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec4.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -661,7 +656,7 @@
     <value>Koniec4</value>
   </data>
   <data name="&gt;&gt;Koniec4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec4.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -670,10 +665,13 @@
     <value>4</value>
   </data>
   <data name="Koniec1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 226</value>
+    <value>1128, 261</value>
+  </data>
+  <data name="Koniec1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec1.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -685,7 +683,7 @@
     <value>Koniec1</value>
   </data>
   <data name="&gt;&gt;Koniec1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec1.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -694,10 +692,13 @@
     <value>5</value>
   </data>
   <data name="Koniec3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 226</value>
+    <value>1268, 261</value>
+  </data>
+  <data name="Koniec3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec3.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -709,7 +710,7 @@
     <value>Koniec3</value>
   </data>
   <data name="&gt;&gt;Koniec3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec3.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -718,10 +719,13 @@
     <value>6</value>
   </data>
   <data name="Koniec2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 226</value>
+    <value>1198, 261</value>
+  </data>
+  <data name="Koniec2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Koniec2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Koniec2.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -733,7 +737,7 @@
     <value>Koniec2</value>
   </data>
   <data name="&gt;&gt;Koniec2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Koniec2.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -742,10 +746,13 @@
     <value>7</value>
   </data>
   <data name="Środek1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 159</value>
+    <value>1128, 183</value>
+  </data>
+  <data name="Środek1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek1.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -757,7 +764,7 @@
     <value>Środek1</value>
   </data>
   <data name="&gt;&gt;Środek1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek1.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -766,10 +773,13 @@
     <value>8</value>
   </data>
   <data name="Początek1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 92</value>
+    <value>1128, 106</value>
+  </data>
+  <data name="Początek1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek1.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -781,7 +791,7 @@
     <value>Początek1</value>
   </data>
   <data name="&gt;&gt;Początek1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek1.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -790,10 +800,13 @@
     <value>9</value>
   </data>
   <data name="Środek3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 159</value>
+    <value>1268, 183</value>
+  </data>
+  <data name="Środek3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek3.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -805,7 +818,7 @@
     <value>Środek3</value>
   </data>
   <data name="&gt;&gt;Środek3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek3.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -814,10 +827,13 @@
     <value>10</value>
   </data>
   <data name="Środek2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 159</value>
+    <value>1198, 183</value>
+  </data>
+  <data name="Środek2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek2.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -829,7 +845,7 @@
     <value>Środek2</value>
   </data>
   <data name="&gt;&gt;Środek2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek2.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -838,10 +854,13 @@
     <value>11</value>
   </data>
   <data name="Środek5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 185</value>
+    <value>1128, 213</value>
+  </data>
+  <data name="Środek5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek5.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -853,7 +872,7 @@
     <value>Środek5</value>
   </data>
   <data name="&gt;&gt;Środek5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek5.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -862,10 +881,13 @@
     <value>12</value>
   </data>
   <data name="Środek7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 185</value>
+    <value>1268, 213</value>
+  </data>
+  <data name="Środek7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek7.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -877,7 +899,7 @@
     <value>Środek7</value>
   </data>
   <data name="&gt;&gt;Środek7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek7.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -886,10 +908,13 @@
     <value>13</value>
   </data>
   <data name="Środek6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 185</value>
+    <value>1198, 213</value>
+  </data>
+  <data name="Środek6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek6.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -901,7 +926,7 @@
     <value>Środek6</value>
   </data>
   <data name="&gt;&gt;Środek6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek6.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -910,10 +935,13 @@
     <value>14</value>
   </data>
   <data name="Środek4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>907, 185</value>
+    <value>1058, 213</value>
+  </data>
+  <data name="Środek4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Środek4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Środek4.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -925,7 +953,7 @@
     <value>Środek4</value>
   </data>
   <data name="&gt;&gt;Środek4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Środek4.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -934,10 +962,13 @@
     <value>15</value>
   </data>
   <data name="Początek5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>967, 116</value>
+    <value>1128, 134</value>
+  </data>
+  <data name="Początek5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek5.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -949,7 +980,7 @@
     <value>Początek5</value>
   </data>
   <data name="&gt;&gt;Początek5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek5.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -958,10 +989,13 @@
     <value>16</value>
   </data>
   <data name="Początek7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 116</value>
+    <value>1268, 134</value>
+  </data>
+  <data name="Początek7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek7.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -973,7 +1007,7 @@
     <value>Początek7</value>
   </data>
   <data name="&gt;&gt;Początek7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek7.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -982,10 +1016,13 @@
     <value>17</value>
   </data>
   <data name="Początek6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 116</value>
+    <value>1198, 134</value>
+  </data>
+  <data name="Początek6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek6.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -997,7 +1034,7 @@
     <value>Początek6</value>
   </data>
   <data name="&gt;&gt;Początek6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek6.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1006,10 +1043,13 @@
     <value>18</value>
   </data>
   <data name="Początek4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>907, 116</value>
+    <value>1058, 134</value>
+  </data>
+  <data name="Początek4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek4.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -1021,7 +1061,7 @@
     <value>Początek4</value>
   </data>
   <data name="&gt;&gt;Początek4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek4.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1030,10 +1070,13 @@
     <value>19</value>
   </data>
   <data name="Początek3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1087, 92</value>
+    <value>1268, 106</value>
+  </data>
+  <data name="Początek3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek3.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -1045,7 +1088,7 @@
     <value>Początek3</value>
   </data>
   <data name="&gt;&gt;Początek3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek3.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1054,10 +1097,13 @@
     <value>20</value>
   </data>
   <data name="Początek2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1027, 92</value>
+    <value>1198, 106</value>
+  </data>
+  <data name="Początek2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Początek2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="Początek2.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1069,7 +1115,7 @@
     <value>Początek2</value>
   </data>
   <data name="&gt;&gt;Początek2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Początek2.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1084,10 +1130,13 @@
     <value>NoControl</value>
   </data>
   <data name="WagonyKoniecTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>816, 228</value>
+    <value>952, 263</value>
+  </data>
+  <data name="WagonyKoniecTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="WagonyKoniecTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+    <value>140, 15</value>
   </data>
   <data name="WagonyKoniecTXT.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1102,7 +1151,7 @@
     <value>WagonyKoniecTXT</value>
   </data>
   <data name="&gt;&gt;WagonyKoniecTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;WagonyKoniecTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1117,10 +1166,13 @@
     <value>NoControl</value>
   </data>
   <data name="WagonyŚrodekTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>816, 161</value>
+    <value>952, 186</value>
+  </data>
+  <data name="WagonyŚrodekTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="WagonyŚrodekTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 13</value>
+    <value>139, 15</value>
   </data>
   <data name="WagonyŚrodekTXT.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1135,7 +1187,7 @@
     <value>WagonyŚrodekTXT</value>
   </data>
   <data name="&gt;&gt;WagonyŚrodekTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;WagonyŚrodekTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1144,10 +1196,13 @@
     <value>23</value>
   </data>
   <data name="ileWagonówWSkładzie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1058, 55</value>
+    <value>1234, 63</value>
+  </data>
+  <data name="ileWagonówWSkładzie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="ileWagonówWSkładzie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="ileWagonówWSkładzie.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1159,7 +1214,7 @@
     <value>ileWagonówWSkładzie</value>
   </data>
   <data name="&gt;&gt;ileWagonówWSkładzie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ileWagonówWSkładzie.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1174,10 +1229,13 @@
     <value>NoControl</value>
   </data>
   <data name="ileWagonowTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>876, 57</value>
+    <value>1022, 66</value>
+  </data>
+  <data name="ileWagonowTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ileWagonowTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 13</value>
+    <value>124, 15</value>
   </data>
   <data name="ileWagonowTXT.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -1192,7 +1250,7 @@
     <value>ileWagonowTXT</value>
   </data>
   <data name="&gt;&gt;ileWagonowTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ileWagonowTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1207,10 +1265,13 @@
     <value>NoControl</value>
   </data>
   <data name="WagonyPoczątekTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>816, 94</value>
+    <value>952, 108</value>
+  </data>
+  <data name="WagonyPoczątekTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="WagonyPoczątekTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 13</value>
+    <value>155, 15</value>
   </data>
   <data name="WagonyPoczątekTXT.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1225,7 +1286,7 @@
     <value>WagonyPoczątekTXT</value>
   </data>
   <data name="&gt;&gt;WagonyPoczątekTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;WagonyPoczątekTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1240,10 +1301,13 @@
     <value>NoControl</value>
   </data>
   <data name="ifReserwation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>924, 23</value>
+    <value>1078, 27</value>
+  </data>
+  <data name="ifReserwation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="ifReserwation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 17</value>
+    <value>268, 19</value>
   </data>
   <data name="ifReserwation.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -1255,7 +1319,7 @@
     <value>ifReserwation</value>
   </data>
   <data name="&gt;&gt;ifReserwation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ifReserwation.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1267,10 +1331,13 @@
     <value>NoControl</value>
   </data>
   <data name="dźwiękButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 455</value>
+    <value>597, 525</value>
+  </data>
+  <data name="dźwiękButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="dźwiękButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
+    <value>117, 58</value>
   </data>
   <data name="dźwiękButton.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -1282,7 +1349,7 @@
     <value>dźwiękButton</value>
   </data>
   <data name="&gt;&gt;dźwiękButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dźwiękButton.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1297,10 +1364,13 @@
     <value>NoControl</value>
   </data>
   <data name="PrzyStOdjTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 22</value>
+    <value>722, 25</value>
+  </data>
+  <data name="PrzyStOdjTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="PrzyStOdjTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+    <value>51, 15</value>
   </data>
   <data name="PrzyStOdjTXT.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -1312,7 +1382,7 @@
     <value>PrzyStOdjTXT</value>
   </data>
   <data name="&gt;&gt;PrzyStOdjTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PrzyStOdjTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1330,10 +1400,13 @@
     <value>Odjedzie</value>
   </data>
   <data name="comboPrzyStOdj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 19</value>
+    <value>784, 22</value>
+  </data>
+  <data name="comboPrzyStOdj.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="comboPrzyStOdj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
+    <value>209, 23</value>
   </data>
   <data name="comboPrzyStOdj.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -1342,7 +1415,7 @@
     <value>comboPrzyStOdj</value>
   </data>
   <data name="&gt;&gt;comboPrzyStOdj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboPrzyStOdj.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1357,10 +1430,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelTor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 358</value>
+    <value>838, 413</value>
+  </data>
+  <data name="labelTor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelTor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
+    <value>28, 15</value>
   </data>
   <data name="labelTor.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -1372,7 +1448,7 @@
     <value>labelTor</value>
   </data>
   <data name="&gt;&gt;labelTor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelTor.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1387,10 +1463,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelPeron.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 333</value>
+    <value>838, 384</value>
+  </data>
+  <data name="labelPeron.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="labelPeron.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
+    <value>43, 15</value>
   </data>
   <data name="labelPeron.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1402,7 +1481,7 @@
     <value>labelPeron</value>
   </data>
   <data name="&gt;&gt;labelPeron.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelPeron.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1417,10 +1496,13 @@
     <value>NoControl</value>
   </data>
   <data name="przezTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 187</value>
+    <value>19, 216</value>
+  </data>
+  <data name="przezTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="przezTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>37, 15</value>
   </data>
   <data name="przezTXT.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -1432,7 +1514,7 @@
     <value>przezTXT</value>
   </data>
   <data name="&gt;&gt;przezTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;przezTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1441,13 +1523,16 @@
     <value>33</value>
   </data>
   <data name="przezBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 184</value>
+    <value>144, 212</value>
+  </data>
+  <data name="przezBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="przezBox.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
   <data name="przezBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 20</value>
+    <value>601, 23</value>
   </data>
   <data name="przezBox.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -1456,7 +1541,7 @@
     <value>przezBox</value>
   </data>
   <data name="&gt;&gt;przezBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;przezBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1465,10 +1550,13 @@
     <value>34</value>
   </data>
   <data name="komunikatWygenerowanyBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>759, 412</value>
+    <value>886, 475</value>
+  </data>
+  <data name="komunikatWygenerowanyBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="komunikatWygenerowanyBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 96</value>
+    <value>476, 110</value>
   </data>
   <data name="komunikatWygenerowanyBox.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1480,7 +1568,7 @@
     <value>komunikatWygenerowanyBox</value>
   </data>
   <data name="&gt;&gt;komunikatWygenerowanyBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;komunikatWygenerowanyBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1489,13 +1577,16 @@
     <value>35</value>
   </data>
   <data name="nazwaPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 368</value>
+    <value>144, 425</value>
+  </data>
+  <data name="nazwaPociąguBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="nazwaPociąguBox.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="nazwaPociąguBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 20</value>
+    <value>209, 23</value>
   </data>
   <data name="nazwaPociąguBox.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -1504,7 +1595,7 @@
     <value>nazwaPociąguBox</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1513,13 +1604,16 @@
     <value>36</value>
   </data>
   <data name="boxPeron.Location" type="System.Drawing.Point, System.Drawing">
-    <value>759, 330</value>
+    <value>886, 381</value>
+  </data>
+  <data name="boxPeron.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="boxPeron.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="boxPeron.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>62, 23</value>
   </data>
   <data name="boxPeron.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -1528,7 +1622,7 @@
     <value>boxPeron</value>
   </data>
   <data name="&gt;&gt;boxPeron.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;boxPeron.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1537,13 +1631,16 @@
     <value>37</value>
   </data>
   <data name="boxTor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>759, 356</value>
+    <value>886, 411</value>
+  </data>
+  <data name="boxTor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="boxTor.MaxLength" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="boxTor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>62, 23</value>
   </data>
   <data name="boxTor.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -1552,7 +1649,7 @@
     <value>boxTor</value>
   </data>
   <data name="&gt;&gt;boxTor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;boxTor.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1561,13 +1658,16 @@
     <value>38</value>
   </data>
   <data name="box_stacja_końcowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 145</value>
+    <value>536, 167</value>
+  </data>
+  <data name="box_stacja_końcowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="box_stacja_końcowa.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="box_stacja_końcowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 20</value>
+    <value>209, 23</value>
   </data>
   <data name="box_stacja_końcowa.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1576,7 +1676,7 @@
     <value>box_stacja_końcowa</value>
   </data>
   <data name="&gt;&gt;box_stacja_końcowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;box_stacja_końcowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1585,13 +1685,16 @@
     <value>39</value>
   </data>
   <data name="box_stacja_początkowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 145</value>
+    <value>144, 167</value>
+  </data>
+  <data name="box_stacja_początkowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="box_stacja_początkowa.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="box_stacja_początkowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 20</value>
+    <value>209, 23</value>
   </data>
   <data name="box_stacja_początkowa.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1600,7 +1703,7 @@
     <value>box_stacja_początkowa</value>
   </data>
   <data name="&gt;&gt;box_stacja_początkowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;box_stacja_początkowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1615,10 +1718,13 @@
     <value>NoControl</value>
   </data>
   <data name="pociągMaOpóźnienie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>924, 329</value>
+    <value>1078, 380</value>
+  </data>
+  <data name="pociągMaOpóźnienie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="pociągMaOpóźnienie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 17</value>
+    <value>143, 19</value>
   </data>
   <data name="pociągMaOpóźnienie.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1630,7 +1736,7 @@
     <value>pociągMaOpóźnienie</value>
   </data>
   <data name="&gt;&gt;pociągMaOpóźnienie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pociągMaOpóźnienie.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1645,10 +1751,13 @@
     <value>NoControl</value>
   </data>
   <data name="OpóźnienieTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>921, 359</value>
+    <value>1074, 414</value>
+  </data>
+  <data name="OpóźnienieTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="OpóźnienieTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 13</value>
+    <value>143, 15</value>
   </data>
   <data name="OpóźnienieTXT.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1663,7 +1772,7 @@
     <value>OpóźnienieTXT</value>
   </data>
   <data name="&gt;&gt;OpóźnienieTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OpóźnienieTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1672,10 +1781,13 @@
     <value>42</value>
   </data>
   <data name="opóźnienieBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>994, 375</value>
+    <value>1160, 433</value>
+  </data>
+  <data name="opóźnienieBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="opóźnienieBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="opóźnienieBox.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -1690,7 +1802,7 @@
     <value>opóźnienieBox</value>
   </data>
   <data name="&gt;&gt;opóźnienieBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;opóźnienieBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1705,10 +1817,13 @@
     <value>NoControl</value>
   </data>
   <data name="nazwaPociąguTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 371</value>
+    <value>19, 428</value>
+  </data>
+  <data name="nazwaPociąguTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="nazwaPociąguTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
+    <value>88, 15</value>
   </data>
   <data name="nazwaPociąguTXT.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -1720,7 +1835,7 @@
     <value>nazwaPociąguTXT</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1732,10 +1847,13 @@
     <value>NoControl</value>
   </data>
   <data name="generujBezZatrzymaniaButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 455</value>
+    <value>360, 525</value>
+  </data>
+  <data name="generujBezZatrzymaniaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="generujBezZatrzymaniaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
+    <value>117, 58</value>
   </data>
   <data name="generujBezZatrzymaniaButton.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -1747,7 +1865,7 @@
     <value>generujBezZatrzymaniaButton</value>
   </data>
   <data name="&gt;&gt;generujBezZatrzymaniaButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;generujBezZatrzymaniaButton.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1759,10 +1877,13 @@
     <value>NoControl</value>
   </data>
   <data name="generujButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 455</value>
+    <value>237, 525</value>
+  </data>
+  <data name="generujButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="generujButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
+    <value>117, 58</value>
   </data>
   <data name="generujButton.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1774,7 +1895,7 @@
     <value>generujButton</value>
   </data>
   <data name="&gt;&gt;generujButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;generujButton.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1786,10 +1907,13 @@
     <value>NoControl</value>
   </data>
   <data name="wyczyscButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 455</value>
+    <value>4, 525</value>
+  </data>
+  <data name="wyczyscButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="wyczyscButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
+    <value>117, 58</value>
   </data>
   <data name="wyczyscButton.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1801,7 +1925,7 @@
     <value>wyczyscButton</value>
   </data>
   <data name="&gt;&gt;wyczyscButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;wyczyscButton.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1816,10 +1940,13 @@
     <value>NoControl</value>
   </data>
   <data name="GodzinaTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 303</value>
+    <value>550, 350</value>
+  </data>
+  <data name="GodzinaTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="GodzinaTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
+    <value>116, 15</value>
   </data>
   <data name="GodzinaTXT.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -1831,7 +1958,7 @@
     <value>GodzinaTXT</value>
   </data>
   <data name="&gt;&gt;GodzinaTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GodzinaTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1846,10 +1973,13 @@
     <value>NoControl</value>
   </data>
   <data name="OdjazdGodzinaTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 358</value>
+    <value>550, 413</value>
+  </data>
+  <data name="OdjazdGodzinaTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="OdjazdGodzinaTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
+    <value>49, 15</value>
   </data>
   <data name="OdjazdGodzinaTXT.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -1861,7 +1991,7 @@
     <value>OdjazdGodzinaTXT</value>
   </data>
   <data name="&gt;&gt;OdjazdGodzinaTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OdjazdGodzinaTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1879,7 +2009,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 354</value>
+    <value>677, 408</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 20</value>
@@ -1894,7 +2027,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1903,10 +2036,13 @@
     <value>50</value>
   </data>
   <data name="minutyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 356</value>
+    <value>695, 411</value>
+  </data>
+  <data name="minutyOdjazdu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="minutyOdjazdu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="minutyOdjazdu.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1915,7 +2051,7 @@
     <value>minutyOdjazdu</value>
   </data>
   <data name="&gt;&gt;minutyOdjazdu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;minutyOdjazdu.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1924,10 +2060,13 @@
     <value>51</value>
   </data>
   <data name="godzinyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 356</value>
+    <value>610, 411</value>
+  </data>
+  <data name="godzinyOdjazdu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="godzinyOdjazdu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+    <value>64, 23</value>
   </data>
   <data name="godzinyOdjazdu.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1936,7 +2075,7 @@
     <value>godzinyOdjazdu</value>
   </data>
   <data name="&gt;&gt;godzinyOdjazdu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;godzinyOdjazdu.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1951,10 +2090,13 @@
     <value>NoControl</value>
   </data>
   <data name="PrzyjazdGodzinaTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 332</value>
+    <value>550, 383</value>
+  </data>
+  <data name="PrzyjazdGodzinaTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="PrzyjazdGodzinaTXT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>55, 15</value>
   </data>
   <data name="PrzyjazdGodzinaTXT.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1966,7 +2108,7 @@
     <value>PrzyjazdGodzinaTXT</value>
   </data>
   <data name="&gt;&gt;PrzyjazdGodzinaTXT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PrzyjazdGodzinaTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -1984,7 +2126,10 @@
     <value>NoControl</value>
   </data>
   <data name="oddzieleniePrzyjazd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 328</value>
+    <value>677, 378</value>
+  </data>
+  <data name="oddzieleniePrzyjazd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="oddzieleniePrzyjazd.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 20</value>
@@ -1999,7 +2144,7 @@
     <value>oddzieleniePrzyjazd</value>
   </data>
   <data name="&gt;&gt;oddzieleniePrzyjazd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;oddzieleniePrzyjazd.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2008,10 +2153,13 @@
     <value>54</value>
   </data>
   <data name="minutyPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 330</value>
+    <value>695, 381</value>
+  </data>
+  <data name="minutyPrzyjazdu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="minutyPrzyjazdu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="minutyPrzyjazdu.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -2020,7 +2168,7 @@
     <value>minutyPrzyjazdu</value>
   </data>
   <data name="&gt;&gt;minutyPrzyjazdu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;minutyPrzyjazdu.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2029,10 +2177,13 @@
     <value>55</value>
   </data>
   <data name="godzinaPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 330</value>
+    <value>610, 381</value>
+  </data>
+  <data name="godzinaPrzyjazdu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="godzinaPrzyjazdu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 23</value>
   </data>
   <data name="godzinaPrzyjazdu.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -2041,7 +2192,7 @@
     <value>godzinaPrzyjazdu</value>
   </data>
   <data name="&gt;&gt;godzinaPrzyjazdu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;godzinaPrzyjazdu.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2050,10 +2201,13 @@
     <value>56</value>
   </data>
   <data name="numerPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 19</value>
+    <value>119, 22</value>
+  </data>
+  <data name="numerPociąguBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="numerPociąguBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
+    <value>91, 23</value>
   </data>
   <data name="numerPociąguBox.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -2065,7 +2219,7 @@
     <value>numerPociąguBox</value>
   </data>
   <data name="&gt;&gt;numerPociąguBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numerPociąguBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2080,10 +2234,13 @@
     <value>NoControl</value>
   </data>
   <data name="naszaStacjaWRJtxt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 22</value>
+    <value>280, 25</value>
+  </data>
+  <data name="naszaStacjaWRJtxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="naszaStacjaWRJtxt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 13</value>
+    <value>148, 15</value>
   </data>
   <data name="naszaStacjaWRJtxt.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -2095,7 +2252,7 @@
     <value>naszaStacjaWRJtxt</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJtxt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJtxt.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2113,10 +2270,13 @@
     <value>Końcowa</value>
   </data>
   <data name="naszaStacjaWRJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 18</value>
+    <value>450, 21</value>
+  </data>
+  <data name="naszaStacjaWRJ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="naszaStacjaWRJ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
+    <value>209, 23</value>
   </data>
   <data name="naszaStacjaWRJ.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -2125,7 +2285,7 @@
     <value>naszaStacjaWRJ</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJ.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2140,10 +2300,13 @@
     <value>NoControl</value>
   </data>
   <data name="kategoriaHandlowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 330</value>
+    <value>19, 381</value>
+  </data>
+  <data name="kategoriaHandlowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="kategoriaHandlowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
+    <value>119, 15</value>
   </data>
   <data name="kategoriaHandlowa.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -2155,7 +2318,7 @@
     <value>kategoriaHandlowa</value>
   </data>
   <data name="&gt;&gt;kategoriaHandlowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;kategoriaHandlowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2170,10 +2333,13 @@
     <value>NoControl</value>
   </data>
   <data name="przewoźnik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 289</value>
+    <value>19, 333</value>
+  </data>
+  <data name="przewoźnik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="przewoźnik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>71, 15</value>
   </data>
   <data name="przewoźnik.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -2185,7 +2351,7 @@
     <value>przewoźnik</value>
   </data>
   <data name="&gt;&gt;przewoźnik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;przewoźnik.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2218,10 +2384,13 @@
     <value>EIC</value>
   </data>
   <data name="comboKategoriaHandlowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 327</value>
+    <value>144, 377</value>
+  </data>
+  <data name="comboKategoriaHandlowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="comboKategoriaHandlowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
+    <value>209, 23</value>
   </data>
   <data name="comboKategoriaHandlowa.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -2230,7 +2399,7 @@
     <value>comboKategoriaHandlowa</value>
   </data>
   <data name="&gt;&gt;comboKategoriaHandlowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboKategoriaHandlowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2266,10 +2435,13 @@
     <value>SKM</value>
   </data>
   <data name="comboPrzewoźnik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 286</value>
+    <value>144, 330</value>
+  </data>
+  <data name="comboPrzewoźnik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="comboPrzewoźnik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 21</value>
+    <value>209, 23</value>
   </data>
   <data name="comboPrzewoźnik.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -2278,7 +2450,7 @@
     <value>comboPrzewoźnik</value>
   </data>
   <data name="&gt;&gt;comboPrzewoźnik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboPrzewoźnik.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2293,10 +2465,13 @@
     <value>NoControl</value>
   </data>
   <data name="stacjaKońcowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 148</value>
+    <value>427, 171</value>
+  </data>
+  <data name="stacjaKońcowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="stacjaKońcowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
+    <value>97, 15</value>
   </data>
   <data name="stacjaKońcowa.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -2308,7 +2483,7 @@
     <value>stacjaKońcowa</value>
   </data>
   <data name="&gt;&gt;stacjaKońcowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;stacjaKońcowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2323,10 +2498,13 @@
     <value>NoControl</value>
   </data>
   <data name="stacjaPoczątkowa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 148</value>
+    <value>19, 171</value>
+  </data>
+  <data name="stacjaPoczątkowa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="stacjaPoczątkowa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 13</value>
+    <value>112, 15</value>
   </data>
   <data name="stacjaPoczątkowa.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -2338,7 +2516,7 @@
     <value>stacjaPoczątkowa</value>
   </data>
   <data name="&gt;&gt;stacjaPoczątkowa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;stacjaPoczątkowa.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2353,10 +2531,13 @@
     <value>NoControl</value>
   </data>
   <data name="NumerPociągu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 22</value>
+    <value>19, 25</value>
+  </data>
+  <data name="NumerPociągu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="NumerPociągu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 13</value>
+    <value>90, 15</value>
   </data>
   <data name="NumerPociągu.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2371,7 +2552,7 @@
     <value>NumerPociągu</value>
   </data>
   <data name="&gt;&gt;NumerPociągu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;NumerPociągu.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
@@ -2380,13 +2561,16 @@
     <value>66</value>
   </data>
   <data name="tabPageKomunikaty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 24</value>
+  </data>
+  <data name="tabPageKomunikaty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="tabPageKomunikaty.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="tabPageKomunikaty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 511</value>
+    <value>1373, 592</value>
   </data>
   <data name="tabPageKomunikaty.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2398,7 +2582,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;tabPageKomunikaty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPageKomunikaty.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -2412,8 +2596,11 @@
   <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 2</value>
   </data>
+  <data name="tabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 537</value>
+    <value>1381, 620</value>
   </data>
   <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -2422,7 +2609,7 @@
     <value>tabControl</value>
   </data>
   <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2434,13 +2621,13 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>68</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 561</value>
+    <value>1381, 647</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4181,6 +4368,9 @@
         AAAgAAAAIAAAAAAAAAAgAADwMQAA+DEAAPw/AAD+fwAA
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Generator komunikatów</value>
   </data>
@@ -4188,12 +4378,12 @@
     <value>wersja</value>
   </data>
   <data name="&gt;&gt;wersja.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>komunikaty</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
