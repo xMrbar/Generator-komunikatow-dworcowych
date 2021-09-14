@@ -50,7 +50,7 @@ namespace insideSF
         }
         public static string koniecTylkoPrzyjazd(string stacjaWRJ, string PSO)
         {
-            if (stacjaWRJ == "Końcowa" && (PSO == "Przyjedzie" || PSO == "Stoi"))
+            if (stacjaWRJ == "Końcowa" && PSO == "Przyjedzie")
             {
                 return "0";
             }
