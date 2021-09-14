@@ -41,7 +41,7 @@ namespace Generator_komunikatów_dworcowych
                     }
                     else
                     {
-                        MessageBox.Show("Na stację końcową może zostać wygenerowany tylko wjazd pociągu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Na stację końcową nie może zostać wygenerowany odjazd pociągu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
@@ -125,7 +125,7 @@ namespace Generator_komunikatów_dworcowych
                         }
                         else
                         {
-                            MessageBox.Show("Na stację końcową może zostać wygenerowany tylko wjazd pociągu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Na stację końcową nie może zostać wygenerowany odjazd pociągu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
