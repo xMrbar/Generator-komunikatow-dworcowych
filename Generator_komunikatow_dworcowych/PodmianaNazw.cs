@@ -387,23 +387,27 @@ namespace PodmianaNazw
 
         public static string TorIPeronSet(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
         {
-            if (czyOpóźniony == true && PSO == "Przyjedzie" && stacjaWRJ == "Początkowa")
+            if (czyOpóźniony && PSO == "Przyjedzie" && stacjaWRJ == "Początkowa")
             {
                 return "";
+            }
+            else if (stacjaWRJ == "Końcowa" && PSO == "Stoi")
+            {
+                return " wjechał na tor " + Tor + " przy peronie " + Peron;
             }
             else
             {
                 if (PSO == "Przyjedzie")
                 {
-                    return ", wjedzie na tor" + Tor + " przy peronie " + Peron + " ";
+                    return ", wjedzie na tor " + Tor + " przy peronie " + Peron;
                 }
                 else if (PSO == "Stoi")
                 {
-                    return ", stoi na torze" + Tor + " przy peronie " + Peron + " ";
+                    return ", stoi na torze " + Tor + " przy peronie " + Peron;
                 }
                 else
                 {
-                    return ", odjedzie z toru" + Tor + " przy peronie " + Peron + " ";
+                    return ", odjedzie z toru " + Tor + " przy peronie " + Peron;
                 }
             }
         }
@@ -414,7 +418,14 @@ namespace PodmianaNazw
             {
                 if (stacjaWRJ == "Końcowa")
                 {
-                    return ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
+                    if (PSO == "Przyjedzie") 
+                    { 
+                        return ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu."; 
+                    }
+                    else
+                    {
+                        return ". Pociąg skończył bieg.";
+                    }
                 }
                 else
                 {
@@ -444,6 +455,10 @@ namespace PodmianaNazw
                     {
                         return " planowy odjazd o godzinie " + godzinaOdj + ":" + minutaOdj;
                     }
+                }
+                else if (stacjaWRJ == "Końcowa" && PSO == "Stoi")
+                {
+                    return "";
                 }
                 else
                 {
