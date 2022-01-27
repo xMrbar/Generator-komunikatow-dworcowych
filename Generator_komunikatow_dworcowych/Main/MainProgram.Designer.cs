@@ -197,6 +197,7 @@
             resources.GetString("wygladStrony.Items2"),
             resources.GetString("wygladStrony.Items3")});
             this.wygladStrony.Name = "wygladStrony";
+            this.wygladStrony.SelectedIndex = 0;
             this.wygladStrony.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // wygladtxt
@@ -216,6 +217,7 @@
             resources.GetString("GongName.Items2"),
             resources.GetString("GongName.Items3")});
             resources.ApplyResources(this.GongName, "GongName");
+            this.GongName.SelectedIndex = 0;
             this.GongName.Name = "GongName";
             // 
             // GongTxt
