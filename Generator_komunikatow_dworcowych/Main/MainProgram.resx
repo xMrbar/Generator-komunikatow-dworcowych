@@ -62,10 +62,10 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
+    <value>103, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.5.1d [dev]</value>
+    <value>wersja 0.5.1e [dev]</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 625</value>
