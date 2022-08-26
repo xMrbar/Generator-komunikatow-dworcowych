@@ -343,5 +343,10 @@ namespace Generator_komunikatów_dworcowych
                 tablicaNazwWagonow[i].Value = Decimal.Parse(item.SubItems[i + 17].Text);
             }
         }
+
+        private void boxTor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

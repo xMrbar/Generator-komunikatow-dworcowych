@@ -12,7 +12,7 @@ namespace Generator
     {
         public static string Komunikat(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
         {
-            return początek + relacja + torIPeron + rezerwacja + godziny;
+            return początek + relacja + torIPeron + rezerwacja + godziny + ".";
         }
 
         public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)

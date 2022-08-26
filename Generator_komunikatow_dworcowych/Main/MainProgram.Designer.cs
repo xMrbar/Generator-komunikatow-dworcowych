@@ -961,6 +961,7 @@
             // 
             resources.ApplyResources(this.boxTor, "boxTor");
             this.boxTor.Name = "boxTor";
+            this.boxTor.TextChanged += new System.EventHandler(this.boxTor_TextChanged);
             // 
             // box_stacja_końcowa
             // 

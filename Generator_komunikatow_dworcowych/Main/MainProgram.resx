@@ -65,7 +65,7 @@
     <value>103, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.6.1a [dev]</value>
+    <value>wersja 0.6.0a [dev]</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 625</value>
