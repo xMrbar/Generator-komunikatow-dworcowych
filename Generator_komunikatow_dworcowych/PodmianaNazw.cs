@@ -79,7 +79,7 @@ namespace PodmianaNazw
 
         public static string torIPeronMowa(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
         {
-            Tor = SyntezatorNumer.PodmianaNumerToru(Tor, PSO);
+            Tor = SyntezatorNumer.PodmianaNumerToru(Tor, PSO, stacjaWRJ);
             Peron = SyntezatorNumer.PodmianaNumerPeronu(Peron);
 
             return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ);
@@ -584,7 +584,7 @@ namespace PodmianaNazw
 
     class SyntezatorNumer
     {
-        public static string PodmianaNumerToru(string numer, string PSO)
+        public static string PodmianaNumerToru(string numer, string PSO, string naszaStacja)
         {
             string jedności;
             string dziesiątki;
@@ -594,7 +594,7 @@ namespace PodmianaNazw
             {
                 numer = numer.PadLeft(4, '0');
 
-                if (PSO == "Przyjedzie")
+                if (PSO == "Przyjedzie" || (PSO == "Stoi" && naszaStacja == "Końcowa"))
                 {
                     if (numer.EndsWith("1") && numer[numer.Length - 2] != '1')
                     {
@@ -1139,7 +1139,7 @@ namespace PodmianaNazw
 
         public static string PodmianaNumerPeronu(string peron)
         {
-            return PodmianaNumerToru(peron, "Stoi");
+            return PodmianaNumerToru(peron, "Stoi", "A");
         }
 
         public static string GodzinaZmiana(string godzina)

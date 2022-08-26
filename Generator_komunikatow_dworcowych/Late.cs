@@ -1,8 +1,10 @@
 ﻿using System.IO;
 using System.Threading;
-using System.Media;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
+using System.Windows.Controls;
+using System.Media;
+using Windows.ApplicationModel.VoiceCommands;
 
 namespace Generator
 {
@@ -21,18 +23,15 @@ namespace Generator
 
     static class Gadanie
     {
-        public static void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn)
+        public static void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc)
         {
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
+            synth.Volume = glosnosc;
 
             if (isGongOn)
             {
-                Stream s = GongSet(NazwaGongu);
-
-                SoundPlayer player = new SoundPlayer(s);
-
-                player.PlaySync();
+                OdtworzGong(NazwaGongu);
             }
 
             if (!ifLate)
@@ -49,18 +48,15 @@ namespace Generator
             ButtonEnabled(current);
         }
         
-        public static void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn)
+        public static void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
         {
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
+            synth.Volume = glosnosc;
 
             if (isGongOn)
             {
-                Stream s = GongSet(NazwaGongu);
-
-                SoundPlayer player = new SoundPlayer(s);
-
-                player.PlaySync();
+                OdtworzGong(NazwaGongu);
             }
 
             synth.Speak("Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!");
@@ -72,11 +68,7 @@ namespace Generator
        
         public static void TestowyDzwiekGongu(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
-            Stream s = GongSet(NazwaGongu);
-
-            SoundPlayer player = new SoundPlayer(s);
-
-            player.PlaySync();
+            OdtworzGong(NazwaGongu);
 
             ButtonEnabled(current);
         }
@@ -101,6 +93,20 @@ namespace Generator
             }
         }
 
+        private static void OdtworzGong(string NazwaGongu)
+        {
+            Stream s = GongSet(NazwaGongu);
+
+            SoundPlayer player = new SoundPlayer(s);
+
+            player.PlaySync();
+        }
+
+        public static void TMP()
+        {
+
+        }
+
         private static void ButtonEnabled (Generator_komunikatów_dworcowych.komunikaty current)
         {
             MethodInvoker changeState = delegate ()
@@ -120,17 +126,17 @@ namespace Generator
         }
     }
 
-    static class Wielowątkowość
+    static class Wielowatkowosc
     {
-        public static void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn)
+        public static void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc)
         {
-            Thread watekZapowiedziGlownej = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn));
+            Thread watekZapowiedziGlownej = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc));
             watekZapowiedziGlownej.Start();
         }
 
-        public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn)
+        public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
         {
-            Thread watekZapowiedziBezPostoju = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn));
+            Thread watekZapowiedziBezPostoju = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc));
             watekZapowiedziBezPostoju.Start();
         }
 

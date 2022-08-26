@@ -32,6 +32,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
+            this.GlosnoscSyntezatoraTXT = new System.Windows.Forms.Label();
+            this.trackBarGlosnoscOgolna = new System.Windows.Forms.TrackBar();
             this.dzwiekTestButton = new System.Windows.Forms.Button();
             this.wygladStrony = new System.Windows.Forms.ComboBox();
             this.wygladtxt = new System.Windows.Forms.Label();
@@ -44,6 +46,14 @@
             this.Pomoc1_1 = new System.Windows.Forms.Label();
             this.Pomoc1 = new System.Windows.Forms.Label();
             this.tabPageKomunikaty = new System.Windows.Forms.TabPage();
+            this.listaPociagowZapisanych = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.listaPociagowUsun = new System.Windows.Forms.Button();
+            this.listaPociagowWczytaj = new System.Windows.Forms.Button();
+            this.listaPociagowDodaj = new System.Windows.Forms.Button();
+            this.numerPociąguBox = new System.Windows.Forms.NumericUpDown();
             this.isGongOn = new System.Windows.Forms.CheckBox();
             this.Koniec5 = new System.Windows.Forms.NumericUpDown();
             this.Koniec7 = new System.Windows.Forms.NumericUpDown();
@@ -101,7 +111,6 @@
             this.oddzieleniePrzyjazd = new System.Windows.Forms.Label();
             this.minutyPrzyjazdu = new System.Windows.Forms.NumericUpDown();
             this.godzinaPrzyjazdu = new System.Windows.Forms.NumericUpDown();
-            this.numerPociąguBox = new System.Windows.Forms.NumericUpDown();
             this.naszaStacjaWRJtxt = new System.Windows.Forms.Label();
             this.naszaStacjaWRJ = new System.Windows.Forms.ComboBox();
             this.kategoriaHandlowa = new System.Windows.Forms.Label();
@@ -114,7 +123,9 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.statusStrip1.SuspendLayout();
             this.tabPageOpcje.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscOgolna)).BeginInit();
             this.tabPageKomunikaty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec6)).BeginInit();
@@ -142,7 +153,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzinyOdjazdu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minutyPrzyjazdu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.godzinaPrzyjazdu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).BeginInit();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,6 +173,8 @@
             // tabPageOpcje
             // 
             this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPageOpcje.Controls.Add(this.GlosnoscSyntezatoraTXT);
+            this.tabPageOpcje.Controls.Add(this.trackBarGlosnoscOgolna);
             this.tabPageOpcje.Controls.Add(this.dzwiekTestButton);
             this.tabPageOpcje.Controls.Add(this.wygladStrony);
             this.tabPageOpcje.Controls.Add(this.wygladtxt);
@@ -176,6 +188,19 @@
             this.tabPageOpcje.Controls.Add(this.Pomoc1);
             resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
             this.tabPageOpcje.Name = "tabPageOpcje";
+            // 
+            // GlosnoscSyntezatoraTXT
+            // 
+            resources.ApplyResources(this.GlosnoscSyntezatoraTXT, "GlosnoscSyntezatoraTXT");
+            this.GlosnoscSyntezatoraTXT.Name = "GlosnoscSyntezatoraTXT";
+            // 
+            // trackBarGlosnoscOgolna
+            // 
+            resources.ApplyResources(this.trackBarGlosnoscOgolna, "trackBarGlosnoscOgolna");
+            this.trackBarGlosnoscOgolna.Maximum = 100;
+            this.trackBarGlosnoscOgolna.Name = "trackBarGlosnoscOgolna";
+            this.trackBarGlosnoscOgolna.TickFrequency = 10;
+            this.trackBarGlosnoscOgolna.Value = 100;
             // 
             // dzwiekTestButton
             // 
@@ -257,6 +282,11 @@
             // 
             this.tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
             resources.ApplyResources(this.tabPageKomunikaty, "tabPageKomunikaty");
+            this.tabPageKomunikaty.Controls.Add(this.listaPociagowZapisanych);
+            this.tabPageKomunikaty.Controls.Add(this.listaPociagowUsun);
+            this.tabPageKomunikaty.Controls.Add(this.listaPociagowWczytaj);
+            this.tabPageKomunikaty.Controls.Add(this.listaPociagowDodaj);
+            this.tabPageKomunikaty.Controls.Add(this.numerPociąguBox);
             this.tabPageKomunikaty.Controls.Add(this.isGongOn);
             this.tabPageKomunikaty.Controls.Add(this.Koniec5);
             this.tabPageKomunikaty.Controls.Add(this.Koniec7);
@@ -314,7 +344,6 @@
             this.tabPageKomunikaty.Controls.Add(this.oddzieleniePrzyjazd);
             this.tabPageKomunikaty.Controls.Add(this.minutyPrzyjazdu);
             this.tabPageKomunikaty.Controls.Add(this.godzinaPrzyjazdu);
-            this.tabPageKomunikaty.Controls.Add(this.numerPociąguBox);
             this.tabPageKomunikaty.Controls.Add(this.naszaStacjaWRJtxt);
             this.tabPageKomunikaty.Controls.Add(this.naszaStacjaWRJ);
             this.tabPageKomunikaty.Controls.Add(this.kategoriaHandlowa);
@@ -325,6 +354,71 @@
             this.tabPageKomunikaty.Controls.Add(this.stacjaPoczątkowa);
             this.tabPageKomunikaty.Controls.Add(this.NumerPociągu);
             this.tabPageKomunikaty.Name = "tabPageKomunikaty";
+            // 
+            // listaPociagowZapisanych
+            // 
+            this.listaPociagowZapisanych.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            resources.ApplyResources(this.listaPociagowZapisanych, "listaPociagowZapisanych");
+            this.listaPociagowZapisanych.Name = "listaPociagowZapisanych";
+            this.listaPociagowZapisanych.UseCompatibleStateImageBehavior = false;
+            this.listaPociagowZapisanych.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
+            // 
+            // columnHeader2
+            // 
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
+            // 
+            // columnHeader3
+            // 
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
+            // 
+            // listaPociagowUsun
+            // 
+            resources.ApplyResources(this.listaPociagowUsun, "listaPociagowUsun");
+            this.listaPociagowUsun.Name = "listaPociagowUsun";
+            this.listaPociagowUsun.UseVisualStyleBackColor = true;
+            this.listaPociagowUsun.Click += new System.EventHandler(this.listaPociagowUsun_Click);
+            // 
+            // listaPociagowWczytaj
+            // 
+            resources.ApplyResources(this.listaPociagowWczytaj, "listaPociagowWczytaj");
+            this.listaPociagowWczytaj.Name = "listaPociagowWczytaj";
+            this.listaPociagowWczytaj.UseVisualStyleBackColor = true;
+            this.listaPociagowWczytaj.Click += new System.EventHandler(this.listaPociagowWczytaj_Click);
+            // 
+            // listaPociagowDodaj
+            // 
+            resources.ApplyResources(this.listaPociagowDodaj, "listaPociagowDodaj");
+            this.listaPociagowDodaj.Name = "listaPociagowDodaj";
+            this.listaPociagowDodaj.UseVisualStyleBackColor = true;
+            this.listaPociagowDodaj.Click += new System.EventHandler(this.listaPociagowDodaj_Click);
+            // 
+            // numerPociąguBox
+            // 
+            this.numerPociąguBox.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.numerPociąguBox, "numerPociąguBox");
+            this.numerPociąguBox.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.numerPociąguBox.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numerPociąguBox.Name = "numerPociąguBox";
+            this.numerPociąguBox.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // isGongOn
             // 
@@ -1005,27 +1099,6 @@
             0});
             this.godzinaPrzyjazdu.Name = "godzinaPrzyjazdu";
             // 
-            // numerPociąguBox
-            // 
-            this.numerPociąguBox.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.numerPociąguBox, "numerPociąguBox");
-            this.numerPociąguBox.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.numerPociąguBox.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numerPociąguBox.Name = "numerPociąguBox";
-            this.numerPociąguBox.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
             // naszaStacjaWRJtxt
             // 
             resources.ApplyResources(this.naszaStacjaWRJtxt, "naszaStacjaWRJtxt");
@@ -1126,8 +1199,10 @@
             this.statusStrip1.PerformLayout();
             this.tabPageOpcje.ResumeLayout(false);
             this.tabPageOpcje.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscOgolna)).EndInit();
             this.tabPageKomunikaty.ResumeLayout(false);
             this.tabPageKomunikaty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Koniec6)).EndInit();
@@ -1155,7 +1230,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzinyOdjazdu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minutyPrzyjazdu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.godzinaPrzyjazdu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1246,6 +1320,15 @@
         public System.Windows.Forms.Label NumerPociągu;
         private System.Windows.Forms.TabControl tabControl;
         public System.Windows.Forms.CheckBox isGongOn;
+        private System.Windows.Forms.Button listaPociagowUsun;
+        private System.Windows.Forms.Button listaPociagowWczytaj;
+        private System.Windows.Forms.Button listaPociagowDodaj;
+        private System.Windows.Forms.ListView listaPociagowZapisanych;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        public System.Windows.Forms.Label GlosnoscSyntezatoraTXT;
+        public System.Windows.Forms.TrackBar trackBarGlosnoscOgolna;
     }
 }
 

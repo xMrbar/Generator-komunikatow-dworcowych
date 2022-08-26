@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneratorKomunikatów;
+using System;
 using System.Windows.Forms;
 
 namespace Generator_komunikatów_dworcowych
@@ -95,7 +96,7 @@ namespace Generator_komunikatów_dworcowych
                 {
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
-                    Generator.Wielowątkowość.NewThread1(this, GongName.Text, isGongOn.Checked);
+                    Generator.Wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value);
                 }
                 else
                 {
@@ -116,7 +117,7 @@ namespace Generator_komunikatów_dworcowych
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
-                                Generator.Wielowątkowość.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked);
+                                Generator.Wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked , trackBarGlosnoscOgolna.Value);
                             }
                             else
                             {
@@ -205,7 +206,7 @@ namespace Generator_komunikatów_dworcowych
             {
                 dźwiękButton.Enabled = false;
                 dzwiekTestButton.Enabled = false;
-                Generator.Wielowątkowość.NewThread2(this, GongName.Text);
+                Generator.Wielowatkowosc.NewThread2(this, GongName.Text);
             }
             else
             {
@@ -229,6 +230,118 @@ namespace Generator_komunikatów_dworcowych
             torIPeron = PodmianaNazw.Podmiana.torIPeronMowa(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text);
             godziny = PodmianaNazw.Podmiana.godzinaMowa(godzinyOdjazdu.Value.ToString(), godzinaPrzyjazdu.Value.ToString(), minutyOdjazdu.Value.ToString(), minutyPrzyjazdu.Value.ToString(), pociągMaOpóźnienie.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, opóźnienieBox.Value.ToString());
             rezerwacja = PodmianaNazw.Podmiana.RezerwacjaMowa(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+        }
+
+        private void listaPociagowDodaj_Click(object sender, EventArgs e)
+        {
+            string[] wagony =
+            {
+                Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), 
+                Środek1.Value.ToString(), Środek2.Value.ToString(),Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(),
+                Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString()
+            };
+
+            string[] tablica = new string[] {
+                numerPociąguBox.Value.ToString(),
+                box_stacja_początkowa.Text,
+                box_stacja_końcowa.Text
+            };
+
+            ListViewItem item = new ListViewItem(tablica);
+
+            //numer
+            item.SubItems.Add(numerPociąguBox.Value.ToString());
+            //stacje
+            item.SubItems.Add(box_stacja_początkowa.Text);
+            item.SubItems.Add(box_stacja_końcowa.Text);
+            item.SubItems.Add(przezBox.Text);
+            //godzina
+            item.SubItems.Add(godzinaPrzyjazdu.Value.ToString());
+            item.SubItems.Add(minutyPrzyjazdu.Value.ToString());
+            item.SubItems.Add(godzinyOdjazdu.Value.ToString());
+            item.SubItems.Add(minutyOdjazdu.Value.ToString());
+            //opoźnienie
+            item.SubItems.Add(pociągMaOpóźnienie.Checked.ToString());
+            item.SubItems.Add(opóźnienieBox.Value.ToString());
+            //tor i peron
+            item.SubItems.Add(boxTor.Text);
+            item.SubItems.Add(boxPeron.Text);
+            //rezerwacja
+            item.SubItems.Add(ifReserwation.Checked.ToString());
+            item.SubItems.Add(ileWagonówWSkładzie.Value.ToString());
+            for(int i = 0; i < 21; i++)
+            {
+                item.SubItems.Add(wagony[i]);
+            }
+            //info ogólne
+            item.SubItems.Add(naszaStacjaWRJ.Text);
+            item.SubItems.Add(comboPrzyStOdj.Text);
+            //przewoźnik
+            item.SubItems.Add(comboKategoriaHandlowa.Text);
+            item.SubItems.Add(comboPrzewoźnik.Text);
+            item.SubItems.Add(nazwaPociąguBox.Text);
+
+            listaPociagowZapisanych.Items.Add(item);
+        }
+
+        private void listaPociagowUsun_Click(object sender, EventArgs e)
+        {
+            if(listaPociagowZapisanych.SelectedItems.Count > 0)
+            {
+                listaPociagowZapisanych.Items.Remove(listaPociagowZapisanych.SelectedItems[0]);
+                GC.Collect();
+            }
+        }
+
+        private void listaPociagowWczytaj_Click(object sender, EventArgs e)
+        {
+            if (listaPociagowZapisanych.SelectedItems.Count > 0)
+            {
+                ListViewItem item = listaPociagowZapisanych.SelectedItems[0];
+
+                //numer
+                numerPociąguBox.Value = Decimal.Parse(item.SubItems[3].Text);
+                //stacje
+                box_stacja_początkowa.Text = item.SubItems[4].Text;
+                box_stacja_końcowa.Text = item.SubItems[5].Text;
+                przezBox.Text = item.SubItems[6].Text;
+                //godzina
+                godzinaPrzyjazdu.Value = Decimal.Parse(item.SubItems[7].Text);
+                minutyPrzyjazdu.Value = Decimal.Parse(item.SubItems[8].Text);
+                godzinyOdjazdu.Value = Decimal.Parse(item.SubItems[9].Text);
+                minutyOdjazdu.Value = Decimal.Parse(item.SubItems[10].Text);
+                //opóżnienie
+                pociągMaOpóźnienie.Checked = Boolean.Parse(item.SubItems[11].Text);
+                opóźnienieBox.Value = Decimal.Parse(item.SubItems[12].Text);
+                //tor i peron
+                boxTor.Text = item.SubItems[13].Text;
+                boxPeron.Text = item.SubItems[14].Text;
+                //rezerwacja
+                ifReserwation.Checked = Boolean.Parse(item.SubItems[15].Text);
+                ileWagonówWSkładzie.Value = Decimal.Parse(item.SubItems[16].Text);
+                uzupelnijNumeryWagonow(item);
+                //info ogólne
+                naszaStacjaWRJ.Text = item.SubItems[38].Text;
+                comboPrzyStOdj.Text = item.SubItems[39].Text;
+                //przewoźnik
+                comboKategoriaHandlowa.Text = item.SubItems[40].Text;
+                comboPrzewoźnik.Text = item.SubItems[41].Text;
+                nazwaPociąguBox.Text = item.SubItems[42].Text;
+            }
+        }
+
+        private void uzupelnijNumeryWagonow(ListViewItem item)
+        {
+            NumericUpDown[] tablicaNazwWagonow = {
+                Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7,
+                Środek1, Środek2, Środek3, Środek4, Środek5, Środek6, Środek7,
+                Koniec1, Koniec2, Koniec3, Koniec4, Koniec5, Koniec6, Koniec7
+            };
+
+            for(int i = 0; i < 21; i++)
+            {
+                tablicaNazwWagonow[i].Value = Decimal.Parse(item.SubItems[i + 17].Text);
+            }
         }
     }
 }

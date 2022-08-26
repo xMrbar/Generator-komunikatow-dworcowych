@@ -19,10 +19,10 @@ namespace GeneratorKomunikatów.Properties {
     // przez narzędzie, takie jak ResGen lub Visual Studio.
     // Aby dodać lub usunąć składową, edytuj plik ResX, a następnie ponownie uruchom narzędzie ResGen
     // z opcją /str lub ponownie utwórz projekt VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace GeneratorKomunikatów.Properties {
         /// Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GeneratorKomunikatów.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace GeneratorKomunikatów.Properties {
         ///   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream gong_torun {
+        public static System.IO.UnmanagedMemoryStream gong_torun {
             get {
                 return ResourceManager.GetStream("gong_torun", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream gong_wroclaw {
+        public static System.IO.UnmanagedMemoryStream gong_wroclaw {
             get {
                 return ResourceManager.GetStream("gong_wroclaw", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream gong1 {
+        public static System.IO.UnmanagedMemoryStream gong1 {
             get {
                 return ResourceManager.GetStream("gong1", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.IO.UnmanagedMemoryStream podobny do zasobu System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream gong2 {
+        public static System.IO.UnmanagedMemoryStream gong2 {
             get {
                 return ResourceManager.GetStream("gong2", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace GeneratorKomunikatów.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Icon podobny do zasobu (Ikona).
         /// </summary>
-        internal static System.Drawing.Icon icon {
+        public static System.Drawing.Icon icon {
             get {
                 object obj = ResourceManager.GetObject("icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));

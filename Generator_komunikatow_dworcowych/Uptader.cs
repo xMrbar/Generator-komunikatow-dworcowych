@@ -1,13 +1,15 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using System.Net;
-//using System.Net.Http;
-//using System.Net.Http.Headers;
-//using Newtonsoft.Json;
-//using Newtonsoft.Json.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+using System.IO;
 
 //namespace GeneratorKomunikatów
 //{ 
@@ -16,7 +18,7 @@
 //        private static readonly string URL = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
 //        public static void GG()
 //        {
-            
+
 //        }
 
 //    }
