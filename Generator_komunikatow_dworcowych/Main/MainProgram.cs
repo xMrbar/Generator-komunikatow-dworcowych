@@ -1,5 +1,6 @@
 ﻿using GeneratorKomunikatów;
 using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Generator_komunikatów_dworcowych
@@ -11,6 +12,8 @@ namespace Generator_komunikatów_dworcowych
         string torIPeron;
         string godziny;
         string rezerwacja;
+
+        Generator.Wielowatkowosc wielowatkowosc = new Generator.Wielowatkowosc();
 
         public komunikaty()
         {
@@ -31,7 +34,7 @@ namespace Generator_komunikatów_dworcowych
                         if (!pociągMaOpóźnienie.Checked)
                         {
                             komunikatWygenerowanyBox.Clear();
-                            komunikatWygenerowanyBox.AppendText(Generator.Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja));
+                            komunikatWygenerowanyBox.AppendText(Generator.Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja, comboPrzyStOdj.Text, naszaStacjaWRJ.Text));
                         }
                         else
                         {
@@ -96,7 +99,8 @@ namespace Generator_komunikatów_dworcowych
                 {
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
-                    Generator.Wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value);
+
+                    wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value);
                 }
                 else
                 {
@@ -117,7 +121,8 @@ namespace Generator_komunikatów_dworcowych
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
-                                Generator.Wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked , trackBarGlosnoscOgolna.Value);
+
+                                wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked , trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
                             }
                             else
                             {
@@ -206,7 +211,7 @@ namespace Generator_komunikatów_dworcowych
             {
                 dźwiękButton.Enabled = false;
                 dzwiekTestButton.Enabled = false;
-                Generator.Wielowatkowosc.NewThread2(this, GongName.Text);
+                wielowatkowosc.NewThread2(this, GongName.Text);
             }
             else
             {
@@ -344,9 +349,66 @@ namespace Generator_komunikatów_dworcowych
             }
         }
 
-        private void boxTor_TextChanged(object sender, EventArgs e)
+        private void zatrzymajModulator_Click(object sender, EventArgs e)
         {
+            zatrzymajModulator.Enabled = false;
+            Generator.Gadanie.ButtonEnabled2(this);
+            wielowatkowosc.gadanie.synth.Pause();
+        }
 
+        private void wznowSyntezator_Click(object sender, EventArgs e)
+        {
+            wznowSyntezator.Enabled = false;
+            Generator.Gadanie.ButtonEnabled1(this);
+            wielowatkowosc.gadanie.synth.Resume();
+        }
+
+        private void anulujSyntezator_Click(object sender, EventArgs e)
+        {
+            wielowatkowosc.gadanie.synth.Dispose();
+
+            Generator.Gadanie.ButtonEnabled(this);
+            ButtonDisabled();
+        }
+
+        public void ButtonDisabled()
+        {
+            MethodInvoker changeState = delegate ()
+            {
+                wznowSyntezator.Enabled = false;
+                zatrzymajModulator.Enabled = false;
+                anulujSyntezator.Enabled = false;
+            };
+
+            if (InvokeRequired)
+            {
+                try
+                {
+                    Invoke(changeState);
+                }
+                catch (ObjectDisposedException)
+                {
+
+                }
+            }
+            else
+            {
+                changeState();
+            }
+        }
+
+        public void ZamkniecieOkna(object sender, FormClosedEventArgs e)
+        {
+            if(wielowatkowosc.gadanie.player != null)
+            {
+                wielowatkowosc.gadanie.player.Stop();
+                wielowatkowosc.gadanie.player.Dispose();
+            }
+
+            if(wielowatkowosc.gadanie.synth != null)
+            {
+                wielowatkowosc.gadanie.synth.Dispose();
+            }
         }
     }
 }

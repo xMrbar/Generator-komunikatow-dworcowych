@@ -700,7 +700,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 2] == '6')
                         {
-                            dziesiątki = "dześćdziesiąty";
+                            dziesiątki = "sześćdziesiąty";
                         }
                         else if (numer[numer.Length - 2] == '7')
                         {
@@ -748,7 +748,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 3] == '6')
                         {
-                            setek = "dześćset";
+                            setek = "sześćset";
                         }
                         else if (numer[numer.Length - 3] == '7')
                         {
@@ -808,7 +808,7 @@ namespace PodmianaNazw
                     }
                     else if (numer.EndsWith("9") && numer[numer.Length - 2] != '1')
                     {
-                        jedności = "dziewiąty";
+                        jedności = "dziewiątym";
                     }
                     else
                     {
@@ -878,7 +878,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 2] == '6')
                         {
-                            dziesiątki = "dześćdziesiątym";
+                            dziesiątki = "sześćdziesiątym";
                         }
                         else if (numer[numer.Length - 2] == '7')
                         {
@@ -926,7 +926,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 3] == '6')
                         {
-                            setek = "dześćset";
+                            setek = "sześćset";
                         }
                         else if (numer[numer.Length - 3] == '7')
                         {
@@ -1056,7 +1056,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 2] == '6')
                         {
-                            dziesiątki = "dześćdziesiątego";
+                            dziesiątki = "sześćdziesiątego";
                         }
                         else if (numer[numer.Length - 2] == '7')
                         {
@@ -1104,7 +1104,7 @@ namespace PodmianaNazw
                         }
                         else if (numer[numer.Length - 3] == '6')
                         {
-                            setek = "dześćset";
+                            setek = "sześćset";
                         }
                         else if (numer[numer.Length - 3] == '7')
                         {
@@ -1264,7 +1264,7 @@ namespace PodmianaNazw
                 }
                 else if (numer[numer.Length - 2] == '6')
                 {
-                    dziesiątki = "dześćdziesiąt";
+                    dziesiątki = "sześćdziesiąt";
                 }
                 else if (numer[numer.Length - 2] == '7')
                 {
@@ -1312,7 +1312,7 @@ namespace PodmianaNazw
                 }
                 else if (numer[numer.Length - 3] == '6')
                 {
-                    setek = "dześćset";
+                    setek = "sześćset";
                 }
                 else if (numer[numer.Length - 3] == '7')
                 {

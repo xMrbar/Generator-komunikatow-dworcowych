@@ -5,14 +5,24 @@ using System.Windows.Forms;
 using System.Windows.Controls;
 using System.Media;
 using Windows.ApplicationModel.VoiceCommands;
+using System.Windows;
+using System;
 
 namespace Generator
 {
     static class Late
     {
-        public static string Komunikat(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
+        public static string Komunikat(string początek, string relacja, string torIPeron, string godziny, string rezerwacja, string PSO, string naszaStacja)
         {
-            return początek + relacja + torIPeron + rezerwacja + godziny + ".";
+            if(PSO != "Odjedzie" && (naszaStacja != "Końcowa"))
+            {
+                return początek + relacja + torIPeron + rezerwacja + godziny + ".";
+            }
+            else
+            {
+                return początek + relacja + torIPeron + rezerwacja + godziny;
+            }
+            
         }
 
         public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
@@ -21,11 +31,15 @@ namespace Generator
         }
     }
 
-    static class Gadanie
+    class Gadanie
     {
-        public static void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc)
+        public SpeechSynthesizer synth;
+        public Stream s;
+        public SoundPlayer player;
+
+        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja)
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
+            synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
 
@@ -34,23 +48,39 @@ namespace Generator
                 OdtworzGong(NazwaGongu);
             }
 
-            if (!ifLate)
-            {
-                synth.Speak(Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja));
-            }
-            else
-            {
-                synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja));
-            }
+            ButtonEnabled1(current);
 
-            synth.Dispose();
+            try
+            {
+                if (!ifLate)
+                {
+                    synth.Speak(Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja, PSO, naszaStacja));
+                }
+                else
+                {
+                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja));
+                }
+            }
+            catch (System.OperationCanceledException)
+            {
 
-            ButtonEnabled(current);
+            }
+            catch (System.ObjectDisposedException)
+            {
+
+            }
+            finally
+            {
+                synth.Dispose();
+
+                current.ButtonDisabled();
+                ButtonEnabled(current);
+            }
         }
         
-        public static void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
+        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
+            synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
 
@@ -59,14 +89,27 @@ namespace Generator
                 OdtworzGong(NazwaGongu);
             }
 
-            synth.Speak("Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!");
+            ButtonEnabled1(current);
 
-            synth.Dispose();
+            try
+            {
+                synth.Speak("Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!");
+            }
+            catch (System.OperationCanceledException)
+            {
 
-            ButtonEnabled(current);
+            }
+            finally
+            {
+                synth.Dispose();
+
+                current.ButtonDisabled();
+                ButtonEnabled(current);
+                current.ButtonDisabled();
+            }
         }
        
-        public static void TestowyDzwiekGongu(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
+        public void TestowyDzwiekGongu(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
             OdtworzGong(NazwaGongu);
 
@@ -93,21 +136,23 @@ namespace Generator
             }
         }
 
-        private static void OdtworzGong(string NazwaGongu)
+        private void OdtworzGong(string NazwaGongu)
         {
-            Stream s = GongSet(NazwaGongu);
+            s = GongSet(NazwaGongu);
 
-            SoundPlayer player = new SoundPlayer(s);
+            player = new SoundPlayer(s);
 
             player.PlaySync();
+
+            player.Dispose();
         }
 
-        public static void TMP()
+        public void ZatrzymajGong()
         {
-
+            player.Stop();
         }
 
-        private static void ButtonEnabled (Generator_komunikatów_dworcowych.komunikaty current)
+        public static void ButtonEnabled (Generator_komunikatów_dworcowych.komunikaty current)
         {
             MethodInvoker changeState = delegate ()
             {
@@ -117,7 +162,63 @@ namespace Generator
 
             if (current.InvokeRequired)
             {
-                current.Invoke(changeState);
+                try
+                {
+                    current.Invoke(changeState);
+                }
+                catch (ObjectDisposedException)
+                {
+
+                }
+            }
+            else
+            {
+                changeState();
+            }
+        }
+
+        public static void ButtonEnabled1(Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            MethodInvoker changeState = delegate ()
+            {
+                current.zatrzymajModulator.Enabled = true;
+                current.anulujSyntezator.Enabled = true;
+            };
+
+            if (current.InvokeRequired)
+            {
+                try
+                {
+                    current.Invoke(changeState);
+                }
+                catch (ObjectDisposedException)
+                {
+
+                }
+            }
+            else
+            {
+                changeState();
+            }
+        }
+
+        public static void ButtonEnabled2(Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            MethodInvoker changeState = delegate ()
+            {
+                current.wznowSyntezator.Enabled = true;
+            };
+
+            if (current.InvokeRequired)
+            {
+                try
+                {
+                    current.Invoke(changeState);
+                }
+                catch (ObjectDisposedException)
+                {
+
+                }
             }
             else
             {
@@ -126,23 +227,25 @@ namespace Generator
         }
     }
 
-    static class Wielowatkowosc
+    class Wielowatkowosc
     {
-        public static void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc)
+        public Gadanie gadanie = new Gadanie();
+
+        public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja)
         {
-            Thread watekZapowiedziGlownej = new Thread(() => Gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc));
+            Thread watekZapowiedziGlownej = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc, PSO, naszaStacja));
             watekZapowiedziGlownej.Start();
         }
 
-        public static void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
+        public void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
         {
-            Thread watekZapowiedziBezPostoju = new Thread(() => Gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc));
+            Thread watekZapowiedziBezPostoju = new Thread(() => gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc));
             watekZapowiedziBezPostoju.Start();
         }
 
-        public static void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
+        public void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
         {
-            Thread watekSprawdzeniaDzwiekuGongu = new Thread(() => Gadanie.TestowyDzwiekGongu(current, NazwaGongu));
+            Thread watekSprawdzeniaDzwiekuGongu = new Thread(() => gadanie.TestowyDzwiekGongu(current, NazwaGongu));
             watekSprawdzeniaDzwiekuGongu.Start();
         }
     }

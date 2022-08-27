@@ -46,6 +46,9 @@
             this.Pomoc1_1 = new System.Windows.Forms.Label();
             this.Pomoc1 = new System.Windows.Forms.Label();
             this.tabPageKomunikaty = new System.Windows.Forms.TabPage();
+            this.anulujSyntezator = new System.Windows.Forms.Button();
+            this.wznowSyntezator = new System.Windows.Forms.Button();
+            this.zatrzymajModulator = new System.Windows.Forms.Button();
             this.listaPociagowZapisanych = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
@@ -282,6 +285,9 @@
             // 
             this.tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
             resources.ApplyResources(this.tabPageKomunikaty, "tabPageKomunikaty");
+            this.tabPageKomunikaty.Controls.Add(this.anulujSyntezator);
+            this.tabPageKomunikaty.Controls.Add(this.wznowSyntezator);
+            this.tabPageKomunikaty.Controls.Add(this.zatrzymajModulator);
             this.tabPageKomunikaty.Controls.Add(this.listaPociagowZapisanych);
             this.tabPageKomunikaty.Controls.Add(this.listaPociagowUsun);
             this.tabPageKomunikaty.Controls.Add(this.listaPociagowWczytaj);
@@ -354,6 +360,27 @@
             this.tabPageKomunikaty.Controls.Add(this.stacjaPoczątkowa);
             this.tabPageKomunikaty.Controls.Add(this.NumerPociągu);
             this.tabPageKomunikaty.Name = "tabPageKomunikaty";
+            // 
+            // anulujSyntezator
+            // 
+            resources.ApplyResources(this.anulujSyntezator, "anulujSyntezator");
+            this.anulujSyntezator.Name = "anulujSyntezator";
+            this.anulujSyntezator.UseVisualStyleBackColor = true;
+            this.anulujSyntezator.Click += new System.EventHandler(this.anulujSyntezator_Click);
+            // 
+            // wznowSyntezator
+            // 
+            resources.ApplyResources(this.wznowSyntezator, "wznowSyntezator");
+            this.wznowSyntezator.Name = "wznowSyntezator";
+            this.wznowSyntezator.UseVisualStyleBackColor = true;
+            this.wznowSyntezator.Click += new System.EventHandler(this.wznowSyntezator_Click);
+            // 
+            // zatrzymajModulator
+            // 
+            resources.ApplyResources(this.zatrzymajModulator, "zatrzymajModulator");
+            this.zatrzymajModulator.Name = "zatrzymajModulator";
+            this.zatrzymajModulator.UseVisualStyleBackColor = true;
+            this.zatrzymajModulator.Click += new System.EventHandler(this.zatrzymajModulator_Click);
             // 
             // listaPociagowZapisanych
             // 
@@ -961,7 +988,6 @@
             // 
             resources.ApplyResources(this.boxTor, "boxTor");
             this.boxTor.Name = "boxTor";
-            this.boxTor.TextChanged += new System.EventHandler(this.boxTor_TextChanged);
             // 
             // box_stacja_końcowa
             // 
@@ -1196,6 +1222,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "komunikaty";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ZamkniecieOkna);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabPageOpcje.ResumeLayout(false);
@@ -1330,6 +1357,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         public System.Windows.Forms.Label GlosnoscSyntezatoraTXT;
         public System.Windows.Forms.TrackBar trackBarGlosnoscOgolna;
+        public System.Windows.Forms.Button anulujSyntezator;
+        public System.Windows.Forms.Button wznowSyntezator;
+        public System.Windows.Forms.Button zatrzymajModulator;
     }
 }
 
