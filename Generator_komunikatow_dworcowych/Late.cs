@@ -32,14 +32,8 @@ namespace Generator
 
     class Gadanie
     {
-        public SpeechSynthesizer synth;
-
-        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu)
+        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth)
         {
-            synth = new SpeechSynthesizer();
-            synth.SetOutputToDefaultAudioDevice();
-            synth.Volume = glosnosc;
-
             ButtonEnabled1(current);
 
             try
@@ -53,11 +47,7 @@ namespace Generator
                     synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja));
                 }
             }
-            catch (System.OperationCanceledException)
-            {
-
-            }
-            catch (System.ObjectDisposedException)
+            catch
             {
 
             }
@@ -70,12 +60,8 @@ namespace Generator
             }
         }
 
-        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc, int glosnoscGongu)
+        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, int glosnosc, SpeechSynthesizer synth)
         {
-            synth = new SpeechSynthesizer();
-            synth.SetOutputToDefaultAudioDevice();
-            synth.Volume = glosnosc;
-
             ButtonEnabled1(current);
 
             try
@@ -92,7 +78,6 @@ namespace Generator
 
                 current.ButtonDisabled();
                 ButtonEnabled(current);
-                current.ButtonDisabled();
             }
         }
 
@@ -177,27 +162,40 @@ namespace Generator
         public Gadanie gadanie = new Gadanie();
         public Thread threadSyntezator;
         public MediaPlayer c;
+        public SpeechSynthesizer synth;
 
         public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu)
         {
+            synth = new SpeechSynthesizer();
+            synth.SetOutputToDefaultAudioDevice();
+            synth.Volume = glosnosc;
+
+            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, glosnosc, PSO, naszaStacja, synth));
+
             if (isGongOn)
             {
                 OdtworzGong(NazwaGongu, glosnoscGongu, current);
             }
 
-            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc, PSO, naszaStacja, glosnoscGongu));
             threadSyntezator.Start();
+            //gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, glosnosc, PSO, naszaStacja, synth);
         }
 
         public void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc, int glosnoscGongu)
         {
+            synth = new SpeechSynthesizer();
+            synth.SetOutputToDefaultAudioDevice();
+            synth.Volume = glosnosc;
+
+            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostoju(current, glosnosc, synth));
+
             if (isGongOn)
             {
                 OdtworzGong(NazwaGongu, glosnoscGongu, current);
             }
 
-            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc, glosnoscGongu));
             threadSyntezator.Start();
+            //gadanie.SyntezatorBezPostoju(current, glosnosc, synth);
         }
 
         public void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, int glosnoscGongu)

@@ -358,19 +358,19 @@ namespace Generator_komunikatów_dworcowych
         {
             zatrzymajModulator.Enabled = false;
             Generator.Gadanie.ButtonEnabled2(this);
-            wielowatkowosc.gadanie.synth.Pause();
+            wielowatkowosc.synth.Pause();
         }
 
         private void wznowSyntezator_Click(object sender, EventArgs e)
         {
             wznowSyntezator.Enabled = false;
             Generator.Gadanie.ButtonEnabled1(this);
-            wielowatkowosc.gadanie.synth.Resume();
+            wielowatkowosc.synth.Resume();
         }
 
         private void anulujSyntezator_Click(object sender, EventArgs e)
         {
-            wielowatkowosc.gadanie.synth.Dispose();
+            wielowatkowosc.synth.Dispose();
 
             Generator.Gadanie.ButtonEnabled(this);
             ButtonDisabled();
@@ -404,14 +404,14 @@ namespace Generator_komunikatów_dworcowych
 
         public void ZamkniecieOkna(object sender, FormClosedEventArgs e)
         {
-            if (wielowatkowosc.gadanie.synth != null)
-            {
-                wielowatkowosc.gadanie.synth.Dispose();
-            }
-
             if (wielowatkowosc.c != null)
             {
                 wielowatkowosc.c.Stop();
+            }
+
+            if (wielowatkowosc.synth != null)
+            {
+                wielowatkowosc.synth.Dispose();
             }
 
             GC.Collect();
