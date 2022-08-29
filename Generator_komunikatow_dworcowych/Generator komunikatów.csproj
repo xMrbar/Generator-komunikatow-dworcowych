@@ -53,6 +53,11 @@
     <Title>Generator Komunikatów Megafonowych</Title>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="voice\gong-torun.wav" />
+    <None Remove="voice\gong1.wav" />
+    <None Remove="voice\gong2.wav" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System.Messaging" />
     <Reference Include="System.Speech" />
   </ItemGroup>
@@ -63,7 +68,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="voice\gong-wroclaw.wav" />
+    <Content Include="voice\gong-torun.wav" />
+    <Content Include="voice\gong-wroclaw.wav" />
+    <Content Include="voice\gong1.wav" />
+    <Content Include="voice\gong2.wav" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -76,6 +84,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

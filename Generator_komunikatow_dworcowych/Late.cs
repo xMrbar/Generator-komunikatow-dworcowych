@@ -1,12 +1,10 @@
-﻿using System.IO;
+﻿using System;
 using System.Threading;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
-using System.Windows.Controls;
-using System.Media;
-using Windows.ApplicationModel.VoiceCommands;
-using System.Windows;
-using System;
+using System.Windows.Media;
+using System.Windows.Threading;
+using System.Windows.Media.Animation;
 
 namespace Generator
 {
@@ -14,7 +12,7 @@ namespace Generator
     {
         public static string Komunikat(string początek, string relacja, string torIPeron, string godziny, string rezerwacja, string PSO, string naszaStacja)
         {
-            if(PSO != "Odjedzie" && (naszaStacja != "Końcowa"))
+            if (PSO != "Odjedzie" && (naszaStacja != "Końcowa"))
             {
                 return początek + relacja + torIPeron + rezerwacja + godziny + ".";
             }
@@ -22,7 +20,7 @@ namespace Generator
             {
                 return początek + relacja + torIPeron + rezerwacja + godziny;
             }
-            
+
         }
 
         public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
@@ -31,22 +29,16 @@ namespace Generator
         }
     }
 
+
     class Gadanie
     {
         public SpeechSynthesizer synth;
-        public Stream s;
-        public SoundPlayer player;
 
-        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja)
+        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu)
         {
             synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
-
-            if (isGongOn)
-            {
-                OdtworzGong(NazwaGongu);
-            }
 
             ButtonEnabled1(current);
 
@@ -77,17 +69,12 @@ namespace Generator
                 ButtonEnabled(current);
             }
         }
-        
-        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
+
+        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc, int glosnoscGongu)
         {
             synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
-
-            if (isGongOn)
-            {
-                OdtworzGong(NazwaGongu);
-            }
 
             ButtonEnabled1(current);
 
@@ -108,51 +95,9 @@ namespace Generator
                 current.ButtonDisabled();
             }
         }
-       
-        public void TestowyDzwiekGongu(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
-        {
-            OdtworzGong(NazwaGongu);
 
-            ButtonEnabled(current);
-        }
 
-        private static Stream GongSet(string NazwaGongu)
-        {
-            if (NazwaGongu == "GONG 1")
-            {
-                return GeneratorKomunikatów.Properties.Resources.gong_wroclaw;
-            }
-            else if (NazwaGongu == "GONG 2")
-            {
-                return GeneratorKomunikatów.Properties.Resources.gong1;
-            }
-            else if (NazwaGongu == "GONG 3")
-            {
-                return GeneratorKomunikatów.Properties.Resources.gong2;
-            }
-            else
-            {
-                return GeneratorKomunikatów.Properties.Resources.gong_torun;
-            }
-        }
-
-        private void OdtworzGong(string NazwaGongu)
-        {
-            s = GongSet(NazwaGongu);
-
-            player = new SoundPlayer(s);
-
-            player.PlaySync();
-
-            player.Dispose();
-        }
-
-        public void ZatrzymajGong()
-        {
-            player.Stop();
-        }
-
-        public static void ButtonEnabled (Generator_komunikatów_dworcowych.komunikaty current)
+        public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
         {
             MethodInvoker changeState = delegate ()
             {
@@ -230,23 +175,119 @@ namespace Generator
     class Wielowatkowosc
     {
         public Gadanie gadanie = new Gadanie();
+        public Thread threadSyntezator;
+        public MediaPlayer c;
 
-        public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja)
+        public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu)
         {
-            Thread watekZapowiedziGlownej = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc, PSO, naszaStacja));
-            watekZapowiedziGlownej.Start();
+            if (isGongOn)
+            {
+                OdtworzGong(NazwaGongu, glosnoscGongu, current);
+            }
+
+            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, NazwaGongu, rezerwacja, isGongOn, glosnosc, PSO, naszaStacja, glosnoscGongu));
+            threadSyntezator.Start();
         }
 
-        public void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc)
+        public void NewThread1(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn, int glosnosc, int glosnoscGongu)
         {
-            Thread watekZapowiedziBezPostoju = new Thread(() => gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc));
-            watekZapowiedziBezPostoju.Start();
+            if (isGongOn)
+            {
+                OdtworzGong(NazwaGongu, glosnoscGongu, current);
+            }
+
+            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostoju(current, NazwaGongu, isGongOn, glosnosc, glosnoscGongu));
+            threadSyntezator.Start();
         }
 
-        public void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu)
+        public void NewThread2(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, int glosnoscGongu)
         {
-            Thread watekSprawdzeniaDzwiekuGongu = new Thread(() => gadanie.TestowyDzwiekGongu(current, NazwaGongu));
-            watekSprawdzeniaDzwiekuGongu.Start();
+            OdtworzGong(NazwaGongu, glosnoscGongu, current);
+
+            ButtonEnabled(current);
+        }
+
+        private Uri GongSet(string NazwaGongu)
+        {
+            if (NazwaGongu == "GONG 1")
+            {
+                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong-wroclaw.wav");
+                return uri;
+            }
+            else if (NazwaGongu == "GONG 2")
+            {
+                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong1.wav");
+                return uri;
+            }
+            else if (NazwaGongu == "GONG 3")
+            {
+                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong2.wav");
+                return uri;
+            }
+            else
+            {
+                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong-torun.wav");
+                return uri;
+            }
+        }
+
+        private void OdtworzGong(string NazwaGongu, int glosnoscGongu, Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            Uri uri = GongSet(NazwaGongu);
+
+            c = new MediaPlayer();
+
+            c.MediaEnded += Zamknij;
+
+            double volume = glosnoscGongu / 100.0;
+            c.Volume = volume;
+
+            c.Open(uri);
+            c.Play();
+
+            Dispatcher.Run();
+        }
+
+        private void Zamknij(object sender, EventArgs e)
+        {
+            c.Close();
+
+            GC.Collect();
+
+            //System.Windows.Forms.MessageBox.Show("Wiadomosc testowa!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            Dispatcher.ExitAllFrames();
+        }
+
+        public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            current.dźwiękButton.Enabled = true;
+            current.dzwiekTestButton.Enabled = true;
         }
     }
+
+/*    public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
+    {
+        MethodInvoker changeState = delegate ()
+        {
+            current.dźwiękButton.Enabled = true;
+            current.dzwiekTestButton.Enabled = true;
+        };
+
+        if (current.InvokeRequired)
+        {
+            try
+            {
+                current.Invoke(changeState);
+            }
+            catch (ObjectDisposedException)
+            {
+
+            }
+        }
+        else
+        {
+            changeState();
+        }
+    }*/
 }

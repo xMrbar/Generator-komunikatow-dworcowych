@@ -1,7 +1,12 @@
 ﻿using GeneratorKomunikatów;
 using System;
 using System.ComponentModel;
+using System.Windows.Controls;
 using System.Windows.Forms;
+using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Resources;
+using System.Windows.Threading;
 
 namespace Generator_komunikatów_dworcowych
 {
@@ -100,7 +105,7 @@ namespace Generator_komunikatów_dworcowych
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
 
-                    wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value);
+                    wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value, trackBarGlosnoscGongu.Value);
                 }
                 else
                 {
@@ -122,7 +127,7 @@ namespace Generator_komunikatów_dworcowych
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
 
-                                wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked , trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
+                                wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked , trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, trackBarGlosnoscGongu.Value);
                             }
                             else
                             {
@@ -211,7 +216,7 @@ namespace Generator_komunikatów_dworcowych
             {
                 dźwiękButton.Enabled = false;
                 dzwiekTestButton.Enabled = false;
-                wielowatkowosc.NewThread2(this, GongName.Text);
+                wielowatkowosc.NewThread2(this, GongName.Text, trackBarGlosnoscGongu.Value);
             }
             else
             {
@@ -252,7 +257,7 @@ namespace Generator_komunikatów_dworcowych
                 box_stacja_końcowa.Text
             };
 
-            ListViewItem item = new ListViewItem(tablica);
+            System.Windows.Forms.ListViewItem item = new System.Windows.Forms.ListViewItem(tablica);
 
             //numer
             item.SubItems.Add(numerPociąguBox.Value.ToString());
@@ -302,7 +307,7 @@ namespace Generator_komunikatów_dworcowych
         {
             if (listaPociagowZapisanych.SelectedItems.Count > 0)
             {
-                ListViewItem item = listaPociagowZapisanych.SelectedItems[0];
+                System.Windows.Forms.ListViewItem item = listaPociagowZapisanych.SelectedItems[0];
 
                 //numer
                 numerPociąguBox.Value = Decimal.Parse(item.SubItems[3].Text);
@@ -335,7 +340,7 @@ namespace Generator_komunikatów_dworcowych
             }
         }
 
-        private void uzupelnijNumeryWagonow(ListViewItem item)
+        private void uzupelnijNumeryWagonow(System.Windows.Forms.ListViewItem item)
         {
             NumericUpDown[] tablicaNazwWagonow = {
                 Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7,
@@ -399,16 +404,17 @@ namespace Generator_komunikatów_dworcowych
 
         public void ZamkniecieOkna(object sender, FormClosedEventArgs e)
         {
-            if(wielowatkowosc.gadanie.player != null)
-            {
-                wielowatkowosc.gadanie.player.Stop();
-                wielowatkowosc.gadanie.player.Dispose();
-            }
-
-            if(wielowatkowosc.gadanie.synth != null)
+            if (wielowatkowosc.gadanie.synth != null)
             {
                 wielowatkowosc.gadanie.synth.Dispose();
             }
+
+            if (wielowatkowosc.c != null)
+            {
+                wielowatkowosc.c.Stop();
+            }
+
+            GC.Collect();
         }
     }
 }

@@ -96,6 +96,67 @@
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="trackBarGlosnoscGongu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="trackBarGlosnoscGongu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 78</value>
+  </data>
+  <data name="trackBarGlosnoscGongu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 45</value>
+  </data>
+  <data name="trackBarGlosnoscGongu.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Name" xml:space="preserve">
+    <value>trackBarGlosnoscGongu</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GlosnoscGonguTXT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GlosnoscGonguTXT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="GlosnoscGonguTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GlosnoscGonguTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 78</value>
+  </data>
+  <data name="GlosnoscGonguTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="GlosnoscGonguTXT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="GlosnoscGonguTXT.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="GlosnoscGonguTXT.Text" xml:space="preserve">
+    <value>Głośność gongu</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Name" xml:space="preserve">
+    <value>GlosnoscGonguTXT</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="GlosnoscSyntezatoraTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -103,7 +164,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="GlosnoscSyntezatoraTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 106</value>
+    <value>527, 126</value>
   </data>
   <data name="GlosnoscSyntezatoraTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -127,10 +188,10 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;GlosnoscSyntezatoraTXT.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="trackBarGlosnoscOgolna.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 106</value>
+    <value>704, 126</value>
   </data>
   <data name="trackBarGlosnoscOgolna.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 45</value>
@@ -148,9 +209,8 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;trackBarGlosnoscOgolna.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dzwiekTestButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -179,7 +239,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;dzwiekTestButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="wygladStrony.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Disable</value>
@@ -218,7 +278,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;wygladStrony.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="wygladtxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -254,7 +314,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;wygladtxt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="GongName.Items" xml:space="preserve">
     <value>GONG 1</value>
@@ -290,7 +350,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;GongName.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="GongTxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -326,7 +386,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;GongTxt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="Pomoc1_5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -362,7 +422,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="Pomoc1_4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -398,7 +458,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_4.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Pomoc1_3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -434,7 +494,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Pomoc1_2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -470,7 +530,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="Pomoc1_1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -506,7 +566,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1_1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Pomoc1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -542,7 +602,7 @@
     <value>tabPageOpcje</value>
   </data>
   <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>

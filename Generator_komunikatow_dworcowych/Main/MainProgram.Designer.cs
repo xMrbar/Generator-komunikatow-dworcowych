@@ -32,6 +32,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
+            this.trackBarGlosnoscGongu = new System.Windows.Forms.TrackBar();
+            this.GlosnoscGonguTXT = new System.Windows.Forms.Label();
             this.GlosnoscSyntezatoraTXT = new System.Windows.Forms.Label();
             this.trackBarGlosnoscOgolna = new System.Windows.Forms.TrackBar();
             this.dzwiekTestButton = new System.Windows.Forms.Button();
@@ -126,6 +128,7 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.statusStrip1.SuspendLayout();
             this.tabPageOpcje.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscGongu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscOgolna)).BeginInit();
             this.tabPageKomunikaty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numerPociąguBox)).BeginInit();
@@ -176,6 +179,8 @@
             // tabPageOpcje
             // 
             this.tabPageOpcje.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPageOpcje.Controls.Add(this.trackBarGlosnoscGongu);
+            this.tabPageOpcje.Controls.Add(this.GlosnoscGonguTXT);
             this.tabPageOpcje.Controls.Add(this.GlosnoscSyntezatoraTXT);
             this.tabPageOpcje.Controls.Add(this.trackBarGlosnoscOgolna);
             this.tabPageOpcje.Controls.Add(this.dzwiekTestButton);
@@ -192,6 +197,20 @@
             resources.ApplyResources(this.tabPageOpcje, "tabPageOpcje");
             this.tabPageOpcje.Name = "tabPageOpcje";
             // 
+            // trackBarGlosnoscGongu
+            // 
+            resources.ApplyResources(this.trackBarGlosnoscGongu, "trackBarGlosnoscGongu");
+            this.trackBarGlosnoscGongu.LargeChange = 2;
+            this.trackBarGlosnoscGongu.Maximum = 50;
+            this.trackBarGlosnoscGongu.Name = "trackBarGlosnoscGongu";
+            this.trackBarGlosnoscGongu.TickFrequency = 5;
+            this.trackBarGlosnoscGongu.Value = 25;
+            // 
+            // GlosnoscGonguTXT
+            // 
+            resources.ApplyResources(this.GlosnoscGonguTXT, "GlosnoscGonguTXT");
+            this.GlosnoscGonguTXT.Name = "GlosnoscGonguTXT";
+            // 
             // GlosnoscSyntezatoraTXT
             // 
             resources.ApplyResources(this.GlosnoscSyntezatoraTXT, "GlosnoscSyntezatoraTXT");
@@ -203,7 +222,7 @@
             this.trackBarGlosnoscOgolna.Maximum = 100;
             this.trackBarGlosnoscOgolna.Name = "trackBarGlosnoscOgolna";
             this.trackBarGlosnoscOgolna.TickFrequency = 10;
-            this.trackBarGlosnoscOgolna.Value = 100;
+            this.trackBarGlosnoscOgolna.Value = 80;
             // 
             // dzwiekTestButton
             // 
@@ -1227,6 +1246,7 @@
             this.statusStrip1.PerformLayout();
             this.tabPageOpcje.ResumeLayout(false);
             this.tabPageOpcje.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscGongu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscOgolna)).EndInit();
             this.tabPageKomunikaty.ResumeLayout(false);
             this.tabPageKomunikaty.PerformLayout();
@@ -1360,6 +1380,8 @@
         public System.Windows.Forms.Button anulujSyntezator;
         public System.Windows.Forms.Button wznowSyntezator;
         public System.Windows.Forms.Button zatrzymajModulator;
+        public System.Windows.Forms.TrackBar trackBarGlosnoscGongu;
+        public System.Windows.Forms.Label GlosnoscGonguTXT;
     }
 }
 
