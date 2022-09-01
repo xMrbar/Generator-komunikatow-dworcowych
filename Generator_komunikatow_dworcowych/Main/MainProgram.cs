@@ -1,12 +1,14 @@
 ﻿using GeneratorKomunikatów;
 using System;
-using System.ComponentModel;
-using System.Windows.Controls;
+//using System.ComponentModel;
+using System.IO;
+//using System.Windows.Controls;
 using System.Windows.Forms;
-using System.Windows.Media.Animation;
+/*using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 using System.Windows.Resources;
-using System.Windows.Threading;
+using System.Windows.Threading;*/
+
 
 namespace Generator_komunikatów_dworcowych
 {
@@ -22,7 +24,10 @@ namespace Generator_komunikatów_dworcowych
 
         public komunikaty()
         {
+            ZaladujDziekiGongu();
             InitializeComponent();
+
+            this.wygladStrony.SelectedIndex = 0;
         }
 
         private void generujButton_Click(object sender, EventArgs e)
@@ -415,6 +420,41 @@ namespace Generator_komunikatów_dworcowych
             }
 
             GC.Collect();
+        }
+
+        public void ZaladujDziekiGongu()
+        {
+            String[] nazwy = { "gong-wroclaw.wav", "gong1.wav", "gong2.wav", "gong-torun.wav" };
+            Stream[] zasoby = { GeneratorKomunikatów.Properties.Resources.gong_wroclaw, GeneratorKomunikatów.Properties.Resources.gong1, 
+                GeneratorKomunikatów.Properties.Resources.gong2 , GeneratorKomunikatów.Properties.Resources.gong_torun};
+
+            for(int i = 0; i < nazwy.Length; i++)
+            {
+                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow");
+                var file1 = System.IO.Path.Combine(file, nazwy[i]);
+
+                if (!File.Exists(file1))
+                {
+                    Stream s = zasoby[i];
+
+                    Directory.CreateDirectory(file);
+
+                    var fileStream = File.Create(file1);
+
+                    s.Seek(0, SeekOrigin.Begin);
+                    s.CopyTo(fileStream);
+
+                    s.Close();
+                    fileStream.Close();
+                }
+            }
+        }
+
+        private void buttonWypelnijZAPI_Click(object sender, EventArgs e)
+        {
+            API api = new API();
+            //api.GetCoinValues(this);
+            api.DeserilizeJson(this);
         }
     }
 }

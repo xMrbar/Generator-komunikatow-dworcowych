@@ -4,7 +4,6 @@ using System.Speech.Synthesis;
 using System.Windows.Forms;
 using System.Windows.Media;
 using System.Windows.Threading;
-using System.Windows.Media.Animation;
 
 namespace Generator
 {
@@ -209,22 +208,73 @@ namespace Generator
         {
             if (NazwaGongu == "GONG 1")
             {
-                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong-wroclaw.wav");
+                #region testy
+                //"C:/Users/Bar/source/repos/Generator/Generator_komunikatow_dworcowych/Resources/gong-wroclaw.wav"
+
+                //Uri uri = new Uri("../Resources/gong-wroclaw.wav", UriKind.Relative);
+
+                /*                var file = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "gong-wroclaw.wav");
+                                Uri uri = new Uri(file);*/
+                /*                StreamResourceInfo ri = System.Windows.Application.GetResourceStream(uri);
+                                Stream data = ri.Stream;*/
+                /*Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong-wroclaw.wav");*/
+
+                //GeneratorKomunikatów.Properties.Resources.gong_wroclaw
+                /*                String fileName1 = Path.Combine(fileName, "gong-wroclaw.wav");
+
+                                if (tablicaZapisu[0] == 0)
+                                {
+                                    tablicaZapisu[0] = 1;
+
+                                    Stream s = GeneratorKomunikatów.Properties.Resources.gong_wroclaw;
+
+                                    Directory.CreateDirectory(fileName1);
+                                    var fileStream = File.Create(fileName1);
+
+                                    s.Seek(0, SeekOrigin.Begin);
+                                    s.CopyTo(fileStream);
+
+                                    s.Close();
+                                    fileStream.Close();
+                                }*/
+
+                //Uri uri = new Uri(fileName1);
+
+                //Uri uri = new Uri("pack://application:,,,/voice/gong-wroclaw.wav");
+
+                //string file = "gong-wroclaw.wav";
+                // var assembly = System.Reflection.Assembly.GetExecutingAssembly().ToString();
+                //String fileName = Path.Combine(assembly, "gong-wroclaw.wav");
+
+                //Uri uri = new Uri("ms-appx:///voice/gong-torun.wav");
+
+                //var a = new Assembly.GetManifestResourceStream("gong-wroclaw.wav");
+                #endregion
+
+                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong-wroclaw.wav");
+                Uri uri = new Uri(file);
+
                 return uri;
             }
             else if (NazwaGongu == "GONG 2")
             {
-                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong1.wav");
+                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong1.wav");
+                Uri uri = new Uri(file);
+
                 return uri;
             }
             else if (NazwaGongu == "GONG 3")
             {
-                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong2.wav");
+                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong2.wav");
+                Uri uri = new Uri(file);
+
                 return uri;
             }
             else
             {
-                Uri uri = new Uri($"{System.Windows.Forms.Application.StartupPath}/voice/gong-torun.wav");
+                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong-torun.wav");
+                Uri uri = new Uri(file);
+
                 return uri;
             }
         }
@@ -252,8 +302,6 @@ namespace Generator
 
             GC.Collect();
 
-            //System.Windows.Forms.MessageBox.Show("Wiadomosc testowa!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             Dispatcher.ExitAllFrames();
         }
 
@@ -262,30 +310,32 @@ namespace Generator
             current.dźwiękButton.Enabled = true;
             current.dzwiekTestButton.Enabled = true;
         }
+
+
+
+        /*    public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
+            {
+                MethodInvoker changeState = delegate ()
+                {
+                    current.dźwiękButton.Enabled = true;
+                    current.dzwiekTestButton.Enabled = true;
+                };
+
+                if (current.InvokeRequired)
+                {
+                    try
+                    {
+                        current.Invoke(changeState);
+                    }
+                    catch (ObjectDisposedException)
+                    {
+
+                    }
+                }
+                else
+                {
+                    changeState();
+                }
+            }*/
     }
-
-/*    public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
-    {
-        MethodInvoker changeState = delegate ()
-        {
-            current.dźwiękButton.Enabled = true;
-            current.dzwiekTestButton.Enabled = true;
-        };
-
-        if (current.InvokeRequired)
-        {
-            try
-            {
-                current.Invoke(changeState);
-            }
-            catch (ObjectDisposedException)
-            {
-
-            }
-        }
-        else
-        {
-            changeState();
-        }
-    }*/
 }

@@ -109,6 +109,9 @@
   <data name="trackBarGlosnoscGongu.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
+  <data name="trackBarGlosnoscGongu.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;trackBarGlosnoscGongu.Name" xml:space="preserve">
     <value>trackBarGlosnoscGongu</value>
   </data>
@@ -145,6 +148,9 @@
   <data name="GlosnoscGonguTXT.Text" xml:space="preserve">
     <value>Głośność gongu</value>
   </data>
+  <data name="GlosnoscGonguTXT.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;GlosnoscGonguTXT.Name" xml:space="preserve">
     <value>GlosnoscGonguTXT</value>
   </data>
@@ -178,6 +184,9 @@
   <data name="GlosnoscSyntezatoraTXT.Text" xml:space="preserve">
     <value>Głośność syntezatora</value>
   </data>
+  <data name="GlosnoscSyntezatoraTXT.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Name" xml:space="preserve">
     <value>GlosnoscSyntezatoraTXT</value>
   </data>
@@ -198,6 +207,9 @@
   </data>
   <data name="trackBarGlosnoscOgolna.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
+  </data>
+  <data name="trackBarGlosnoscOgolna.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;trackBarGlosnoscOgolna.Name" xml:space="preserve">
     <value>trackBarGlosnoscOgolna</value>
@@ -637,6 +649,33 @@
   <data name="tabPageKomunikaty.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="buttonWypelnijZAPI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 56</value>
+  </data>
+  <data name="buttonWypelnijZAPI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="buttonWypelnijZAPI.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="buttonWypelnijZAPI.Text" xml:space="preserve">
+    <value>Pobierz dane</value>
+  </data>
+  <data name="buttonWypelnijZAPI.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Name" xml:space="preserve">
+    <value>buttonWypelnijZAPI</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="anulujSyntezator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -655,6 +694,9 @@
   <data name="anulujSyntezator.Text" xml:space="preserve">
     <value>Anuluj</value>
   </data>
+  <data name="anulujSyntezator.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;anulujSyntezator.Name" xml:space="preserve">
     <value>anulujSyntezator</value>
   </data>
@@ -665,7 +707,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;anulujSyntezator.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="wznowSyntezator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -685,6 +727,9 @@
   <data name="wznowSyntezator.Text" xml:space="preserve">
     <value>Wznów</value>
   </data>
+  <data name="wznowSyntezator.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;wznowSyntezator.Name" xml:space="preserve">
     <value>wznowSyntezator</value>
   </data>
@@ -695,7 +740,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;wznowSyntezator.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="zatrzymajModulator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -715,6 +760,9 @@
   <data name="zatrzymajModulator.Text" xml:space="preserve">
     <value>Zatrzymaj</value>
   </data>
+  <data name="zatrzymajModulator.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;zatrzymajModulator.Name" xml:space="preserve">
     <value>zatrzymajModulator</value>
   </data>
@@ -725,7 +773,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;zatrzymajModulator.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Numer</value>
@@ -754,6 +802,9 @@
   <data name="listaPociagowZapisanych.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
   </data>
+  <data name="listaPociagowZapisanych.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listaPociagowZapisanych.Name" xml:space="preserve">
     <value>listaPociagowZapisanych</value>
   </data>
@@ -764,7 +815,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowZapisanych.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="listaPociagowUsun.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 437</value>
@@ -778,6 +829,9 @@
   <data name="listaPociagowUsun.Text" xml:space="preserve">
     <value>Usuń</value>
   </data>
+  <data name="listaPociagowUsun.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listaPociagowUsun.Name" xml:space="preserve">
     <value>listaPociagowUsun</value>
   </data>
@@ -788,7 +842,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowUsun.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="listaPociagowWczytaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 408</value>
@@ -802,6 +856,9 @@
   <data name="listaPociagowWczytaj.Text" xml:space="preserve">
     <value>Wczytaj</value>
   </data>
+  <data name="listaPociagowWczytaj.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listaPociagowWczytaj.Name" xml:space="preserve">
     <value>listaPociagowWczytaj</value>
   </data>
@@ -812,7 +869,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowWczytaj.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="listaPociagowDodaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 379</value>
@@ -826,6 +883,9 @@
   <data name="listaPociagowDodaj.Text" xml:space="preserve">
     <value>Dodaj</value>
   </data>
+  <data name="listaPociagowDodaj.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listaPociagowDodaj.Name" xml:space="preserve">
     <value>listaPociagowDodaj</value>
   </data>
@@ -836,7 +896,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowDodaj.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="numerPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 27</value>
@@ -860,7 +920,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;numerPociąguBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="isGongOn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -893,7 +953,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;isGongOn.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Koniec5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 252</value>
@@ -920,7 +980,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Koniec7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 252</value>
@@ -947,7 +1007,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec7.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Koniec6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 252</value>
@@ -974,7 +1034,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec6.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Koniec4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 252</value>
@@ -1001,7 +1061,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Koniec1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 222</value>
@@ -1028,7 +1088,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Koniec3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 222</value>
@@ -1055,7 +1115,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec3.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Koniec2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 222</value>
@@ -1082,7 +1142,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="Środek1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 163</value>
@@ -1109,7 +1169,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="Początek1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 106</value>
@@ -1136,7 +1196,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="Środek3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 163</value>
@@ -1163,7 +1223,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek3.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="Środek2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 163</value>
@@ -1190,7 +1250,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek2.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="Środek5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 193</value>
@@ -1217,7 +1277,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek5.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="Środek7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 193</value>
@@ -1244,7 +1304,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek7.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="Środek6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 193</value>
@@ -1271,7 +1331,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek6.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="Środek4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 193</value>
@@ -1298,7 +1358,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek4.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="Początek5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 134</value>
@@ -1325,7 +1385,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek5.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="Początek7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 134</value>
@@ -1352,7 +1412,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek7.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="Początek6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 134</value>
@@ -1379,7 +1439,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek6.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="Początek4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 134</value>
@@ -1406,7 +1466,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek4.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="Początek3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 106</value>
@@ -1433,7 +1493,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek3.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="Początek2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 106</value>
@@ -1460,7 +1520,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek2.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="WagonyKoniecTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1496,7 +1556,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyKoniecTXT.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="WagonyŚrodekTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1532,7 +1592,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyŚrodekTXT.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="ileWagonówWSkładzie.Location" type="System.Drawing.Point, System.Drawing">
     <value>1234, 63</value>
@@ -1559,7 +1619,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ileWagonówWSkładzie.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="ileWagonowTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1595,7 +1655,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ileWagonowTXT.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="WagonyPoczątekTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1631,7 +1691,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyPoczątekTXT.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="ifReserwation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1664,7 +1724,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ifReserwation.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="dźwiękButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1694,7 +1754,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;dźwiękButton.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="PrzyStOdjTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1727,7 +1787,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;PrzyStOdjTXT.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="comboPrzyStOdj.Items" xml:space="preserve">
     <value>Przyjedzie</value>
@@ -1760,7 +1820,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboPrzyStOdj.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="labelTor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1793,7 +1853,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;labelTor.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="labelPeron.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1826,7 +1886,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;labelPeron.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="przezTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1859,7 +1919,112 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przezTXT.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Aleksandrów Kujawski</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Arkadia Zdrój</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Bełchów</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Białogard</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Blaszki</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Bystra Woda</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Czermin</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Dziewoszyce</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Glinik</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Głęboszów</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Krzemienice</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Głowno</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Kleszczów</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Kołobrzeg</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource14" xml:space="preserve">
+    <value>Kudowa-Zdrój</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource15" xml:space="preserve">
+    <value>Lisków</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource16" xml:space="preserve">
+    <value>Lublinek</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource17" xml:space="preserve">
+    <value>Łapanów</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource18" xml:space="preserve">
+    <value>Łask</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource19" xml:space="preserve">
+    <value>Łęczyca</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource20" xml:space="preserve">
+    <value>Okoń Główny</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource21" xml:space="preserve">
+    <value>Orniki</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource22" xml:space="preserve">
+    <value>Ozorków</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource23" xml:space="preserve">
+    <value>Poznań Główny</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource24" xml:space="preserve">
+    <value>Pszczyna</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource25" xml:space="preserve">
+    <value>Stare Lipowo</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource26" xml:space="preserve">
+    <value>Szadek</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource27" xml:space="preserve">
+    <value>Szlichtyngowa</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource28" xml:space="preserve">
+    <value>Testowo</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource29" xml:space="preserve">
+    <value>Warszowice-Strumień</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource30" xml:space="preserve">
+    <value>Wielichowo Główne</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource31" xml:space="preserve">
+    <value>Wrocław Główny</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource32" xml:space="preserve">
+    <value>Zgierz</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource33" xml:space="preserve">
+    <value>Żory</value>
+  </data>
+  <data name="przezBox.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>Żywiec</value>
   </data>
   <data name="przezBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 151</value>
@@ -1886,7 +2051,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przezBox.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>43</value>
   </data>
   <data name="komunikatWygenerowanyBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>888, 466</value>
@@ -1913,7 +2078,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;komunikatWygenerowanyBox.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>44</value>
   </data>
   <data name="nazwaPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 346</value>
@@ -1940,7 +2105,40 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguBox.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>45</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="boxPeron.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="boxPeron.Location" type="System.Drawing.Point, System.Drawing">
     <value>820, 254</value>
@@ -1967,7 +2165,43 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;boxPeron.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>46</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="boxTor.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="boxTor.Location" type="System.Drawing.Point, System.Drawing">
     <value>820, 283</value>
@@ -1994,7 +2228,112 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;boxTor.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>47</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Aleksandrów Kujawski</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Arkadia Zdrój</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Bełchów</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Białogard</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Blaszki</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Bystra Woda</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Czermin</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Dziewoszyce</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Glinik</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Głęboszów</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Krzemienice</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Głowno</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Kleszczów</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Kołobrzeg</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource14" xml:space="preserve">
+    <value>Kudowa-Zdrój</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource15" xml:space="preserve">
+    <value>Lisków</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource16" xml:space="preserve">
+    <value>Lublinek</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource17" xml:space="preserve">
+    <value>Łapanów</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource18" xml:space="preserve">
+    <value>Łask</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource19" xml:space="preserve">
+    <value>Łęczyca</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource20" xml:space="preserve">
+    <value>Okoń Główny</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource21" xml:space="preserve">
+    <value>Orniki</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource22" xml:space="preserve">
+    <value>Ozorków</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource23" xml:space="preserve">
+    <value>Poznań Główny</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource24" xml:space="preserve">
+    <value>Pszczyna</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource25" xml:space="preserve">
+    <value>Stare Lipowo</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource26" xml:space="preserve">
+    <value>Szadek</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource27" xml:space="preserve">
+    <value>Szlichtyngowa</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource28" xml:space="preserve">
+    <value>Testowo</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource29" xml:space="preserve">
+    <value>Warszowice-Strumień</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource30" xml:space="preserve">
+    <value>Wielichowo Główne</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource31" xml:space="preserve">
+    <value>Wrocław Główny</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource32" xml:space="preserve">
+    <value>Zgierz</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource33" xml:space="preserve">
+    <value>Żory</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>Żywiec</value>
   </data>
   <data name="box_stacja_końcowa.Location" type="System.Drawing.Point, System.Drawing">
     <value>530, 106</value>
@@ -2021,7 +2360,112 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;box_stacja_końcowa.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>48</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource" xml:space="preserve">
+    <value>Aleksandrów Kujawski</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>Arkadia Zdrój</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>Bełchów</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>Białogard</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>Blaszki</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>Bystra Woda</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>Czermin</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>Dziewoszyce</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>Glinik</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource9" xml:space="preserve">
+    <value>Głęboszów</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource10" xml:space="preserve">
+    <value>Krzemienice</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource11" xml:space="preserve">
+    <value>Głowno</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource12" xml:space="preserve">
+    <value>Kleszczów</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource13" xml:space="preserve">
+    <value>Kołobrzeg</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource14" xml:space="preserve">
+    <value>Kudowa-Zdrój</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource15" xml:space="preserve">
+    <value>Lisków</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource16" xml:space="preserve">
+    <value>Lublinek</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource17" xml:space="preserve">
+    <value>Łapanów</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource18" xml:space="preserve">
+    <value>Łask</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource19" xml:space="preserve">
+    <value>Łęczyca</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource20" xml:space="preserve">
+    <value>Okoń Główny</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource21" xml:space="preserve">
+    <value>Orniki</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource22" xml:space="preserve">
+    <value>Ozorków</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource23" xml:space="preserve">
+    <value>Poznań Główny</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource24" xml:space="preserve">
+    <value>Pszczyna</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource25" xml:space="preserve">
+    <value>Stare Lipowo</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource26" xml:space="preserve">
+    <value>Szadek</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource27" xml:space="preserve">
+    <value>Szlichtyngowa</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource28" xml:space="preserve">
+    <value>Testowo</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource29" xml:space="preserve">
+    <value>Warszowice-Strumień</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource30" xml:space="preserve">
+    <value>Wielichowo Główne</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource31" xml:space="preserve">
+    <value>Wrocław Główny</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource32" xml:space="preserve">
+    <value>Zgierz</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource33" xml:space="preserve">
+    <value>Żory</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>Żywiec</value>
   </data>
   <data name="box_stacja_początkowa.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 106</value>
@@ -2048,7 +2492,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;box_stacja_początkowa.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>49</value>
   </data>
   <data name="pociągMaOpóźnienie.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2081,7 +2525,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;pociągMaOpóźnienie.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>50</value>
   </data>
   <data name="OpóźnienieTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2117,7 +2561,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;OpóźnienieTXT.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>51</value>
   </data>
   <data name="opóźnienieBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>512, 364</value>
@@ -2147,7 +2591,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;opóźnienieBox.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>52</value>
   </data>
   <data name="nazwaPociąguTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2180,7 +2624,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguTXT.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>53</value>
   </data>
   <data name="generujBezZatrzymaniaButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2210,7 +2654,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;generujBezZatrzymaniaButton.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>54</value>
   </data>
   <data name="generujButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2240,7 +2684,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;generujButton.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>55</value>
   </data>
   <data name="wyczyscButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2270,7 +2714,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;wyczyscButton.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>56</value>
   </data>
   <data name="GodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2303,7 +2747,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;GodzinaTXT.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>57</value>
   </data>
   <data name="OdjazdGodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2336,7 +2780,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;OdjazdGodzinaTXT.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>58</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2372,7 +2816,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>59</value>
   </data>
   <data name="minutyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>596, 284</value>
@@ -2396,7 +2840,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;minutyOdjazdu.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>60</value>
   </data>
   <data name="godzinyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 284</value>
@@ -2420,7 +2864,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;godzinyOdjazdu.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>61</value>
   </data>
   <data name="PrzyjazdGodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2453,7 +2897,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;PrzyjazdGodzinaTXT.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>62</value>
   </data>
   <data name="oddzieleniePrzyjazd.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2489,7 +2933,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;oddzieleniePrzyjazd.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>63</value>
   </data>
   <data name="minutyPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>596, 254</value>
@@ -2513,7 +2957,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;minutyPrzyjazdu.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>64</value>
   </data>
   <data name="godzinaPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 254</value>
@@ -2537,7 +2981,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;godzinaPrzyjazdu.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>65</value>
   </data>
   <data name="naszaStacjaWRJtxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2570,7 +3014,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJtxt.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>66</value>
   </data>
   <data name="naszaStacjaWRJ.Items" xml:space="preserve">
     <value>Początkowa</value>
@@ -2603,7 +3047,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJ.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>67</value>
   </data>
   <data name="kategoriaHandlowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2636,7 +3080,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;kategoriaHandlowa.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>68</value>
   </data>
   <data name="przewoźnik.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2669,7 +3113,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przewoźnik.ZOrder" xml:space="preserve">
-    <value>68</value>
+    <value>69</value>
   </data>
   <data name="comboKategoriaHandlowa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2717,7 +3161,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboKategoriaHandlowa.ZOrder" xml:space="preserve">
-    <value>69</value>
+    <value>70</value>
   </data>
   <data name="comboPrzewoźnik.Items" xml:space="preserve">
     <value>KD</value>
@@ -2768,7 +3212,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboPrzewoźnik.ZOrder" xml:space="preserve">
-    <value>70</value>
+    <value>71</value>
   </data>
   <data name="stacjaKońcowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2801,7 +3245,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;stacjaKońcowa.ZOrder" xml:space="preserve">
-    <value>71</value>
+    <value>72</value>
   </data>
   <data name="stacjaPoczątkowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2834,7 +3278,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;stacjaPoczątkowa.ZOrder" xml:space="preserve">
-    <value>72</value>
+    <value>73</value>
   </data>
   <data name="NumerPociągu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2867,7 +3311,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;NumerPociągu.ZOrder" xml:space="preserve">
-    <value>73</value>
+    <value>74</value>
   </data>
   <data name="tabPageKomunikaty.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>

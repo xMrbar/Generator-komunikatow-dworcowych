@@ -19,7 +19,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>0.5.1.5</ApplicationVersion>
+    <ApplicationVersion>0.6.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -53,6 +53,11 @@
     <Title>Generator Komunikatów Megafonowych</Title>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="images\icon.ico" />
+    <None Remove="Resources\gong-torun.wav" />
+    <None Remove="Resources\gong-wroclaw.wav" />
+    <None Remove="Resources\gong1.wav" />
+    <None Remove="Resources\gong2.wav" />
     <None Remove="voice\gong-torun.wav" />
     <None Remove="voice\gong1.wav" />
     <None Remove="voice\gong2.wav" />
@@ -68,10 +73,31 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="voice\gong-torun.wav" />
-    <Content Include="voice\gong-wroclaw.wav" />
-    <Content Include="voice\gong1.wav" />
-    <Content Include="voice\gong2.wav" />
+    <EmbeddedResource Include="images\icon.ico" />
+    <EmbeddedResource Include="Resources\gong-torun.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\gong-wroclaw.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\gong1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\gong2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voice\gong-torun.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voice\gong-wroclaw.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voice\gong1.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voice\gong2.wav">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

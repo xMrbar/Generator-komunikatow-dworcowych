@@ -48,6 +48,7 @@
             this.Pomoc1_1 = new System.Windows.Forms.Label();
             this.Pomoc1 = new System.Windows.Forms.Label();
             this.tabPageKomunikaty = new System.Windows.Forms.TabPage();
+            this.buttonWypelnijZAPI = new System.Windows.Forms.Button();
             this.anulujSyntezator = new System.Windows.Forms.Button();
             this.wznowSyntezator = new System.Windows.Forms.Button();
             this.zatrzymajModulator = new System.Windows.Forms.Button();
@@ -304,6 +305,7 @@
             // 
             this.tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
             resources.ApplyResources(this.tabPageKomunikaty, "tabPageKomunikaty");
+            this.tabPageKomunikaty.Controls.Add(this.buttonWypelnijZAPI);
             this.tabPageKomunikaty.Controls.Add(this.anulujSyntezator);
             this.tabPageKomunikaty.Controls.Add(this.wznowSyntezator);
             this.tabPageKomunikaty.Controls.Add(this.zatrzymajModulator);
@@ -379,6 +381,13 @@
             this.tabPageKomunikaty.Controls.Add(this.stacjaPoczątkowa);
             this.tabPageKomunikaty.Controls.Add(this.NumerPociągu);
             this.tabPageKomunikaty.Name = "tabPageKomunikaty";
+            // 
+            // buttonWypelnijZAPI
+            // 
+            resources.ApplyResources(this.buttonWypelnijZAPI, "buttonWypelnijZAPI");
+            this.buttonWypelnijZAPI.Name = "buttonWypelnijZAPI";
+            this.buttonWypelnijZAPI.UseVisualStyleBackColor = true;
+            this.buttonWypelnijZAPI.Click += new System.EventHandler(this.buttonWypelnijZAPI_Click);
             // 
             // anulujSyntezator
             // 
@@ -487,7 +496,7 @@
             0});
             this.Koniec5.Name = "Koniec5";
             this.Koniec5.Value = new decimal(new int[] {
-            1,
+            19,
             0,
             0,
             0});
@@ -507,7 +516,7 @@
             0});
             this.Koniec7.Name = "Koniec7";
             this.Koniec7.Value = new decimal(new int[] {
-            1,
+            21,
             0,
             0,
             0});
@@ -527,7 +536,7 @@
             0});
             this.Koniec6.Name = "Koniec6";
             this.Koniec6.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -547,7 +556,7 @@
             0});
             this.Koniec4.Name = "Koniec4";
             this.Koniec4.Value = new decimal(new int[] {
-            1,
+            18,
             0,
             0,
             0});
@@ -567,7 +576,7 @@
             0});
             this.Koniec1.Name = "Koniec1";
             this.Koniec1.Value = new decimal(new int[] {
-            1,
+            15,
             0,
             0,
             0});
@@ -587,7 +596,7 @@
             0});
             this.Koniec3.Name = "Koniec3";
             this.Koniec3.Value = new decimal(new int[] {
-            1,
+            17,
             0,
             0,
             0});
@@ -607,7 +616,7 @@
             0});
             this.Koniec2.Name = "Koniec2";
             this.Koniec2.Value = new decimal(new int[] {
-            1,
+            16,
             0,
             0,
             0});
@@ -627,7 +636,7 @@
             0});
             this.Środek1.Name = "Środek1";
             this.Środek1.Value = new decimal(new int[] {
-            1,
+            8,
             0,
             0,
             0});
@@ -667,7 +676,7 @@
             0});
             this.Środek3.Name = "Środek3";
             this.Środek3.Value = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -687,7 +696,7 @@
             0});
             this.Środek2.Name = "Środek2";
             this.Środek2.Value = new decimal(new int[] {
-            1,
+            9,
             0,
             0,
             0});
@@ -707,7 +716,7 @@
             0});
             this.Środek5.Name = "Środek5";
             this.Środek5.Value = new decimal(new int[] {
-            1,
+            12,
             0,
             0,
             0});
@@ -727,7 +736,7 @@
             0});
             this.Środek7.Name = "Środek7";
             this.Środek7.Value = new decimal(new int[] {
-            1,
+            14,
             0,
             0,
             0});
@@ -747,7 +756,7 @@
             0});
             this.Środek6.Name = "Środek6";
             this.Środek6.Value = new decimal(new int[] {
-            1,
+            13,
             0,
             0,
             0});
@@ -767,7 +776,7 @@
             0});
             this.Środek4.Name = "Środek4";
             this.Środek4.Value = new decimal(new int[] {
-            1,
+            11,
             0,
             0,
             0});
@@ -787,7 +796,7 @@
             0});
             this.Początek5.Name = "Początek5";
             this.Początek5.Value = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             0});
@@ -807,7 +816,7 @@
             0});
             this.Początek7.Name = "Początek7";
             this.Początek7.Value = new decimal(new int[] {
-            1,
+            7,
             0,
             0,
             0});
@@ -827,7 +836,7 @@
             0});
             this.Początek6.Name = "Początek6";
             this.Początek6.Value = new decimal(new int[] {
-            1,
+            6,
             0,
             0,
             0});
@@ -847,7 +856,7 @@
             0});
             this.Początek4.Name = "Początek4";
             this.Początek4.Value = new decimal(new int[] {
-            1,
+            4,
             0,
             0,
             0});
@@ -867,7 +876,7 @@
             0});
             this.Początek3.Name = "Początek3";
             this.Początek3.Value = new decimal(new int[] {
-            1,
+            3,
             0,
             0,
             0});
@@ -887,7 +896,7 @@
             0});
             this.Początek2.Name = "Początek2";
             this.Początek2.Value = new decimal(new int[] {
-            1,
+            2,
             0,
             0,
             0});
@@ -982,6 +991,44 @@
             // 
             // przezBox
             // 
+            this.przezBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("przezBox.AutoCompleteCustomSource"),
+            resources.GetString("przezBox.AutoCompleteCustomSource1"),
+            resources.GetString("przezBox.AutoCompleteCustomSource2"),
+            resources.GetString("przezBox.AutoCompleteCustomSource3"),
+            resources.GetString("przezBox.AutoCompleteCustomSource4"),
+            resources.GetString("przezBox.AutoCompleteCustomSource5"),
+            resources.GetString("przezBox.AutoCompleteCustomSource6"),
+            resources.GetString("przezBox.AutoCompleteCustomSource7"),
+            resources.GetString("przezBox.AutoCompleteCustomSource8"),
+            resources.GetString("przezBox.AutoCompleteCustomSource9"),
+            resources.GetString("przezBox.AutoCompleteCustomSource10"),
+            resources.GetString("przezBox.AutoCompleteCustomSource11"),
+            resources.GetString("przezBox.AutoCompleteCustomSource12"),
+            resources.GetString("przezBox.AutoCompleteCustomSource13"),
+            resources.GetString("przezBox.AutoCompleteCustomSource14"),
+            resources.GetString("przezBox.AutoCompleteCustomSource15"),
+            resources.GetString("przezBox.AutoCompleteCustomSource16"),
+            resources.GetString("przezBox.AutoCompleteCustomSource17"),
+            resources.GetString("przezBox.AutoCompleteCustomSource18"),
+            resources.GetString("przezBox.AutoCompleteCustomSource19"),
+            resources.GetString("przezBox.AutoCompleteCustomSource20"),
+            resources.GetString("przezBox.AutoCompleteCustomSource21"),
+            resources.GetString("przezBox.AutoCompleteCustomSource22"),
+            resources.GetString("przezBox.AutoCompleteCustomSource23"),
+            resources.GetString("przezBox.AutoCompleteCustomSource24"),
+            resources.GetString("przezBox.AutoCompleteCustomSource25"),
+            resources.GetString("przezBox.AutoCompleteCustomSource26"),
+            resources.GetString("przezBox.AutoCompleteCustomSource27"),
+            resources.GetString("przezBox.AutoCompleteCustomSource28"),
+            resources.GetString("przezBox.AutoCompleteCustomSource29"),
+            resources.GetString("przezBox.AutoCompleteCustomSource30"),
+            resources.GetString("przezBox.AutoCompleteCustomSource31"),
+            resources.GetString("przezBox.AutoCompleteCustomSource32"),
+            resources.GetString("przezBox.AutoCompleteCustomSource33"),
+            resources.GetString("przezBox.AutoCompleteCustomSource34")});
+            this.przezBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.przezBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.przezBox, "przezBox");
             this.przezBox.Name = "przezBox";
             this.przezBox.Tag = "";
@@ -1000,22 +1047,123 @@
             // 
             // boxPeron
             // 
+            this.boxPeron.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("boxPeron.AutoCompleteCustomSource"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource1"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource2"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource3"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource4"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource5"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource6"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource7"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource8"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource9"),
+            resources.GetString("boxPeron.AutoCompleteCustomSource10")});
             resources.ApplyResources(this.boxPeron, "boxPeron");
             this.boxPeron.Name = "boxPeron";
             // 
             // boxTor
             // 
+            this.boxTor.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("boxTor.AutoCompleteCustomSource"),
+            resources.GetString("boxTor.AutoCompleteCustomSource1"),
+            resources.GetString("boxTor.AutoCompleteCustomSource2"),
+            resources.GetString("boxTor.AutoCompleteCustomSource3"),
+            resources.GetString("boxTor.AutoCompleteCustomSource4"),
+            resources.GetString("boxTor.AutoCompleteCustomSource5"),
+            resources.GetString("boxTor.AutoCompleteCustomSource6"),
+            resources.GetString("boxTor.AutoCompleteCustomSource7"),
+            resources.GetString("boxTor.AutoCompleteCustomSource8"),
+            resources.GetString("boxTor.AutoCompleteCustomSource9"),
+            resources.GetString("boxTor.AutoCompleteCustomSource10"),
+            resources.GetString("boxTor.AutoCompleteCustomSource11")});
             resources.ApplyResources(this.boxTor, "boxTor");
             this.boxTor.Name = "boxTor";
             // 
             // box_stacja_końcowa
             // 
+            this.box_stacja_końcowa.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource1"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource2"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource3"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource4"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource5"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource6"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource7"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource8"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource9"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource10"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource11"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource12"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource13"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource14"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource15"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource16"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource17"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource18"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource19"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource20"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource21"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource22"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource23"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource24"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource25"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource26"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource27"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource28"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource29"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource30"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource31"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource32"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource33"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource34")});
+            this.box_stacja_końcowa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.box_stacja_końcowa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.box_stacja_końcowa.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.box_stacja_końcowa, "box_stacja_końcowa");
             this.box_stacja_końcowa.Name = "box_stacja_końcowa";
             // 
             // box_stacja_początkowa
             // 
+            this.box_stacja_początkowa.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource1"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource2"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource3"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource4"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource5"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource6"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource7"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource8"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource9"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource10"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource11"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource12"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource13"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource14"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource15"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource16"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource17"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource18"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource19"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource20"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource21"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource22"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource23"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource24"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource25"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource26"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource27"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource28"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource29"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource30"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource31"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource32"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource33"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource34")});
+            this.box_stacja_początkowa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.box_stacja_początkowa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.box_stacja_początkowa, "box_stacja_początkowa");
             this.box_stacja_początkowa.Name = "box_stacja_początkowa";
             // 
@@ -1382,6 +1530,7 @@
         public System.Windows.Forms.Button zatrzymajModulator;
         public System.Windows.Forms.TrackBar trackBarGlosnoscGongu;
         public System.Windows.Forms.Label GlosnoscGonguTXT;
+        private System.Windows.Forms.Button buttonWypelnijZAPI;
     }
 }
 

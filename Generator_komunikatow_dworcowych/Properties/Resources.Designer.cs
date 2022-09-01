@@ -65,7 +65,7 @@ namespace GeneratorKomunikatów.Properties {
         /// </summary>
         public static System.IO.UnmanagedMemoryStream gong_torun {
             get {
-                return ResourceManager.GetStream("gong_torun", resourceCulture);
+                return ResourceManager.GetStream("gong-torun", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace GeneratorKomunikatów.Properties {
         /// </summary>
         public static System.IO.UnmanagedMemoryStream gong_wroclaw {
             get {
-                return ResourceManager.GetStream("gong_wroclaw", resourceCulture);
+                return ResourceManager.GetStream("gong-wroclaw", resourceCulture);
             }
         }
         
