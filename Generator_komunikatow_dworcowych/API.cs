@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 /*using System.IO;
 using System.Linq;
 using System.Net;
@@ -87,11 +88,36 @@ namespace GeneratorKomunikatów
 
     #endregion
 
+    #region Kod do pobierania info o wersji
+
+    public partial class JsonModelVersion
+    {
+        [JsonProperty("tag_name")]
+        public string Version { get; set; }
+    }
+
+    public partial class JsonModelDownloadURL
+    {
+        [JsonProperty("assets")]
+        public ResponceDownloadURL Version { get; set; }
+    }
+
+    public partial class ResponceDownloadURL
+    {
+        [JsonProperty("browser_download_url")]
+        public string DownloadURL { get; set; }
+    }
+
+    #endregion
+
     public class API
     {
         System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
 
-        #region
+        private static readonly string URL = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
+        private static readonly string Version = "0.5.1";
+
+        #region wylaczony kod - do ewentualnego usuniecia
         //String link;
         //link = "https://api.td2.info.pl:9640/?method=readFromSWDR&value=getTimetable%3B" + current.numerPociąguBox.Value.ToString() + "%3Beu";
 
@@ -109,6 +135,7 @@ namespace GeneratorKomunikatów
                 }*/
         #endregion
 
+        #region pobieranie z API danych o pociagach
         public async Task DeserilizeJson(Generator_komunikatów_dworcowych.komunikaty current)
         {
             string url = "https://api.td2.info.pl:9640/?method=readFromSWDR&value=getTimetable%3B" + current.numerPociąguBox.Value.ToString() + "%3Beu";
@@ -127,5 +154,31 @@ namespace GeneratorKomunikatów
 
             JsonModel info = JsonConvert.DeserializeObject<JsonModel>(responseBody);
         }
+        #endregion
+
+        #region pobieranie danych z githuba
+        public async Task DeserilizeJsonVersion()
+        {
+            string responseBody;
+
+            try
+            {
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.UserAgent.TryParseAdd("request");//Set the User Agent to "request"
+
+                System.Net.Http.HttpResponseMessage response = await client.GetAsync(URL);
+                response.EnsureSuccessStatusCode();
+                responseBody = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception)
+            {
+                responseBody = null;
+            }
+
+            JsonModelVersion info = JsonConvert.DeserializeObject<JsonModelVersion>(responseBody);
+            JsonModelDownloadURL infoURL = JsonConvert.DeserializeObject<JsonModelDownloadURL>(responseBody);
+        }
+
+        #endregion
     }
 }

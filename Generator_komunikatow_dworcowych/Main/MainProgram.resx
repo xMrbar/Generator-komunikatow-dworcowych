@@ -656,13 +656,10 @@
     <value>91, 23</value>
   </data>
   <data name="buttonWypelnijZAPI.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
+    <value>0</value>
   </data>
   <data name="buttonWypelnijZAPI.Text" xml:space="preserve">
     <value>Pobierz dane</value>
-  </data>
-  <data name="buttonWypelnijZAPI.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;buttonWypelnijZAPI.Name" xml:space="preserve">
     <value>buttonWypelnijZAPI</value>
@@ -2249,90 +2246,96 @@
     <value>Bystra Woda</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Czermin</value>
+    <value>Chlorkowice</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Dziewoszyce</value>
+    <value>Czermin</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Glinik</value>
+    <value>Dziewoszyce</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Głęboszów</value>
+    <value>Glinik</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Krzemienice</value>
+    <value>Głęboszów</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Głowno</value>
+    <value>Krzemienice</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Kleszczów</value>
+    <value>Głowno</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Kołobrzeg</value>
+    <value>Kleszczów</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource14" xml:space="preserve">
-    <value>Kudowa-Zdrój</value>
+    <value>Kołobrzeg</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource15" xml:space="preserve">
-    <value>Lisków</value>
+    <value>Kudowa-Zdrój</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource16" xml:space="preserve">
-    <value>Lublinek</value>
+    <value>Lisków</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource17" xml:space="preserve">
-    <value>Łapanów</value>
+    <value>Lublinek</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource18" xml:space="preserve">
-    <value>Łask</value>
+    <value>Łapanów</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource19" xml:space="preserve">
-    <value>Łęczyca</value>
+    <value>Łask</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource20" xml:space="preserve">
-    <value>Okoń Główny</value>
+    <value>Łęczyca</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource21" xml:space="preserve">
-    <value>Orniki</value>
+    <value>Okoń Główny</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource22" xml:space="preserve">
-    <value>Ozorków</value>
+    <value>Orniki</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource23" xml:space="preserve">
-    <value>Poznań Główny</value>
+    <value>Ozorków</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource24" xml:space="preserve">
-    <value>Pszczyna</value>
+    <value>Poznań Główny</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource25" xml:space="preserve">
-    <value>Stare Lipowo</value>
+    <value>Pszczyna</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource26" xml:space="preserve">
-    <value>Szadek</value>
+    <value>Stare Lipowo</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource27" xml:space="preserve">
-    <value>Szlichtyngowa</value>
+    <value>Sulechów</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource28" xml:space="preserve">
-    <value>Testowo</value>
+    <value>Szadek</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource29" xml:space="preserve">
-    <value>Warszowice-Strumień</value>
+    <value>Szlichtyngowa</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource30" xml:space="preserve">
-    <value>Wielichowo Główne</value>
+    <value>Testowo</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource31" xml:space="preserve">
-    <value>Wrocław Główny</value>
+    <value>Warszowice-Strumień</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource32" xml:space="preserve">
-    <value>Zgierz</value>
+    <value>Wielichowo Główne</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource33" xml:space="preserve">
-    <value>Żory</value>
+    <value>Wrocław Główny</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>Zgierz</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource35" xml:space="preserve">
+    <value>Żory</value>
+  </data>
+  <data name="box_stacja_końcowa.AutoCompleteCustomSource36" xml:space="preserve">
     <value>Żywiec</value>
   </data>
   <data name="box_stacja_końcowa.Location" type="System.Drawing.Point, System.Drawing">
@@ -2381,90 +2384,96 @@
     <value>Bystra Woda</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource6" xml:space="preserve">
-    <value>Czermin</value>
+    <value>Chlorkowice</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource7" xml:space="preserve">
-    <value>Dziewoszyce</value>
+    <value>Czermin</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource8" xml:space="preserve">
-    <value>Glinik</value>
+    <value>Dziewoszyce</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource9" xml:space="preserve">
-    <value>Głęboszów</value>
+    <value>Glinik</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource10" xml:space="preserve">
-    <value>Krzemienice</value>
+    <value>Głęboszów</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource11" xml:space="preserve">
-    <value>Głowno</value>
+    <value>Krzemienice</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource12" xml:space="preserve">
-    <value>Kleszczów</value>
+    <value>Głowno</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource13" xml:space="preserve">
-    <value>Kołobrzeg</value>
+    <value>Kleszczów</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource14" xml:space="preserve">
-    <value>Kudowa-Zdrój</value>
+    <value>Kołobrzeg</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource15" xml:space="preserve">
-    <value>Lisków</value>
+    <value>Kudowa-Zdrój</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource16" xml:space="preserve">
-    <value>Lublinek</value>
+    <value>Lisków</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource17" xml:space="preserve">
-    <value>Łapanów</value>
+    <value>Lublinek</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource18" xml:space="preserve">
-    <value>Łask</value>
+    <value>Łapanów</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource19" xml:space="preserve">
-    <value>Łęczyca</value>
+    <value>Łask</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource20" xml:space="preserve">
-    <value>Okoń Główny</value>
+    <value>Łęczyca</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource21" xml:space="preserve">
-    <value>Orniki</value>
+    <value>Okoń Główny</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource22" xml:space="preserve">
-    <value>Ozorków</value>
+    <value>Orniki</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource23" xml:space="preserve">
-    <value>Poznań Główny</value>
+    <value>Ozorków</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource24" xml:space="preserve">
-    <value>Pszczyna</value>
+    <value>Poznań Główny</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource25" xml:space="preserve">
-    <value>Stare Lipowo</value>
+    <value>Pszczyna</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource26" xml:space="preserve">
-    <value>Szadek</value>
+    <value>Stare Lipowo</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource27" xml:space="preserve">
-    <value>Szlichtyngowa</value>
+    <value>Sulechów</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource28" xml:space="preserve">
-    <value>Testowo</value>
+    <value>Szadek</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource29" xml:space="preserve">
-    <value>Warszowice-Strumień</value>
+    <value>Szlichtyngowa</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource30" xml:space="preserve">
-    <value>Wielichowo Główne</value>
+    <value>Testowo</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource31" xml:space="preserve">
-    <value>Wrocław Główny</value>
+    <value>Warszowice-Strumień</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource32" xml:space="preserve">
-    <value>Zgierz</value>
+    <value>Wielichowo Główne</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource33" xml:space="preserve">
-    <value>Żory</value>
+    <value>Wrocław Główny</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource34" xml:space="preserve">
+    <value>Zgierz</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource35" xml:space="preserve">
+    <value>Żory</value>
+  </data>
+  <data name="box_stacja_początkowa.AutoCompleteCustomSource36" xml:space="preserve">
     <value>Żywiec</value>
   </data>
   <data name="box_stacja_początkowa.Location" type="System.Drawing.Point, System.Drawing">

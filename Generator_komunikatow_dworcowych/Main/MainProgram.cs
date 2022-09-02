@@ -21,9 +21,12 @@ namespace Generator_komunikatów_dworcowych
         string rezerwacja;
 
         Generator.Wielowatkowosc wielowatkowosc = new Generator.Wielowatkowosc();
+        API api = new API();
 
         public komunikaty()
         {
+            sprawdzanieWersji();
+
             ZaladujDziekiGongu();
             InitializeComponent();
 
@@ -452,9 +455,12 @@ namespace Generator_komunikatów_dworcowych
 
         private void buttonWypelnijZAPI_Click(object sender, EventArgs e)
         {
-            API api = new API();
-            //api.GetCoinValues(this);
             api.DeserilizeJson(this);
+        }
+
+        private void sprawdzanieWersji()
+        {
+            api.DeserilizeJsonVersion();
         }
     }
 }

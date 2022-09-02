@@ -386,6 +386,7 @@
             // 
             resources.ApplyResources(this.buttonWypelnijZAPI, "buttonWypelnijZAPI");
             this.buttonWypelnijZAPI.Name = "buttonWypelnijZAPI";
+            this.buttonWypelnijZAPI.TabStop = false;
             this.buttonWypelnijZAPI.UseVisualStyleBackColor = true;
             this.buttonWypelnijZAPI.Click += new System.EventHandler(this.buttonWypelnijZAPI_Click);
             // 
@@ -1117,7 +1118,9 @@
             resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource31"),
             resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource32"),
             resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource33"),
-            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource34")});
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource34"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource35"),
+            resources.GetString("box_stacja_końcowa.AutoCompleteCustomSource36")});
             this.box_stacja_końcowa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.box_stacja_końcowa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.box_stacja_końcowa.BackColor = System.Drawing.SystemColors.Window;
@@ -1161,7 +1164,9 @@
             resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource31"),
             resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource32"),
             resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource33"),
-            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource34")});
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource34"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource35"),
+            resources.GetString("box_stacja_początkowa.AutoCompleteCustomSource36")});
             this.box_stacja_początkowa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.box_stacja_początkowa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             resources.ApplyResources(this.box_stacja_początkowa, "box_stacja_początkowa");
