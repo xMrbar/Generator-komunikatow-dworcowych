@@ -460,7 +460,7 @@ namespace Generator_komunikatów_dworcowych
 
         private void sprawdzanieWersji()
         {
-            api.DeserilizeJsonVersion();
+            api.DeserilizeJsonVersion(this);
         }
     }
 }

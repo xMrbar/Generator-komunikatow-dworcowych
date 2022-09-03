@@ -2,13 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
+using System.Net;
 /*using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;*/
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Diagnostics;
 /*using System.Windows.Forms;
 using System.Windows.Markup;
 using Windows.Media.Protection.PlayReady;
@@ -99,7 +101,7 @@ namespace GeneratorKomunikatów
     public partial class JsonModelDownloadURL
     {
         [JsonProperty("assets")]
-        public ResponceDownloadURL Version { get; set; }
+        public List<ResponceDownloadURL> DownloadURLList { get; set; }
     }
 
     public partial class ResponceDownloadURL
@@ -115,7 +117,7 @@ namespace GeneratorKomunikatów
         System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
 
         private static readonly string URL = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
-        private static readonly string Version = "0.5.1";
+        private static readonly string Version = "0.6.0";
 
         #region wylaczony kod - do ewentualnego usuniecia
         //String link;
@@ -157,14 +159,14 @@ namespace GeneratorKomunikatów
         #endregion
 
         #region pobieranie danych z githuba
-        public async Task DeserilizeJsonVersion()
+        public async Task DeserilizeJsonVersion(Generator_komunikatów_dworcowych.komunikaty current)
         {
             string responseBody;
 
             try
             {
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.UserAgent.TryParseAdd("request");//Set the User Agent to "request"
+                client.DefaultRequestHeaders.UserAgent.TryParseAdd("request");
 
                 System.Net.Http.HttpResponseMessage response = await client.GetAsync(URL);
                 response.EnsureSuccessStatusCode();
@@ -177,6 +179,60 @@ namespace GeneratorKomunikatów
 
             JsonModelVersion info = JsonConvert.DeserializeObject<JsonModelVersion>(responseBody);
             JsonModelDownloadURL infoURL = JsonConvert.DeserializeObject<JsonModelDownloadURL>(responseBody);
+
+            PorownanieWersji(info, infoURL, current);
+        }
+
+        public static void PorownanieWersji(JsonModelVersion info, JsonModelDownloadURL infoURL, Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            if(info != null)
+            {
+                if(info.Version != null)
+                {
+                    if (!Version.Equals(info.Version))
+                    {
+                        MessageBox.Show("Nowa wersja dostępna", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        Process.Start(@".\GeneratorKomunikatowUpdater.exe");
+                        current.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Masz najnowszą wersję", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nie udało się zweryfikować najnowszej wersji \n Sprawdź czy masz dostęp do internetu!", "Błąd (info.Version != null)", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Nie udało się zweryfikować najnowszej wersji \n Sprawdź czy masz dostęp do internetu!", "Błąd (info != null)", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static async Task Pobieranie(JsonModelDownloadURL infoURL)
+        {
+            var file = System.Windows.Forms.Application.ExecutablePath;
+            //var file1 = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "Generator_Komunikatow.exe");
+
+            var url = infoURL.DownloadURLList[0].DownloadURL;
+            var uri = new Uri(url);
+
+            Process.Start("GeneratorKomunikatowUpdater.exe");
+            Application.Exit();
+
+            /*string tmp = "/x \"" + file + "\"/qn";
+
+            Process p = new Process();
+            p.StartInfo.FileName = "Generator_Komunikatow.exe";
+            p.StartInfo.Arguments = tmp;
+            p.Start();
+
+            await webClient.DownloadFileTaskAsync(uri, file);
+
+            MessageBox.Show("POBRANO! \n READY!", "Sukces!", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
         }
 
         #endregion
