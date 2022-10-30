@@ -15,30 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_17F71A9E7A9540BEBBB49816E1F64F2C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1FE1B655309E4179A89A5F5256BF2A30"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5066D9882361428A90B693A6DC29AC12"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7197B0DF4D3247989055D927D7016670"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_72A4E483D2FD41F19E5533856823E60D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -152,86 +128,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_17F71A9E7A9540BEBBB49816E1F64F2C"
-            {
-            "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\Resources\\\\gong1.wav"
-            "TargetName" = "8:gong1.wav"
-            "Tag" = "8:"
-            "Folder" = "8:_7B19D994685C413BA062EC4907B7623B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1FE1B655309E4179A89A5F5256BF2A30"
-            {
-            "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\Resources\\\\gong-wroclaw.wav"
-            "TargetName" = "8:gong-wroclaw.wav"
-            "Tag" = "8:"
-            "Folder" = "8:_7B19D994685C413BA062EC4907B7623B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5066D9882361428A90B693A6DC29AC12"
-            {
-            "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\Resources\\\\gong-torun.wav"
-            "TargetName" = "8:gong-torun.wav"
-            "Tag" = "8:"
-            "Folder" = "8:_7B19D994685C413BA062EC4907B7623B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7197B0DF4D3247989055D927D7016670"
-            {
-            "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\Resources\\\\gong2.wav"
-            "TargetName" = "8:gong2.wav"
-            "Tag" = "8:"
-            "Folder" = "8:_7B19D994685C413BA062EC4907B7623B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_72A4E483D2FD41F19E5533856823E60D"
             {
             "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\bin\\Release\\Generator_Komunikatow.exe"
@@ -532,7 +428,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_1F78D21A8DB54475AA09BBD271E8CDB9"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Potwierdzanie instalacji"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -554,7 +450,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C80C8238901344569F23CEBA77BDA290"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Folder instalacji"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -576,7 +472,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F844930A07B84213971AE2396AE5F012"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Zapraszamy"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
@@ -639,7 +535,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_DAE1E8291A3B423EB256FA8906726338"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Postęp"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -683,7 +579,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_1967233AB930484586B5250B0AC11CCC"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Zakończono"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -727,7 +623,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_0D5E1F0615634D8894243001833A3606"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:Folder instalacji"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -762,7 +658,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_24D927567CC744C28B4061A36CECB9A0"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:Potwierdzanie instalacji"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -784,7 +680,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F08A9AC54BE048FC9BB197EA2930D9F6"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:Zapraszamy"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -847,7 +743,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_66A8757996C94167ACADE11252A696F4"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:Postęp"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -891,7 +787,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_FF04CECB93B24AB9BC23C26BB143AB86"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:Zakończono"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
