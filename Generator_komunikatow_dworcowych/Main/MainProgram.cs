@@ -25,7 +25,7 @@ namespace Generator_komunikatów_dworcowych
 
         public komunikaty()
         {
-            sprawdzanieWersji();
+            //sprawdzanieWersji();
 
             ZaladujDziekiGongu();
             InitializeComponent();
@@ -433,7 +433,7 @@ namespace Generator_komunikatów_dworcowych
 
             for(int i = 0; i < nazwy.Length; i++)
             {
-                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow");
+                var file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Voice");
                 var file1 = System.IO.Path.Combine(file, nazwy[i]);
 
                 if (!File.Exists(file1))
@@ -455,7 +455,7 @@ namespace Generator_komunikatów_dworcowych
 
         private void buttonWypelnijZAPI_Click(object sender, EventArgs e)
         {
-            api.DeserilizeJson(this);
+            api.DeserilizeJsonTrain(this);
         }
 
         private void sprawdzanieWersji()

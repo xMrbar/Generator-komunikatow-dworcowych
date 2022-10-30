@@ -251,28 +251,28 @@ namespace Generator
                 //var a = new Assembly.GetManifestResourceStream("gong-wroclaw.wav");
                 #endregion
 
-                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong-wroclaw.wav");
+                var file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Voice", "gong-wroclaw.wav");
                 Uri uri = new Uri(file);
 
                 return uri;
             }
             else if (NazwaGongu == "GONG 2")
             {
-                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong1.wav");
+                var file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Voice", "gong1.wav");
                 Uri uri = new Uri(file);
 
                 return uri;
             }
             else if (NazwaGongu == "GONG 3")
             {
-                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong2.wav");
+                var file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Voice", "gong2.wav");
                 Uri uri = new Uri(file);
 
                 return uri;
             }
             else
             {
-                var file = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GeneratorKomunikatow", "gong-torun.wav");
+                var file = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Voice", "gong-torun.wav");
                 Uri uri = new Uri(file);
 
                 return uri;

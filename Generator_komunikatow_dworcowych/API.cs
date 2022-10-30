@@ -119,26 +119,8 @@ namespace GeneratorKomunikatów
         private static readonly string URL = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
         private static readonly string Version = "0.6.0";
 
-        #region wylaczony kod - do ewentualnego usuniecia
-        //String link;
-        //link = "https://api.td2.info.pl:9640/?method=readFromSWDR&value=getTimetable%3B" + current.numerPociąguBox.Value.ToString() + "%3Beu";
-
-        /*        public async Task GetCoinValues(Generator_komunikatów_dworcowych.komunikaty current)
-                {
-                    *//*String url = "https://api.td2.info.pl:9640/?method=readFromSWDR&value=getTimetable%3B" + current.numerPociąguBox.Value.ToString() + "%3Beu";
-
-                    HttpResponseMessage response = await client.GetAsync(url);
-                    response.EnsureSuccessStatusCode();
-                    string responseBody = await response.Content.ReadAsStringAsync();*//*
-
-
-
-                    MessageBox.Show("M", "M");
-                }*/
-        #endregion
-
         #region pobieranie z API danych o pociagach
-        public async Task DeserilizeJson(Generator_komunikatów_dworcowych.komunikaty current)
+        public async Task DeserilizeJsonTrain(Generator_komunikatów_dworcowych.komunikaty current)
         {
             string url = "https://api.td2.info.pl:9640/?method=readFromSWDR&value=getTimetable%3B" + current.numerPociąguBox.Value.ToString() + "%3Beu";
             string responseBody;
@@ -152,6 +134,8 @@ namespace GeneratorKomunikatów
             catch (Exception)
             {
                 responseBody = null;
+                MessageBox.Show("Błąd podczas pobieranai danych o składzie " + current.numerPociąguBox.Value.ToString(), "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             JsonModel info = JsonConvert.DeserializeObject<JsonModel>(responseBody);

@@ -6,25 +6,13 @@ using System.Security.Policy;
 
 namespace GeneratorKomunikatowUpdater
 {
-    public partial class JsonModelDownloadURL
-    {
-        [JsonProperty("assets")]
-        public List<ResponceDownloadURL> DownloadURLList { get; set; }
-    }
-
-    public partial class ResponceDownloadURL
-    {
-        [JsonProperty("browser_download_url")]
-        public string DownloadURL { get; set; }
-    }
-
-    public partial class Form1 : Form
+    public partial class MainProgram : Form
     {
         HttpClient client = new HttpClient();
         WebClient webClient = new WebClient();
         private static readonly string URL = "https://api.github.com/repos/xMrbar/Generator-komunikatow-dworcowych/releases/latest";
 
-        public Form1()
+        public MainProgram()
         {
             InitializeComponent();
 
@@ -78,5 +66,17 @@ namespace GeneratorKomunikatowUpdater
 
             }
         }
+    }
+
+    public partial class JsonModelDownloadURL
+    {
+        [JsonProperty("assets")]
+        public List<ResponceDownloadURL> DownloadURLList { get; set; }
+    }
+
+    public partial class ResponceDownloadURL
+    {
+        [JsonProperty("browser_download_url")]
+        public string DownloadURL { get; set; }
     }
 }
