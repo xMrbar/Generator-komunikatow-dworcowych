@@ -62,10 +62,16 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
+    <value>103, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.6.0b [dev]</value>
+    <value>wersja 0.6.0c [dev]</value>
+  </data>
+  <data name="podpis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 17</value>
+  </data>
+  <data name="podpis.Text" xml:space="preserve">
+    <value>Create with quills by Mr_bar &lt;3</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 625</value>
@@ -96,6 +102,216 @@
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Name" xml:space="preserve">
+    <value>trackBarGlosnoscGongu</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Name" xml:space="preserve">
+    <value>GlosnoscGonguTXT</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Name" xml:space="preserve">
+    <value>GlosnoscSyntezatoraTXT</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Name" xml:space="preserve">
+    <value>trackBarGlosnoscOgolna</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Name" xml:space="preserve">
+    <value>dzwiekTestButton</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Name" xml:space="preserve">
+    <value>wygladStrony</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Name" xml:space="preserve">
+    <value>wygladtxt</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;GongName.Name" xml:space="preserve">
+    <value>GongName</value>
+  </data>
+  <data name="&gt;&gt;GongName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GongName.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GongName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Name" xml:space="preserve">
+    <value>GongTxt</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Name" xml:space="preserve">
+    <value>Pomoc1_5</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Name" xml:space="preserve">
+    <value>Pomoc1_4</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Name" xml:space="preserve">
+    <value>Pomoc1_3</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Name" xml:space="preserve">
+    <value>Pomoc1_2</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Name" xml:space="preserve">
+    <value>Pomoc1_1</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Name" xml:space="preserve">
+    <value>Pomoc1</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tabPageOpcje.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageOpcje.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageOpcje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1373, 592</value>
+  </data>
+  <data name="tabPageOpcje.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageOpcje.Text" xml:space="preserve">
+    <value>Opcje</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Name" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="trackBarGlosnoscGongu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -108,9 +324,6 @@
   </data>
   <data name="trackBarGlosnoscGongu.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
-  </data>
-  <data name="trackBarGlosnoscGongu.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;trackBarGlosnoscGongu.Name" xml:space="preserve">
     <value>trackBarGlosnoscGongu</value>
@@ -148,9 +361,6 @@
   <data name="GlosnoscGonguTXT.Text" xml:space="preserve">
     <value>Głośność gongu</value>
   </data>
-  <data name="GlosnoscGonguTXT.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;GlosnoscGonguTXT.Name" xml:space="preserve">
     <value>GlosnoscGonguTXT</value>
   </data>
@@ -184,9 +394,6 @@
   <data name="GlosnoscSyntezatoraTXT.Text" xml:space="preserve">
     <value>Głośność syntezatora</value>
   </data>
-  <data name="GlosnoscSyntezatoraTXT.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Name" xml:space="preserve">
     <value>GlosnoscSyntezatoraTXT</value>
   </data>
@@ -207,9 +414,6 @@
   </data>
   <data name="trackBarGlosnoscOgolna.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
-  </data>
-  <data name="trackBarGlosnoscOgolna.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;trackBarGlosnoscOgolna.Name" xml:space="preserve">
     <value>trackBarGlosnoscOgolna</value>
@@ -616,38 +820,941 @@
   <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="tabPageOpcje.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageOpcje.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageOpcje.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1373, 592</value>
-  </data>
-  <data name="tabPageOpcje.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageOpcje.Text" xml:space="preserve">
-    <value>Opcje</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Name" xml:space="preserve">
-    <value>tabPageOpcje</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tabPageKomunikaty.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Name" xml:space="preserve">
+    <value>buttonWypelnijZAPI</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;buttonWypelnijZAPI.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;anulujSyntezator.Name" xml:space="preserve">
+    <value>anulujSyntezator</value>
+  </data>
+  <data name="&gt;&gt;anulujSyntezator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;anulujSyntezator.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;anulujSyntezator.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;wznowSyntezator.Name" xml:space="preserve">
+    <value>wznowSyntezator</value>
+  </data>
+  <data name="&gt;&gt;wznowSyntezator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wznowSyntezator.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;wznowSyntezator.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;zatrzymajModulator.Name" xml:space="preserve">
+    <value>zatrzymajModulator</value>
+  </data>
+  <data name="&gt;&gt;zatrzymajModulator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;zatrzymajModulator.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;zatrzymajModulator.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Name" xml:space="preserve">
+    <value>listaPociagowZapisanych</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowUsun.Name" xml:space="preserve">
+    <value>listaPociagowUsun</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowUsun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowUsun.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowUsun.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowWczytaj.Name" xml:space="preserve">
+    <value>listaPociagowWczytaj</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowWczytaj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowWczytaj.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowWczytaj.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowDodaj.Name" xml:space="preserve">
+    <value>listaPociagowDodaj</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowDodaj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowDodaj.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowDodaj.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;numerPociąguBox.Name" xml:space="preserve">
+    <value>numerPociąguBox</value>
+  </data>
+  <data name="&gt;&gt;numerPociąguBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numerPociąguBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;numerPociąguBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;isGongOn.Name" xml:space="preserve">
+    <value>isGongOn</value>
+  </data>
+  <data name="&gt;&gt;isGongOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isGongOn.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;isGongOn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Koniec5.Name" xml:space="preserve">
+    <value>Koniec5</value>
+  </data>
+  <data name="&gt;&gt;Koniec5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec5.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Koniec7.Name" xml:space="preserve">
+    <value>Koniec7</value>
+  </data>
+  <data name="&gt;&gt;Koniec7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec7.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec7.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Koniec6.Name" xml:space="preserve">
+    <value>Koniec6</value>
+  </data>
+  <data name="&gt;&gt;Koniec6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec6.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Koniec4.Name" xml:space="preserve">
+    <value>Koniec4</value>
+  </data>
+  <data name="&gt;&gt;Koniec4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec4.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec4.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Koniec1.Name" xml:space="preserve">
+    <value>Koniec1</value>
+  </data>
+  <data name="&gt;&gt;Koniec1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec1.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Koniec3.Name" xml:space="preserve">
+    <value>Koniec3</value>
+  </data>
+  <data name="&gt;&gt;Koniec3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec3.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Koniec2.Name" xml:space="preserve">
+    <value>Koniec2</value>
+  </data>
+  <data name="&gt;&gt;Koniec2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Koniec2.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Koniec2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Środek1.Name" xml:space="preserve">
+    <value>Środek1</value>
+  </data>
+  <data name="&gt;&gt;Środek1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek1.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Początek1.Name" xml:space="preserve">
+    <value>Początek1</value>
+  </data>
+  <data name="&gt;&gt;Początek1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek1.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Środek3.Name" xml:space="preserve">
+    <value>Środek3</value>
+  </data>
+  <data name="&gt;&gt;Środek3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek3.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Środek2.Name" xml:space="preserve">
+    <value>Środek2</value>
+  </data>
+  <data name="&gt;&gt;Środek2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek2.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek2.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Środek5.Name" xml:space="preserve">
+    <value>Środek5</value>
+  </data>
+  <data name="&gt;&gt;Środek5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek5.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek5.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Środek7.Name" xml:space="preserve">
+    <value>Środek7</value>
+  </data>
+  <data name="&gt;&gt;Środek7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek7.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek7.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Środek6.Name" xml:space="preserve">
+    <value>Środek6</value>
+  </data>
+  <data name="&gt;&gt;Środek6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek6.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek6.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Środek4.Name" xml:space="preserve">
+    <value>Środek4</value>
+  </data>
+  <data name="&gt;&gt;Środek4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Środek4.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Środek4.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Początek5.Name" xml:space="preserve">
+    <value>Początek5</value>
+  </data>
+  <data name="&gt;&gt;Początek5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek5.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek5.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Początek7.Name" xml:space="preserve">
+    <value>Początek7</value>
+  </data>
+  <data name="&gt;&gt;Początek7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek7.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;Początek6.Name" xml:space="preserve">
+    <value>Początek6</value>
+  </data>
+  <data name="&gt;&gt;Początek6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek6.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek6.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;Początek4.Name" xml:space="preserve">
+    <value>Początek4</value>
+  </data>
+  <data name="&gt;&gt;Początek4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek4.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek4.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;Początek3.Name" xml:space="preserve">
+    <value>Początek3</value>
+  </data>
+  <data name="&gt;&gt;Początek3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek3.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek3.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;Początek2.Name" xml:space="preserve">
+    <value>Początek2</value>
+  </data>
+  <data name="&gt;&gt;Początek2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Początek2.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;Początek2.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;WagonyKoniecTXT.Name" xml:space="preserve">
+    <value>WagonyKoniecTXT</value>
+  </data>
+  <data name="&gt;&gt;WagonyKoniecTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WagonyKoniecTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;WagonyKoniecTXT.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;WagonyŚrodekTXT.Name" xml:space="preserve">
+    <value>WagonyŚrodekTXT</value>
+  </data>
+  <data name="&gt;&gt;WagonyŚrodekTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WagonyŚrodekTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;WagonyŚrodekTXT.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;ileWagonówWSkładzie.Name" xml:space="preserve">
+    <value>ileWagonówWSkładzie</value>
+  </data>
+  <data name="&gt;&gt;ileWagonówWSkładzie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ileWagonówWSkładzie.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;ileWagonówWSkładzie.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;ileWagonowTXT.Name" xml:space="preserve">
+    <value>ileWagonowTXT</value>
+  </data>
+  <data name="&gt;&gt;ileWagonowTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ileWagonowTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;ileWagonowTXT.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;WagonyPoczątekTXT.Name" xml:space="preserve">
+    <value>WagonyPoczątekTXT</value>
+  </data>
+  <data name="&gt;&gt;WagonyPoczątekTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WagonyPoczątekTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;WagonyPoczątekTXT.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;ifReserwation.Name" xml:space="preserve">
+    <value>ifReserwation</value>
+  </data>
+  <data name="&gt;&gt;ifReserwation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ifReserwation.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;ifReserwation.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;dźwiękButton.Name" xml:space="preserve">
+    <value>dźwiękButton</value>
+  </data>
+  <data name="&gt;&gt;dźwiękButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dźwiękButton.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;dźwiękButton.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;PrzyStOdjTXT.Name" xml:space="preserve">
+    <value>PrzyStOdjTXT</value>
+  </data>
+  <data name="&gt;&gt;PrzyStOdjTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrzyStOdjTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;PrzyStOdjTXT.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;comboPrzyStOdj.Name" xml:space="preserve">
+    <value>comboPrzyStOdj</value>
+  </data>
+  <data name="&gt;&gt;comboPrzyStOdj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboPrzyStOdj.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;comboPrzyStOdj.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;labelTor.Name" xml:space="preserve">
+    <value>labelTor</value>
+  </data>
+  <data name="&gt;&gt;labelTor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTor.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;labelTor.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;labelPeron.Name" xml:space="preserve">
+    <value>labelPeron</value>
+  </data>
+  <data name="&gt;&gt;labelPeron.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPeron.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;labelPeron.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;przezTXT.Name" xml:space="preserve">
+    <value>przezTXT</value>
+  </data>
+  <data name="&gt;&gt;przezTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;przezTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;przezTXT.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;przezBox.Name" xml:space="preserve">
+    <value>przezBox</value>
+  </data>
+  <data name="&gt;&gt;przezBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;przezBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;przezBox.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;komunikatWygenerowanyBox.Name" xml:space="preserve">
+    <value>komunikatWygenerowanyBox</value>
+  </data>
+  <data name="&gt;&gt;komunikatWygenerowanyBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;komunikatWygenerowanyBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;komunikatWygenerowanyBox.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguBox.Name" xml:space="preserve">
+    <value>nazwaPociąguBox</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguBox.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;boxPeron.Name" xml:space="preserve">
+    <value>boxPeron</value>
+  </data>
+  <data name="&gt;&gt;boxPeron.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;boxPeron.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;boxPeron.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;boxTor.Name" xml:space="preserve">
+    <value>boxTor</value>
+  </data>
+  <data name="&gt;&gt;boxTor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;boxTor.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;boxTor.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_końcowa.Name" xml:space="preserve">
+    <value>box_stacja_końcowa</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_końcowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_końcowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_końcowa.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_początkowa.Name" xml:space="preserve">
+    <value>box_stacja_początkowa</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_początkowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_początkowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;box_stacja_początkowa.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;pociągMaOpóźnienie.Name" xml:space="preserve">
+    <value>pociągMaOpóźnienie</value>
+  </data>
+  <data name="&gt;&gt;pociągMaOpóźnienie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pociągMaOpóźnienie.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;pociągMaOpóźnienie.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;OpóźnienieTXT.Name" xml:space="preserve">
+    <value>OpóźnienieTXT</value>
+  </data>
+  <data name="&gt;&gt;OpóźnienieTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpóźnienieTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;OpóźnienieTXT.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;opóźnienieBox.Name" xml:space="preserve">
+    <value>opóźnienieBox</value>
+  </data>
+  <data name="&gt;&gt;opóźnienieBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;opóźnienieBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;opóźnienieBox.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguTXT.Name" xml:space="preserve">
+    <value>nazwaPociąguTXT</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;nazwaPociąguTXT.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;generujBezZatrzymaniaButton.Name" xml:space="preserve">
+    <value>generujBezZatrzymaniaButton</value>
+  </data>
+  <data name="&gt;&gt;generujBezZatrzymaniaButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;generujBezZatrzymaniaButton.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;generujBezZatrzymaniaButton.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;generujButton.Name" xml:space="preserve">
+    <value>generujButton</value>
+  </data>
+  <data name="&gt;&gt;generujButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;generujButton.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;generujButton.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;wyczyscButton.Name" xml:space="preserve">
+    <value>wyczyscButton</value>
+  </data>
+  <data name="&gt;&gt;wyczyscButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wyczyscButton.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;wyczyscButton.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;GodzinaTXT.Name" xml:space="preserve">
+    <value>GodzinaTXT</value>
+  </data>
+  <data name="&gt;&gt;GodzinaTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GodzinaTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;GodzinaTXT.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;OdjazdGodzinaTXT.Name" xml:space="preserve">
+    <value>OdjazdGodzinaTXT</value>
+  </data>
+  <data name="&gt;&gt;OdjazdGodzinaTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OdjazdGodzinaTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;OdjazdGodzinaTXT.ZOrder" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;minutyOdjazdu.Name" xml:space="preserve">
+    <value>minutyOdjazdu</value>
+  </data>
+  <data name="&gt;&gt;minutyOdjazdu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minutyOdjazdu.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;minutyOdjazdu.ZOrder" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;godzinyOdjazdu.Name" xml:space="preserve">
+    <value>godzinyOdjazdu</value>
+  </data>
+  <data name="&gt;&gt;godzinyOdjazdu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;godzinyOdjazdu.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;godzinyOdjazdu.ZOrder" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;PrzyjazdGodzinaTXT.Name" xml:space="preserve">
+    <value>PrzyjazdGodzinaTXT</value>
+  </data>
+  <data name="&gt;&gt;PrzyjazdGodzinaTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrzyjazdGodzinaTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;PrzyjazdGodzinaTXT.ZOrder" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;oddzieleniePrzyjazd.Name" xml:space="preserve">
+    <value>oddzieleniePrzyjazd</value>
+  </data>
+  <data name="&gt;&gt;oddzieleniePrzyjazd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oddzieleniePrzyjazd.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;oddzieleniePrzyjazd.ZOrder" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;minutyPrzyjazdu.Name" xml:space="preserve">
+    <value>minutyPrzyjazdu</value>
+  </data>
+  <data name="&gt;&gt;minutyPrzyjazdu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minutyPrzyjazdu.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;minutyPrzyjazdu.ZOrder" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;godzinaPrzyjazdu.Name" xml:space="preserve">
+    <value>godzinaPrzyjazdu</value>
+  </data>
+  <data name="&gt;&gt;godzinaPrzyjazdu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;godzinaPrzyjazdu.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;godzinaPrzyjazdu.ZOrder" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJtxt.Name" xml:space="preserve">
+    <value>naszaStacjaWRJtxt</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJtxt.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJtxt.ZOrder" xml:space="preserve">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJ.Name" xml:space="preserve">
+    <value>naszaStacjaWRJ</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJ.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;naszaStacjaWRJ.ZOrder" xml:space="preserve">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;kategoriaHandlowa.Name" xml:space="preserve">
+    <value>kategoriaHandlowa</value>
+  </data>
+  <data name="&gt;&gt;kategoriaHandlowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kategoriaHandlowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;kategoriaHandlowa.ZOrder" xml:space="preserve">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;przewoźnik.Name" xml:space="preserve">
+    <value>przewoźnik</value>
+  </data>
+  <data name="&gt;&gt;przewoźnik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;przewoźnik.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;przewoźnik.ZOrder" xml:space="preserve">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;comboKategoriaHandlowa.Name" xml:space="preserve">
+    <value>comboKategoriaHandlowa</value>
+  </data>
+  <data name="&gt;&gt;comboKategoriaHandlowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboKategoriaHandlowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;comboKategoriaHandlowa.ZOrder" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;comboPrzewoźnik.Name" xml:space="preserve">
+    <value>comboPrzewoźnik</value>
+  </data>
+  <data name="&gt;&gt;comboPrzewoźnik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboPrzewoźnik.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;comboPrzewoźnik.ZOrder" xml:space="preserve">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;stacjaKońcowa.Name" xml:space="preserve">
+    <value>stacjaKońcowa</value>
+  </data>
+  <data name="&gt;&gt;stacjaKońcowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stacjaKońcowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;stacjaKońcowa.ZOrder" xml:space="preserve">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;stacjaPoczątkowa.Name" xml:space="preserve">
+    <value>stacjaPoczątkowa</value>
+  </data>
+  <data name="&gt;&gt;stacjaPoczątkowa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stacjaPoczątkowa.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;stacjaPoczątkowa.ZOrder" xml:space="preserve">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;NumerPociągu.Name" xml:space="preserve">
+    <value>NumerPociągu</value>
+  </data>
+  <data name="&gt;&gt;NumerPociągu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumerPociągu.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;NumerPociągu.ZOrder" xml:space="preserve">
+    <value>74</value>
+  </data>
+  <data name="tabPageKomunikaty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tabPageKomunikaty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageKomunikaty.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageKomunikaty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1373, 592</value>
+  </data>
+  <data name="tabPageKomunikaty.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageKomunikaty.Text" xml:space="preserve">
+    <value>Komunikaty Megafonowe</value>
+  </data>
+  <data name="&gt;&gt;tabPageKomunikaty.Name" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;tabPageKomunikaty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageKomunikaty.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageKomunikaty.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonWypelnijZAPI.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="buttonWypelnijZAPI.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 56</value>
@@ -660,6 +1767,9 @@
   </data>
   <data name="buttonWypelnijZAPI.Text" xml:space="preserve">
     <value>Pobierz dane</value>
+  </data>
+  <data name="buttonWypelnijZAPI.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;buttonWypelnijZAPI.Name" xml:space="preserve">
     <value>buttonWypelnijZAPI</value>
@@ -691,9 +1801,6 @@
   <data name="anulujSyntezator.Text" xml:space="preserve">
     <value>Anuluj</value>
   </data>
-  <data name="anulujSyntezator.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;anulujSyntezator.Name" xml:space="preserve">
     <value>anulujSyntezator</value>
   </data>
@@ -723,9 +1830,6 @@
   </data>
   <data name="wznowSyntezator.Text" xml:space="preserve">
     <value>Wznów</value>
-  </data>
-  <data name="wznowSyntezator.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;wznowSyntezator.Name" xml:space="preserve">
     <value>wznowSyntezator</value>
@@ -757,9 +1861,6 @@
   <data name="zatrzymajModulator.Text" xml:space="preserve">
     <value>Zatrzymaj</value>
   </data>
-  <data name="zatrzymajModulator.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;zatrzymajModulator.Name" xml:space="preserve">
     <value>zatrzymajModulator</value>
   </data>
@@ -771,6 +1872,27 @@
   </data>
   <data name="&gt;&gt;zatrzymajModulator.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="listaPociagowZapisanych.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1033, 346</value>
+  </data>
+  <data name="listaPociagowZapisanych.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 114</value>
+  </data>
+  <data name="listaPociagowZapisanych.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Name" xml:space="preserve">
+    <value>listaPociagowZapisanych</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;listaPociagowZapisanych.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Numer</value>
@@ -790,30 +1912,6 @@
   <data name="columnHeader3.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="listaPociagowZapisanych.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1033, 346</value>
-  </data>
-  <data name="listaPociagowZapisanych.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 114</value>
-  </data>
-  <data name="listaPociagowZapisanych.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="listaPociagowZapisanych.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;listaPociagowZapisanych.Name" xml:space="preserve">
-    <value>listaPociagowZapisanych</value>
-  </data>
-  <data name="&gt;&gt;listaPociagowZapisanych.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listaPociagowZapisanych.Parent" xml:space="preserve">
-    <value>tabPageKomunikaty</value>
-  </data>
-  <data name="&gt;&gt;listaPociagowZapisanych.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="listaPociagowUsun.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 437</value>
   </data>
@@ -825,9 +1923,6 @@
   </data>
   <data name="listaPociagowUsun.Text" xml:space="preserve">
     <value>Usuń</value>
-  </data>
-  <data name="listaPociagowUsun.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;listaPociagowUsun.Name" xml:space="preserve">
     <value>listaPociagowUsun</value>
@@ -853,9 +1948,6 @@
   <data name="listaPociagowWczytaj.Text" xml:space="preserve">
     <value>Wczytaj</value>
   </data>
-  <data name="listaPociagowWczytaj.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;listaPociagowWczytaj.Name" xml:space="preserve">
     <value>listaPociagowWczytaj</value>
   </data>
@@ -879,9 +1971,6 @@
   </data>
   <data name="listaPociagowDodaj.Text" xml:space="preserve">
     <value>Dodaj</value>
-  </data>
-  <data name="listaPociagowDodaj.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;listaPociagowDodaj.Name" xml:space="preserve">
     <value>listaPociagowDodaj</value>
@@ -3322,36 +4411,6 @@
   <data name="&gt;&gt;NumerPociągu.ZOrder" xml:space="preserve">
     <value>74</value>
   </data>
-  <data name="tabPageKomunikaty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="tabPageKomunikaty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageKomunikaty.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageKomunikaty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1373, 592</value>
-  </data>
-  <data name="tabPageKomunikaty.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageKomunikaty.Text" xml:space="preserve">
-    <value>Komunikaty Megafonowe</value>
-  </data>
-  <data name="&gt;&gt;tabPageKomunikaty.Name" xml:space="preserve">
-    <value>tabPageKomunikaty</value>
-  </data>
-  <data name="&gt;&gt;tabPageKomunikaty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageKomunikaty.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageKomunikaty.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="tabControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -5136,10 +6195,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Generator komunikatów</value>
   </data>
-  <data name="&gt;&gt;wersja.Name" xml:space="preserve">
-    <value>wersja</value>
+  <data name="&gt;&gt;podpis.Name" xml:space="preserve">
+    <value>podpis</value>
   </data>
-  <data name="&gt;&gt;wersja.Type" xml:space="preserve">
+  <data name="&gt;&gt;podpis.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
@@ -5159,6 +6218,12 @@
   </data>
   <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wersja.Name" xml:space="preserve">
+    <value>wersja</value>
+  </data>
+  <data name="&gt;&gt;wersja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>komunikaty</value>

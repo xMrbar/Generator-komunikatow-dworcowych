@@ -4,6 +4,7 @@ using System.Speech.Synthesis;
 using System.Windows.Forms;
 using System.Windows.Media;
 using System.Windows.Threading;
+using System.Runtime.Versioning;
 
 namespace Generator
 {
@@ -28,7 +29,7 @@ namespace Generator
         }
     }
 
-
+    [SupportedOSPlatform("windows")]
     class Gadanie
     {
         public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth)
@@ -156,6 +157,7 @@ namespace Generator
         }
     }
 
+    [SupportedOSPlatform("windows")]
     class Wielowatkowosc
     {
         public Gadanie gadanie = new Gadanie();

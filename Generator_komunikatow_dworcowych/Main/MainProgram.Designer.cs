@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(komunikaty));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
+            this.podpis = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
             this.trackBarGlosnoscGongu = new System.Windows.Forms.TrackBar();
             this.GlosnoscGonguTXT = new System.Windows.Forms.Label();
@@ -127,6 +127,7 @@
             this.stacjaPoczątkowa = new System.Windows.Forms.Label();
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.tabPageOpcje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscGongu)).BeginInit();
@@ -167,15 +168,16 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Info;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wersja});
+            this.wersja,
+            this.podpis});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
-            // wersja
+            // podpis
             // 
-            this.wersja.BackColor = System.Drawing.SystemColors.Info;
-            this.wersja.Name = "wersja";
-            resources.ApplyResources(this.wersja, "wersja");
+            this.podpis.BackColor = System.Drawing.SystemColors.Info;
+            this.podpis.Name = "podpis";
+            resources.ApplyResources(this.podpis, "podpis");
             // 
             // tabPageOpcje
             // 
@@ -1383,6 +1385,12 @@
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             // 
+            // wersja
+            // 
+            this.wersja.BackColor = System.Drawing.SystemColors.Info;
+            this.wersja.Name = "wersja";
+            resources.ApplyResources(this.wersja, "wersja");
+            // 
             // komunikaty
             // 
             resources.ApplyResources(this, "$this");
@@ -1439,7 +1447,7 @@
 
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel wersja;
+        private System.Windows.Forms.ToolStripStatusLabel podpis;
         public System.Windows.Forms.TabPage tabPageOpcje;
         public System.Windows.Forms.Button dzwiekTestButton;
         public System.Windows.Forms.ComboBox wygladStrony;
@@ -1536,6 +1544,7 @@
         public System.Windows.Forms.TrackBar trackBarGlosnoscGongu;
         public System.Windows.Forms.Label GlosnoscGonguTXT;
         private System.Windows.Forms.Button buttonWypelnijZAPI;
+        private System.Windows.Forms.ToolStripStatusLabel wersja;
     }
 }
 

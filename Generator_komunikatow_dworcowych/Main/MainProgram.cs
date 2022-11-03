@@ -2,6 +2,7 @@
 using System;
 //using System.ComponentModel;
 using System.IO;
+using System.Runtime.Versioning;
 //using System.Windows.Controls;
 using System.Windows.Forms;
 /*using System.Windows.Media.Animation;
@@ -12,6 +13,7 @@ using System.Windows.Threading;*/
 
 namespace Generator_komunikatów_dworcowych
 {
+    [SupportedOSPlatform("windows")]
     public partial class komunikaty : Form
     {
         string początek;
