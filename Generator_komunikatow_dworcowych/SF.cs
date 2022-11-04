@@ -6,7 +6,7 @@ namespace insideSF
     {
         public static string KategoriaAPrzewoźnik(string kategoria, string przewoźnik)
         {
-            if (przewoźnik == "PKP INTERCITY")
+            if (przewoźnik == "PKP Intercity")
             {
                 if (kategoria == "TLK" || kategoria == "IC" || kategoria == "EIC")
                 {
@@ -17,7 +17,7 @@ namespace insideSF
                     return "1";
                 }
             }
-            else if (przewoźnik == "KD" || przewoźnik == "KM" || przewoźnik == "KMŁ" || przewoźnik == "KŚ" || przewoźnik == "KW" || przewoźnik == "ŁKA" )
+            else if (przewoźnik == "Koleje Dolnośląskie" || przewoźnik == "Koleje Mazowieckie" || przewoźnik == "Koleje Małopolskie" || przewoźnik == "Koleje Śląskie" || przewoźnik == "Koleje Wielkopolskie" || przewoźnik == "Łódzkie Koleje Aglomeracyjne" )
             {
                 if (kategoria == "Osobowy" || kategoria == "Os. Przyspieszony")
                 {
@@ -28,11 +28,11 @@ namespace insideSF
                     return "1";
                 }
             }
-            else if (przewoźnik == "SKM" && kategoria == "Osobowy")
+            else if (przewoźnik == "Szybka Kolej Miejska" && kategoria == "Osobowy")
             {
                 return "0";
             }
-            else if (przewoźnik == "POLREGIO")
+            else if (przewoźnik == "Polregio")
             {
                 if (kategoria == "Osobowy" || kategoria == "interREGIO" || kategoria == "superREGIO" || kategoria == "Os. Przyspieszony")
                 {

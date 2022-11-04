@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(komunikaty));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
             this.podpis = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPageOpcje = new System.Windows.Forms.TabPage();
             this.trackBarGlosnoscGongu = new System.Windows.Forms.TrackBar();
@@ -127,7 +128,6 @@
             this.stacjaPoczątkowa = new System.Windows.Forms.Label();
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.wersja = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.tabPageOpcje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscGongu)).BeginInit();
@@ -172,6 +172,12 @@
             this.podpis});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
+            // 
+            // wersja
+            // 
+            this.wersja.BackColor = System.Drawing.SystemColors.Info;
+            this.wersja.Name = "wersja";
+            resources.ApplyResources(this.wersja, "wersja");
             // 
             // podpis
             // 
@@ -1190,7 +1196,7 @@
             // 
             resources.ApplyResources(this.opóźnienieBox, "opóźnienieBox");
             this.opóźnienieBox.Maximum = new decimal(new int[] {
-            180,
+            999,
             0,
             0,
             0});
@@ -1384,12 +1390,6 @@
             resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            // 
-            // wersja
-            // 
-            this.wersja.BackColor = System.Drawing.SystemColors.Info;
-            this.wersja.Name = "wersja";
-            resources.ApplyResources(this.wersja, "wersja");
             // 
             // komunikaty
             // 

@@ -105,6 +105,12 @@ namespace PodmianaNazw
             godzinaOdj = SyntezatorNumer.GodzinaZmiana(godzinaOdj);
             godzinaPrz = SyntezatorNumer.GodzinaZmiana(godzinaPrz);
 
+            if(czyOpóźniony)
+            {
+                czasOpóźnienia = SyntezatorNumer.CzasOpoznienia(czasOpóźnienia);
+            }
+            
+
             return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia);
         }
 
@@ -163,35 +169,35 @@ namespace PodmianaNazw
                 }
                 else if (kategoriaWprowadzona == "Osobowy")
                 {
-                    if (Przewoźnik == "POLREGIO")
+                    if (Przewoźnik == "Polregio")
                     {
                         return "Pociąg REGIO ";
                     }
-                    else if (Przewoźnik == "SKM")
+                    else if (Przewoźnik == "Szybka Kolej Miejska")
                     {
                         return "Pociąg SKM ";
                     }
-                    else if (Przewoźnik == "KD")
+                    else if (Przewoźnik == "Koleje Dolnośląskie")
                     {
                         return "Pociąg Kolei Dolnośląskich ";
                     }
-                    else if (Przewoźnik == "KM")
+                    else if (Przewoźnik == "Koleje Mazowieckie")
                     {
                         return "Pociąg Kolei Mazowieckich ";
                     }
-                    else if (Przewoźnik == "KMŁ")
+                    else if (Przewoźnik == "Koleje Małopolskie")
                     {
                         return "Pociąg Kolei Małopolskich ";
                     }
-                    else if (Przewoźnik == "KŚ")
+                    else if (Przewoźnik == "Koleje Śląskie")
                     {
                         return "Pociąg Kolei Śląskich ";
                     }
-                    else if (Przewoźnik == "KW")
+                    else if (Przewoźnik == "Koleje Wielkopolskie")
                     {
                         return "Pociąg Kolei Wielkopolskich ";
                     }
-                    else if (Przewoźnik == "ŁKA")
+                    else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
                     {
                         return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
@@ -202,31 +208,31 @@ namespace PodmianaNazw
                 }
                 else if (kategoriaWprowadzona == "Os. Przyspieszony")
                 {
-                    if (Przewoźnik == "KD")
+                    if (Przewoźnik == "Koleje Dolnośląskie")
                     {
                         return "Przyspieszony pociąg Kolei Dolnośląskich ";
                     }
-                    else if (Przewoźnik == "KM")
+                    else if (Przewoźnik == "Koleje Mazowieckie")
                     {
                         return "Przyspieszony pociąg Kolei Mazowieckich ";
                     }
-                    else if (Przewoźnik == "KMŁ")
+                    else if (Przewoźnik == "Koleje Małopolskie")
                     {
                         return "Przyspieszony pociąg Kolei Małopolskich ";
                     }
-                    else if (Przewoźnik == "KŚ")
+                    else if (Przewoźnik == "Koleje Śląskie")
                     {
                         return "Przyspieszony pociąg Kolei Śląskich ";
                     }
-                    else if (Przewoźnik == "KW")
+                    else if (Przewoźnik == "Koleje Wielkopolskie")
                     {
                         return "Przyspieszony pociąg Kolei Wielkopolskich ";
                     }
-                    else if (Przewoźnik == "ŁKA")
+                    else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
                     {
                         return "Przyspieszony pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
-                    else if (Przewoźnik == "POLREGIO")
+                    else if (Przewoźnik == "Polregio")
                     {
                         return "Przyspieszony pociąg REGIO ";
                     }
@@ -250,70 +256,139 @@ namespace PodmianaNazw
             }
             else
             {
-                if (PSO == "Przyjedzie" && stacjaWRJ == "Początkowa")
+                if (PSO == "Przyjedzie")
                 {
-                    if (kategoriaWprowadzona == "TLK")
+                    if (stacjaWRJ == "Początkowa")
                     {
-                        return "Pociąg TLK ";
-                    }
-                    else if (kategoriaWprowadzona == "IC")
-                    {
-                        return "Pociąg Intercity ";
-                    }
-                    else if (kategoriaWprowadzona == "EIC")
-                    {
-                        return "Pociąg Express Intercity ";
-                    }
-                    else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
-                    {
-                        if (Przewoźnik == "POLREGIO")
+                        if (kategoriaWprowadzona == "TLK")
                         {
-                            return "Pociąg regio ";
+                            return "Pociąg TLK ";
                         }
-                        else if (Przewoźnik == "SKM")
+                        else if (kategoriaWprowadzona == "IC")
                         {
-                            return "Pociąg SKM ";
+                            return "Pociąg Intercity ";
                         }
-                        else if (Przewoźnik == "KD")
+                        else if (kategoriaWprowadzona == "EIC")
                         {
-                            return "Pociąg Kolei Dolnośląskich ";
+                            return "Pociąg Express Intercity ";
                         }
-                        else if (Przewoźnik == "KM")
+                        else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                         {
-                            return "Pociąg Kolei Mazowieckich ";
+                            if (Przewoźnik == "Polregio")
+                            {
+                                return "Pociąg regio ";
+                            }
+                            else if (Przewoźnik == "Szybka Kolej Miejska")
+                            {
+                                return "Pociąg SKM ";
+                            }
+                            else if (Przewoźnik == "Koleje Dolnośląskie")
+                            {
+                                return "Pociąg Kolei Dolnośląskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Mazowieckie")
+                            {
+                                return "Pociąg Kolei Mazowieckich ";
+                            }
+                            else if (Przewoźnik == "Koleje Małopolskie")
+                            {
+                                return "Pociąg Kolei Małopolskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Śląskie")
+                            {
+                                return "Pociąg Kolei Śląskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Wielkopolskie")
+                            {
+                                return "Pociąg Kolei Wielkopolskich ";
+                            }
+                            else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                            {
+                                return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                            }
+                            else
+                            {
+                                return "BŁĄD PODCZAS GENEROWANIA";
+                            }
                         }
-                        else if (Przewoźnik == "KMŁ")
+                        else if (kategoriaWprowadzona == "superREGIO")
                         {
-                            return "Pociąg Kolei Małopolskich ";
+                            return "Pociąg SUPERREGIO ";
                         }
-                        else if (Przewoźnik == "KŚ")
+                        else if (kategoriaWprowadzona == "interREGIO")
                         {
-                            return "Pociąg Kolei Śląskich ";
-                        }
-                        else if (Przewoźnik == "KW")
-                        {
-                            return "Pociąg Kolei Wielkopolskich ";
-                        }
-                        else if (Przewoźnik == "ŁKA")
-                        {
-                            return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                            return "Pociąg INTERREGIO ";
                         }
                         else
                         {
-                            return "BŁĄD PODCZAS GENEROWANIA";
+                            return "NIEOBSŁUGIWANY WYJĄTEK!";
                         }
-                    }
-                    else if (kategoriaWprowadzona == "superREGIO")
-                    {
-                        return "Pociąg SUPERREGIO ";
-                    }
-                    else if (kategoriaWprowadzona == "interREGIO")
-                    {
-                        return "Pociąg INTERREGIO ";
                     }
                     else
                     {
-                        return "NIEOBSŁUGIWANY WYJĄTEK!";
+                        if (kategoriaWprowadzona == "TLK")
+                        {
+                            return "UWAGA! Pociąg TLK ";
+                        }
+                        else if (kategoriaWprowadzona == "IC")
+                        {
+                            return "UWAGA! Pociąg Intercity ";
+                        }
+                        else if (kategoriaWprowadzona == "EIC")
+                        {
+                            return "UWAGA! Pociąg Express Intercity ";
+                        }
+                        else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
+                        {
+                            if (Przewoźnik == "Polregio")
+                            {
+                                return "UWAGA! Pociąg regio ";
+                            }
+                            else if (Przewoźnik == "Szybka Kolej Miejska")
+                            {
+                                return "UWAGA! Pociąg SKM ";
+                            }
+                            else if (Przewoźnik == "Koleje Dolnośląskie")
+                            {
+                                return "UWAGA! Pociąg Kolei Dolnośląskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Mazowieckie")
+                            {
+                                return "UWAGA! Pociąg Kolei Mazowieckich ";
+                            }
+                            else if (Przewoźnik == "Koleje Małopolskie")
+                            {
+                                return "UWAGA! Pociąg Kolei Małopolskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Śląskie")
+                            {
+                                return "UWAGA! Pociąg Kolei Śląskich ";
+                            }
+                            else if (Przewoźnik == "Koleje Wielkopolskie")
+                            {
+                                return "UWAGA! Pociąg Kolei Wielkopolskich ";
+                            }
+                            else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                            {
+                                return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                            }
+                            else
+                            {
+                                return "BŁĄD PODCZAS GENEROWANIA";
+                            }
+                        }
+                        else if (kategoriaWprowadzona == "superREGIO")
+                        {
+                            return "Pociąg SUPERREGIO ";
+                        }
+                        else if (kategoriaWprowadzona == "interREGIO")
+                        {
+                            return "Pociąg INTERREGIO ";
+                        }
+                        else
+                        {
+                            return "NIEOBSŁUGIWANY WYJĄTEK!";
+                        }
                     }
                 }
                 else
@@ -332,35 +407,35 @@ namespace PodmianaNazw
                     }
                     else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                     {
-                        if (Przewoźnik == "POLREGIO")
+                        if (Przewoźnik == "Polregio")
                         {
                             return "Opóźniony pociąg ";
                         }
-                        else if (Przewoźnik == "SKM")
+                        else if (Przewoźnik == "Szybka Kolej Miejska")
                         {
                             return "Opóźniony pociąg SKM ";
                         }
-                        else if (Przewoźnik == "KD")
+                        else if (Przewoźnik == "Koleje Dolnośląskie")
                         {
                             return "Opóźniony pociąg Kolei Dolnośląskich ";
                         }
-                        else if (Przewoźnik == "KM")
+                        else if (Przewoźnik == "Koleje Mazowieckie")
                         {
                             return "Opóźniony pociąg Kolei Mazowieckich ";
                         }
-                        else if (Przewoźnik == "KMŁ")
+                        else if (Przewoźnik == "Koleje Małopolskie")
                         {
                             return "Opóźniony pociąg Kolei Małopolskich ";
                         }
-                        else if (Przewoźnik == "KŚ")
+                        else if (Przewoźnik == "Koleje Śląskie")
                         {
                             return "Opóźniony pociąg Kolei Śląskich ";
                         }
-                        else if (Przewoźnik == "KW")
+                        else if (Przewoźnik == "Koleje Wielkopolskie")
                         {
                             return "Opóźniony pociąg Kolei Wielkopolskich ";
                         }
-                        else if (Przewoźnik == "ŁKA")
+                        else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
                         {
                             return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
                         }
@@ -387,7 +462,7 @@ namespace PodmianaNazw
 
         public static string TorIPeronSet(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
         {
-            if (czyOpóźniony && PSO == "Przyjedzie" && stacjaWRJ == "Początkowa")
+            if (czyOpóźniony && PSO == "Przyjedzie")
             {
                 return "";
             }
@@ -464,7 +539,7 @@ namespace PodmianaNazw
                 {
                     if (PSO == "Przyjedzie")
                     {
-                        return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz;
+                        return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + " przyjedzie z opóźnieniem około " + czasOpóźnienia + " minut. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
                     }
                     else
                     {
@@ -1336,6 +1411,189 @@ namespace PodmianaNazw
                 setek = "";
             }
             return " " + setek + " " + dziesiątki + " " + jedności;
+        }
+
+        public static string CzasOpoznienia(string czas)
+        {
+            string wynik = "";
+
+            //cyfra setek
+            if(czas.Length > 2)
+            {
+                if (czas[2] == '0')
+                {
+                    wynik += "";
+                }
+                else if(czas[2] == '1')
+                {
+                    wynik += "stu";
+                }
+                else if (czas[2] == '2')
+                {
+                    wynik += "dwustu";
+                }
+                else if (czas[2] == '3')
+                {
+                    wynik += "trzystu";
+                }
+                else if (czas[2] == '4')
+                {
+                    wynik += "czterystu";
+                }
+                else if (czas[2] == '5')
+                {
+                    wynik += "pięciuset";
+                }
+                else if (czas[2] == '6')
+                {
+                    wynik += "sześciuset";
+                }
+                else if (czas[2] == '7')
+                {
+                    wynik += "siedmiuset";
+                }
+                else if (czas[2] == '8')
+                {
+                    wynik += "ośmióset";
+                }
+                else
+                {
+                    wynik += "dziewiąciuset";
+                }
+            }
+
+            //cyfra dziesiatek
+            if (czas.Length > 1)
+            {
+                if (czas[1] == '0')
+                {
+                    wynik += "";
+                }
+                else if (czas[1] == '1')
+                {
+                    if (czas[0] == '0')
+                    {
+                        wynik += "dziesięciu";
+                    }
+                    else if (czas[0] == '1')
+                    {
+                        wynik += "jedenastu";
+                    }
+                    else if (czas[0] == '2')
+                    {
+                        wynik += "dwunastu";
+                    }
+                    else if (czas[0] == '3')
+                    {
+                        wynik += "trzynastu";
+                    }
+                    else if (czas[0] == '4')
+                    {
+                        wynik += "czternatu";
+                    }
+                    else if (czas[0] == '5')
+                    {
+                        wynik += "piętnastu";
+                    }
+                    else if (czas[0] == '6')
+                    {
+                        wynik += "szesnastu";
+                    }
+                    else if (czas[0] == '7')
+                    {
+                        wynik += "siedemnastu";
+                    }
+                    else if (czas[0] == '8')
+                    {
+                        wynik += "osiemnastu";
+                    }
+                    else
+                    {
+                        wynik += "dziewiętnastu";
+                    }
+
+                    return wynik;
+                }
+                else if (czas[1] == '2')
+                {
+                    wynik += "dwudziestu";
+                }
+                else if (czas[1] == '3')
+                {
+                    wynik += "trzydziestu";
+                }
+                else if (czas[1] == '4')
+                {
+                    wynik += "czterdziestu";
+                }
+                else if (czas[1] == '5')
+                {
+                    wynik += "pięćdziesięciu";
+                }
+                else if (czas[1] == '6')
+                {
+                    wynik += "sześćdziesięciu";
+                }
+                else if (czas[1] == '7')
+                {
+                    wynik += "siedemdziesięciu";
+                }
+                else if (czas[1] == '8')
+                {
+                    wynik += "osiemdziesięciu";
+                }
+                else
+                {
+                    wynik += "dziewiędziesięciu";
+                }
+            }
+
+            //cyfra jedności
+            if (true)
+            {
+                if (czas[0] == '0')
+                {
+                    wynik += "";
+                }
+                else if (czas[0] == '1')
+                {
+                    wynik += "jeden";
+                }
+                else if (czas[0] == '2')
+                {
+                    wynik += "dwóch";
+                }
+                else if (czas[0] == '3')
+                {
+                    wynik += "trzech";
+                }
+                else if (czas[0] == '4')
+                {
+                    wynik += "czterech";
+                }
+                else if (czas[0] == '5')
+                {
+                    wynik += "pięciu";
+                }
+                else if (czas[0] == '6')
+                {
+                    wynik += "sześciu";
+                }
+                else if (czas[0] == '7')
+                {
+                    wynik += "siedmiu";
+                }
+                else if (czas[0] == '8')
+                {
+                    wynik += "ośmiu";
+                }
+                else
+                {
+                    wynik += "dziewięciu";
+                }
+            }
+
+            return wynik;
         }
     }
 }
