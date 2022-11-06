@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms.VisualStyles;
+﻿using GeneratorKomunikatów;
 
 namespace PodmianaNazw
 {
@@ -22,6 +21,17 @@ namespace PodmianaNazw
             if (stacjaWRJ == "Początkowa")
             {
                 if (czyOpóźniony == false)
+                {
+                    if (przez.Length > 0)
+                    {
+                        return "do stacji " + koniec + ", przez stacje: " + przez;
+                    }
+                    else
+                    {
+                        return "do stacji " + koniec;
+                    }
+                }
+                else if (czyOpóźniony && PSO != "Przyjedzie")
                 {
                     if (przez.Length > 0)
                     {
@@ -72,17 +82,17 @@ namespace PodmianaNazw
             }
         }
 
-        public static string torIPeron(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
+        public static string torIPeron(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
         {
-            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ);
+            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu);
         }
 
-        public static string torIPeronMowa(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
+        public static string torIPeronMowa(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
         {
             Tor = SyntezatorNumer.PodmianaNumerToru(Tor, PSO, stacjaWRJ);
             Peron = SyntezatorNumer.PodmianaNumerPeronu(Peron);
 
-            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ);
+            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu);
         }
 
         public static string godzina(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia)
@@ -105,11 +115,11 @@ namespace PodmianaNazw
             godzinaOdj = SyntezatorNumer.GodzinaZmiana(godzinaOdj);
             godzinaPrz = SyntezatorNumer.GodzinaZmiana(godzinaPrz);
 
-            if(czyOpóźniony)
+            if (czyOpóźniony)
             {
                 czasOpóźnienia = SyntezatorNumer.CzasOpoznienia(czasOpóźnienia);
             }
-            
+
 
             return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia);
         }
@@ -151,9 +161,9 @@ namespace PodmianaNazw
 
     class StringSet
     {
-        public static string KategoriaSet(string kategoriaWprowadzona, bool opóźnienie, string Przewoźnik, string PSO, string stacjaWRJ)
+        public static string KategoriaSet(string kategoriaWprowadzona, bool opoznienie, string przewoznik, string PSO, string stacjaWRJ)
         {
-            if (!opóźnienie)
+            if (!opoznienie)
             {
                 if (kategoriaWprowadzona == "TLK")
                 {
@@ -169,35 +179,35 @@ namespace PodmianaNazw
                 }
                 else if (kategoriaWprowadzona == "Osobowy")
                 {
-                    if (Przewoźnik == "Polregio")
+                    if (przewoznik == "Polregio")
                     {
                         return "Pociąg REGIO ";
                     }
-                    else if (Przewoźnik == "Szybka Kolej Miejska")
+                    else if (przewoznik == "Szybka Kolej Miejska")
                     {
                         return "Pociąg SKM ";
                     }
-                    else if (Przewoźnik == "Koleje Dolnośląskie")
+                    else if (przewoznik == "Koleje Dolnośląskie")
                     {
                         return "Pociąg Kolei Dolnośląskich ";
                     }
-                    else if (Przewoźnik == "Koleje Mazowieckie")
+                    else if (przewoznik == "Koleje Mazowieckie")
                     {
                         return "Pociąg Kolei Mazowieckich ";
                     }
-                    else if (Przewoźnik == "Koleje Małopolskie")
+                    else if (przewoznik == "Koleje Małopolskie")
                     {
                         return "Pociąg Kolei Małopolskich ";
                     }
-                    else if (Przewoźnik == "Koleje Śląskie")
+                    else if (przewoznik == "Koleje Śląskie")
                     {
                         return "Pociąg Kolei Śląskich ";
                     }
-                    else if (Przewoźnik == "Koleje Wielkopolskie")
+                    else if (przewoznik == "Koleje Wielkopolskie")
                     {
                         return "Pociąg Kolei Wielkopolskich ";
                     }
-                    else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
                     {
                         return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
@@ -208,33 +218,48 @@ namespace PodmianaNazw
                 }
                 else if (kategoriaWprowadzona == "Os. Przyspieszony")
                 {
-                    if (Przewoźnik == "Koleje Dolnośląskie")
+                    if (przewoznik == "Koleje Dolnośląskie")
                     {
                         return "Przyspieszony pociąg Kolei Dolnośląskich ";
                     }
-                    else if (Przewoźnik == "Koleje Mazowieckie")
+                    else if (przewoznik == "Koleje Mazowieckie")
                     {
                         return "Przyspieszony pociąg Kolei Mazowieckich ";
                     }
-                    else if (Przewoźnik == "Koleje Małopolskie")
+                    else if (przewoznik == "Koleje Małopolskie")
                     {
                         return "Przyspieszony pociąg Kolei Małopolskich ";
                     }
-                    else if (Przewoźnik == "Koleje Śląskie")
+                    else if (przewoznik == "Koleje Śląskie")
                     {
                         return "Przyspieszony pociąg Kolei Śląskich ";
                     }
-                    else if (Przewoźnik == "Koleje Wielkopolskie")
+                    else if (przewoznik == "Koleje Wielkopolskie")
                     {
                         return "Przyspieszony pociąg Kolei Wielkopolskich ";
                     }
-                    else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
                     {
                         return "Przyspieszony pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
-                    else if (Przewoźnik == "Polregio")
+                    else if (przewoznik == "Polregio")
                     {
                         return "Przyspieszony pociąg REGIO ";
+                    }
+                    else
+                    {
+                        return "BŁĄD PODCZAS GENEROWANIA";
+                    }
+                }
+                else if (kategoriaWprowadzona == "Sprinter")
+                {
+                    if (przewoznik == "Koleje Dolnośląskie")
+                    {
+                        return "Pociąg KD Sprinter ";
+                    }
+                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                    {
+                        return "Pociąg ŁKA Sprinter ";
                     }
                     else
                     {
@@ -274,37 +299,52 @@ namespace PodmianaNazw
                         }
                         else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                         {
-                            if (Przewoźnik == "Polregio")
+                            if (przewoznik == "Polregio")
                             {
                                 return "Pociąg regio ";
                             }
-                            else if (Przewoźnik == "Szybka Kolej Miejska")
+                            else if (przewoznik == "Szybka Kolej Miejska")
                             {
                                 return "Pociąg SKM ";
                             }
-                            else if (Przewoźnik == "Koleje Dolnośląskie")
+                            else if (przewoznik == "Koleje Dolnośląskie")
                             {
                                 return "Pociąg Kolei Dolnośląskich ";
                             }
-                            else if (Przewoźnik == "Koleje Mazowieckie")
+                            else if (przewoznik == "Koleje Mazowieckie")
                             {
                                 return "Pociąg Kolei Mazowieckich ";
                             }
-                            else if (Przewoźnik == "Koleje Małopolskie")
+                            else if (przewoznik == "Koleje Małopolskie")
                             {
                                 return "Pociąg Kolei Małopolskich ";
                             }
-                            else if (Przewoźnik == "Koleje Śląskie")
+                            else if (przewoznik == "Koleje Śląskie")
                             {
                                 return "Pociąg Kolei Śląskich ";
                             }
-                            else if (Przewoźnik == "Koleje Wielkopolskie")
+                            else if (przewoznik == "Koleje Wielkopolskie")
                             {
                                 return "Pociąg Kolei Wielkopolskich ";
                             }
-                            else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
                             {
                                 return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                            }
+                            else
+                            {
+                                return "BŁĄD PODCZAS GENEROWANIA";
+                            }
+                        }
+                        else if (kategoriaWprowadzona == "Sprinter")
+                        {
+                            if (przewoznik == "Koleje Dolnośląskie")
+                            {
+                                return "Pociąg KD Sprinter ";
+                            }
+                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            {
+                                return "Pociąg ŁKA Sprinter ";
                             }
                             else
                             {
@@ -340,37 +380,52 @@ namespace PodmianaNazw
                         }
                         else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                         {
-                            if (Przewoźnik == "Polregio")
+                            if (przewoznik == "Polregio")
                             {
                                 return "UWAGA! Pociąg regio ";
                             }
-                            else if (Przewoźnik == "Szybka Kolej Miejska")
+                            else if (przewoznik == "Szybka Kolej Miejska")
                             {
                                 return "UWAGA! Pociąg SKM ";
                             }
-                            else if (Przewoźnik == "Koleje Dolnośląskie")
+                            else if (przewoznik == "Koleje Dolnośląskie")
                             {
                                 return "UWAGA! Pociąg Kolei Dolnośląskich ";
                             }
-                            else if (Przewoźnik == "Koleje Mazowieckie")
+                            else if (przewoznik == "Koleje Mazowieckie")
                             {
                                 return "UWAGA! Pociąg Kolei Mazowieckich ";
                             }
-                            else if (Przewoźnik == "Koleje Małopolskie")
+                            else if (przewoznik == "Koleje Małopolskie")
                             {
                                 return "UWAGA! Pociąg Kolei Małopolskich ";
                             }
-                            else if (Przewoźnik == "Koleje Śląskie")
+                            else if (przewoznik == "Koleje Śląskie")
                             {
                                 return "UWAGA! Pociąg Kolei Śląskich ";
                             }
-                            else if (Przewoźnik == "Koleje Wielkopolskie")
+                            else if (przewoznik == "Koleje Wielkopolskie")
                             {
                                 return "UWAGA! Pociąg Kolei Wielkopolskich ";
                             }
-                            else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
                             {
                                 return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                            }
+                            else
+                            {
+                                return "BŁĄD PODCZAS GENEROWANIA";
+                            }
+                        }
+                        else if (kategoriaWprowadzona == "Sprinter")
+                        {
+                            if (przewoznik == "Koleje Dolnośląskie")
+                            {
+                                return "UWAGA! Pociąg KD Sprinter ";
+                            }
+                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            {
+                                return "UWAGA! Pociąg ŁKA Sprinter ";
                             }
                             else
                             {
@@ -407,37 +462,52 @@ namespace PodmianaNazw
                     }
                     else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                     {
-                        if (Przewoźnik == "Polregio")
+                        if (przewoznik == "Polregio")
                         {
                             return "Opóźniony pociąg ";
                         }
-                        else if (Przewoźnik == "Szybka Kolej Miejska")
+                        else if (przewoznik == "Szybka Kolej Miejska")
                         {
                             return "Opóźniony pociąg SKM ";
                         }
-                        else if (Przewoźnik == "Koleje Dolnośląskie")
+                        else if (przewoznik == "Koleje Dolnośląskie")
                         {
                             return "Opóźniony pociąg Kolei Dolnośląskich ";
                         }
-                        else if (Przewoźnik == "Koleje Mazowieckie")
+                        else if (przewoznik == "Koleje Mazowieckie")
                         {
                             return "Opóźniony pociąg Kolei Mazowieckich ";
                         }
-                        else if (Przewoźnik == "Koleje Małopolskie")
+                        else if (przewoznik == "Koleje Małopolskie")
                         {
                             return "Opóźniony pociąg Kolei Małopolskich ";
                         }
-                        else if (Przewoźnik == "Koleje Śląskie")
+                        else if (przewoznik == "Koleje Śląskie")
                         {
                             return "Opóźniony pociąg Kolei Śląskich ";
                         }
-                        else if (Przewoźnik == "Koleje Wielkopolskie")
+                        else if (przewoznik == "Koleje Wielkopolskie")
                         {
                             return "Opóźniony pociąg Kolei Wielkopolskich ";
                         }
-                        else if (Przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+                        else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
                         {
                             return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                        }
+                        else
+                        {
+                            return "BŁĄD PODCZAS GENEROWANIA";
+                        }
+                    }
+                    else if (kategoriaWprowadzona == "Sprinter")
+                    {
+                        if (przewoznik == "Koleje Dolnośląskie")
+                        {
+                            return "Opóźniony pociąg KD Sprinter ";
+                        }
+                        else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                        {
+                            return "Opóźniony pociąg ŁKA Sprinter ";
                         }
                         else
                         {
@@ -460,7 +530,7 @@ namespace PodmianaNazw
             }
         }
 
-        public static string TorIPeronSet(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ)
+        public static string TorIPeronSet(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
         {
             if (czyOpóźniony && PSO == "Przyjedzie")
             {
@@ -472,16 +542,28 @@ namespace PodmianaNazw
             }
             else
             {
-                if (PSO == "Przyjedzie")
+                if (PSO == "Przyjedzie" && stacjaWRJ != "Końcowa")
                 {
+                    if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
+                    {
+                        return ", wjedzie na tor " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                    }
                     return ", wjedzie na tor " + Tor + " przy peronie " + Peron;
                 }
                 else if (PSO == "Stoi")
                 {
+                    if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
+                    {
+                        return ", stoi na torze " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                    }
                     return ", stoi na torze " + Tor + " przy peronie " + Peron;
                 }
                 else
                 {
+                    if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
+                    {
+                        return ", odjedzie z toru " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                    }
                     return ", odjedzie z toru " + Tor + " przy peronie " + Peron;
                 }
             }
@@ -493,14 +575,18 @@ namespace PodmianaNazw
             {
                 if (stacjaWRJ == "Końcowa")
                 {
-                    if (PSO == "Przyjedzie") 
-                    { 
-                        return ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu."; 
+                    if (PSO == "Przyjedzie")
+                    {
+                        return ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu.";
                     }
                     else
                     {
                         return ". Pociąg skończył bieg.";
                     }
+                }
+                else if (PSO == "Przyjedzie" && stacjaWRJ == "Pośrednia")
+                {
+                    return ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu. Życzymy państwu przyjemnej podróży";
                 }
                 else
                 {
@@ -1418,13 +1504,13 @@ namespace PodmianaNazw
             string wynik = "";
 
             //cyfra setek
-            if(czas.Length > 2)
+            if (czas.Length > 2)
             {
                 if (czas[2] == '0')
                 {
                     wynik += "";
                 }
-                else if(czas[2] == '1')
+                else if (czas[2] == '1')
                 {
                     wynik += "stu";
                 }

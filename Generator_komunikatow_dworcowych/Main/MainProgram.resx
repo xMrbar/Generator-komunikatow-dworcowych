@@ -3119,12 +3119,15 @@
     <value>Os. Przyspieszony</value>
   </data>
   <data name="comboKategoriaHandlowa.Items4" xml:space="preserve">
-    <value>TLK</value>
+    <value>Sprinter</value>
   </data>
   <data name="comboKategoriaHandlowa.Items5" xml:space="preserve">
-    <value>IC</value>
+    <value>TLK</value>
   </data>
   <data name="comboKategoriaHandlowa.Items6" xml:space="preserve">
+    <value>IC</value>
+  </data>
+  <data name="comboKategoriaHandlowa.Items7" xml:space="preserve">
     <value>EIC</value>
   </data>
   <data name="comboKategoriaHandlowa.Location" type="System.Drawing.Point, System.Drawing">

@@ -1346,7 +1346,8 @@
             resources.GetString("comboKategoriaHandlowa.Items3"),
             resources.GetString("comboKategoriaHandlowa.Items4"),
             resources.GetString("comboKategoriaHandlowa.Items5"),
-            resources.GetString("comboKategoriaHandlowa.Items6")});
+            resources.GetString("comboKategoriaHandlowa.Items6"),
+            resources.GetString("comboKategoriaHandlowa.Items7")});
             this.comboKategoriaHandlowa.Name = "comboKategoriaHandlowa";
             // 
             // comboPrzewoźnik

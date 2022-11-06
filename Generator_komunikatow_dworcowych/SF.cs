@@ -17,9 +17,20 @@ namespace insideSF
                     return "1";
                 }
             }
-            else if (przewoźnik == "Koleje Dolnośląskie" || przewoźnik == "Koleje Mazowieckie" || przewoźnik == "Koleje Małopolskie" || przewoźnik == "Koleje Śląskie" || przewoźnik == "Koleje Wielkopolskie" || przewoźnik == "Łódzkie Koleje Aglomeracyjne" )
+            else if (przewoźnik == "Koleje Mazowieckie" || przewoźnik == "Koleje Małopolskie" || przewoźnik == "Koleje Śląskie" || przewoźnik == "Koleje Wielkopolskie")
             {
                 if (kategoria == "Osobowy" || kategoria == "Os. Przyspieszony")
+                {
+                    return "0";
+                }
+                else
+                {
+                    return "1";
+                }
+            }
+            else if(przewoźnik == "Koleje Dolnośląskie" || przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+            {
+                if (kategoria == "Osobowy" || kategoria == "Os. Przyspieszony" || kategoria == "Sprinter")
                 {
                     return "0";
                 }
