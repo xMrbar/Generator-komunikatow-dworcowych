@@ -51,13 +51,20 @@ namespace PodmianaNazw
             {
                 if (PSO == "Przyjedzie")
                 {
-                    if (przez.Length > 0)
+                    if (!czyOpóźniony)
                     {
-                        return "ze stacji " + początek + " do stacji " + koniec + ", przez stacje: " + przez;
+                        if (przez.Length > 0)
+                        {
+                            return "ze stacji " + początek + " do stacji " + koniec + ", przez stacje: " + przez;
+                        }
+                        else
+                        {
+                            return "ze stacji " + początek + " do stacji " + koniec;
+                        }
                     }
                     else
                     {
-                        return "ze stacji " + początek + " do stacji " + koniec;
+                        return "ze stacji " + początek + " do stacji " + koniec + ",";
                     }
                 }
                 else
@@ -207,7 +214,7 @@ namespace PodmianaNazw
                     {
                         return "Pociąg Kolei Wielkopolskich ";
                     }
-                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                    else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                     {
                         return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
@@ -238,7 +245,7 @@ namespace PodmianaNazw
                     {
                         return "Przyspieszony pociąg Kolei Wielkopolskich ";
                     }
-                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                    else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                     {
                         return "Przyspieszony pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
@@ -257,7 +264,7 @@ namespace PodmianaNazw
                     {
                         return "Pociąg KD Sprinter ";
                     }
-                    else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                    else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                     {
                         return "Pociąg ŁKA Sprinter ";
                     }
@@ -327,7 +334,7 @@ namespace PodmianaNazw
                             {
                                 return "Pociąg Kolei Wielkopolskich ";
                             }
-                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                             {
                                 return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                             }
@@ -342,7 +349,7 @@ namespace PodmianaNazw
                             {
                                 return "Pociąg KD Sprinter ";
                             }
-                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                             {
                                 return "Pociąg ŁKA Sprinter ";
                             }
@@ -408,7 +415,7 @@ namespace PodmianaNazw
                             {
                                 return "UWAGA! Pociąg Kolei Wielkopolskich ";
                             }
-                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                             {
                                 return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                             }
@@ -423,7 +430,7 @@ namespace PodmianaNazw
                             {
                                 return "UWAGA! Pociąg KD Sprinter ";
                             }
-                            else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                             {
                                 return "UWAGA! Pociąg ŁKA Sprinter ";
                             }
@@ -490,7 +497,7 @@ namespace PodmianaNazw
                         {
                             return "Opóźniony pociąg Kolei Wielkopolskich ";
                         }
-                        else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                        else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                         {
                             return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
                         }
@@ -505,7 +512,7 @@ namespace PodmianaNazw
                         {
                             return "Opóźniony pociąg KD Sprinter ";
                         }
-                        else if (przewoznik == "Łódzkie Koleje Aglomeracyjne")
+                        else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                         {
                             return "Opóźniony pociąg ŁKA Sprinter ";
                         }
@@ -542,9 +549,9 @@ namespace PodmianaNazw
             }
             else
             {
-                if (PSO == "Przyjedzie" && stacjaWRJ != "Końcowa")
+                if (PSO == "Przyjedzie")
                 {
-                    if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
+                    if ((kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO") && stacjaWRJ != "Końcowa")
                     {
                         return ", wjedzie na tor " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
                     }
@@ -586,7 +593,7 @@ namespace PodmianaNazw
                 }
                 else if (PSO == "Przyjedzie" && stacjaWRJ == "Pośrednia")
                 {
-                    return ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu. Życzymy państwu przyjemnej podróży";
+                    return ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
                 }
                 else
                 {

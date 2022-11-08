@@ -28,7 +28,7 @@ namespace insideSF
                     return "1";
                 }
             }
-            else if(przewoźnik == "Koleje Dolnośląskie" || przewoźnik == "Łódzkie Koleje Aglomeracyjne")
+            else if(przewoźnik == "Koleje Dolnośląskie" || przewoźnik == "Łódzka Kolej Aglomeracyjna")
             {
                 if (kategoria == "Osobowy" || kategoria == "Os. Przyspieszony" || kategoria == "Sprinter")
                 {
