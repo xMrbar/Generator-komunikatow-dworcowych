@@ -23,9 +23,16 @@ namespace Generator
 
         }
 
-        public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja)
+        public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja, string PSO)
         {
-            return początek + relacja + godziny + torIPeron + rezerwacja + ". Za opóźnienie pociągu przepraszamy.";
+            if (!PSO.Equals("Odjedzie"))
+            {
+                return początek + relacja + godziny + torIPeron + rezerwacja + ". Za opóźnienie pociągu przepraszamy.";
+            }
+            else
+            {
+                return początek + relacja + godziny + torIPeron + rezerwacja + ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu.";
+            }
         }
     }
 
@@ -35,7 +42,6 @@ namespace Generator
         public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth)
         {
             ButtonEnabled1(current);
-
             try
             {
                 if (!ifLate)
@@ -44,7 +50,7 @@ namespace Generator
                 }
                 else
                 {
-                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja));
+                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, PSO));
                 }
             }
             catch
@@ -53,10 +59,19 @@ namespace Generator
             }
             finally
             {
-                synth.Dispose();
-
-                current.ButtonDisabled();
-                ButtonEnabled(current);
+                try
+                {
+                    synth.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString(), "Błąd 1", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    current.ButtonDisabled();
+                    ButtonEnabled(current);
+                }
             }
         }
 

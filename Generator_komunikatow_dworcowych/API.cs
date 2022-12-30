@@ -158,6 +158,8 @@ namespace GeneratorKomunikatów
             }
             catch (Exception)
             {
+                MessageBox.Show("Nie można sprawdzić czy jest nowsza wersja!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 responseBody = null;
             }
 
@@ -175,14 +177,14 @@ namespace GeneratorKomunikatów
                 {
                     if (!Version.Equals(info.Version))
                     {
-                        MessageBox.Show("Nowa wersja dostępna", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Nowa wersja dostępna", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         Process.Start(@".\GeneratorKomunikatowUpdater.exe");
                         current.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Masz najnowszą wersję", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //MessageBox.Show("Masz najnowszą wersję", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else

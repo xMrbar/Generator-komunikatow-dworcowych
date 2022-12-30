@@ -1,22 +1,23 @@
 ﻿using GeneratorKomunikatów;
+using System;
 
 namespace PodmianaNazw
 {
     class Podmiana
     {
-        public static string Kategoria(string kategoriaWprowadzona, bool opóźnienie, string Przewoźnik, string nazwaSkładu, string PSO, string stacjaWRJ)
+        public static string Kategoria(string kategoriaWprowadzona, bool opóźnienie, string Przewoźnik, string nazwaSkładu, string PSO, string stacjaWRJ, bool czyCzas)
         {
             if (nazwaSkładu.Length == 0)
             {
-                return StringSet.KategoriaSet(kategoriaWprowadzona, opóźnienie, Przewoźnik, PSO, stacjaWRJ);
+                return StringSet.KategoriaSet(kategoriaWprowadzona, opóźnienie, Przewoźnik, PSO, stacjaWRJ, czyCzas);
             }
             else
             {
-                return StringSet.KategoriaSet(kategoriaWprowadzona, opóźnienie, Przewoźnik, PSO, stacjaWRJ) + nazwaSkładu + " ";
+                return StringSet.KategoriaSet(kategoriaWprowadzona, opóźnienie, Przewoźnik, PSO, stacjaWRJ, czyCzas) + nazwaSkładu + " ";
             }
         }
 
-        public static string Relacja(string początek, string koniec, string przez, string stacjaWRJ, string PSO, bool czyOpóźniony)
+        public static string Relacja(string początek, string koniec, string przez, string stacjaWRJ, string PSO, bool czyOpóźniony, bool czyCzas)
         {
             if (stacjaWRJ == "Początkowa")
             {
@@ -64,7 +65,14 @@ namespace PodmianaNazw
                     }
                     else
                     {
-                        return "ze stacji " + początek + " do stacji " + koniec + ",";
+                        if (!czyCzas)
+                        {
+                            return "ze stacji " + początek + " do stacji " + koniec + ",";
+                        }
+                        else
+                        {
+                            return "ze stacji " + początek + " do stacji " + koniec + ", przez stacje: " + przez;
+                        }
                     }
                 }
                 else
@@ -89,30 +97,30 @@ namespace PodmianaNazw
             }
         }
 
-        public static string torIPeron(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
+        public static string torIPeron(string PSO, string peron, string tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu, bool czyCzas)
         {
-            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu);
+            return StringSet.TorIPeronSet(PSO, peron, tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu, czyCzas);
         }
 
-        public static string torIPeronMowa(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
+        public static string torIPeronMowa(string PSO, string peron, string tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu, bool czyCzas)
         {
-            Tor = SyntezatorNumer.PodmianaNumerToru(Tor, PSO, stacjaWRJ);
-            Peron = SyntezatorNumer.PodmianaNumerPeronu(Peron);
+            tor = SyntezatorNumer.PodmianaNumerToru(tor, PSO, stacjaWRJ);
+            peron = SyntezatorNumer.PodmianaNumerPeronu(peron);
 
-            return StringSet.TorIPeronSet(PSO, Peron, Tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu);
+            return StringSet.TorIPeronSet(PSO, peron, tor, czyOpóźniony, stacjaWRJ, kategoriaPociagu, czyCzas);
         }
 
-        public static string godzina(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia)
+        public static string godzina(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia, bool czyCzas)
         {
             godzinaOdj = godzinaOdj.PadLeft(2, '0');
             godzinaPrz = godzinaPrz.PadLeft(2, '0');
             minutaOdj = minutaOdj.PadLeft(2, '0');
             minutaPrz = minutaPrz.PadLeft(2, '0');
 
-            return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia);
+            return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia, czyCzas);
         }
 
-        public static string godzinaMowa(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia)
+        public static string godzinaMowa(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia, bool czyCzas)
         {
             godzinaOdj = godzinaOdj.PadLeft(2, '0');
             godzinaPrz = godzinaPrz.PadLeft(2, '0');
@@ -128,15 +136,15 @@ namespace PodmianaNazw
             }
 
 
-            return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia);
+            return StringSet.GodzinaSet(godzinaOdj, godzinaPrz, minutaOdj, minutaPrz, czyOpóźniony, PSO, stacjaWRJ, czasOpóźnienia, czyCzas);
         }
 
-        public static string Rezerwacja(bool CzyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
+        public static string Rezerwacja(bool czyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
         {
-            return StringSet.RezerwacjaSet(CzyRezerwacja, Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7, Środek1, Środek2, Środek3, Środek4, Środek5, Środek6, Środek7, Koniec1, Koniec2, Koniec3, Koniec4, Koniec5, Koniec6, Koniec7, ileWagonówWSkładzie, PSO, stacjaWRJ);
+            return StringSet.RezerwacjaSet(czyRezerwacja, Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7, Środek1, Środek2, Środek3, Środek4, Środek5, Środek6, Środek7, Koniec1, Koniec2, Koniec3, Koniec4, Koniec5, Koniec6, Koniec7, ileWagonówWSkładzie, PSO, stacjaWRJ);
         }
 
-        public static string RezerwacjaMowa(bool CzyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
+        public static string RezerwacjaMowa(bool czyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
         {
             Początek1 = SyntezatorNumer.NumerWagonu(Początek1);
             Początek2 = SyntezatorNumer.NumerWagonu(Początek2);
@@ -162,13 +170,13 @@ namespace PodmianaNazw
             Koniec6 = SyntezatorNumer.NumerWagonu(Koniec6);
             Koniec7 = SyntezatorNumer.NumerWagonu(Koniec7);
 
-            return StringSet.RezerwacjaSet(CzyRezerwacja, Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7, Środek1, Środek2, Środek3, Środek4, Środek5, Środek6, Środek7, Koniec1, Koniec2, Koniec3, Koniec4, Koniec5, Koniec6, Koniec7, ileWagonówWSkładzie, PSO, stacjaWRJ);
+            return StringSet.RezerwacjaSet(czyRezerwacja, Początek1, Początek2, Początek3, Początek4, Początek5, Początek6, Początek7, Środek1, Środek2, Środek3, Środek4, Środek5, Środek6, Środek7, Koniec1, Koniec2, Koniec3, Koniec4, Koniec5, Koniec6, Koniec7, ileWagonówWSkładzie, PSO, stacjaWRJ);
         }
     }
 
     class StringSet
     {
-        public static string KategoriaSet(string kategoriaWprowadzona, bool opoznienie, string przewoznik, string PSO, string stacjaWRJ)
+        public static string KategoriaSet(string kategoriaWprowadzona, bool opoznienie, string przewoznik, string PSO, string stacjaWRJ, bool czyCzas)
         {
             if (!opoznienie)
             {
@@ -373,83 +381,167 @@ namespace PodmianaNazw
                     }
                     else
                     {
-                        if (kategoriaWprowadzona == "TLK")
+                        if (!czyCzas)
                         {
-                            return "UWAGA! Pociąg TLK ";
-                        }
-                        else if (kategoriaWprowadzona == "IC")
-                        {
-                            return "UWAGA! Pociąg Intercity ";
-                        }
-                        else if (kategoriaWprowadzona == "EIC")
-                        {
-                            return "UWAGA! Pociąg Express Intercity ";
-                        }
-                        else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
-                        {
-                            if (przewoznik == "Polregio")
+                            if (kategoriaWprowadzona == "TLK")
                             {
-                                return "UWAGA! Pociąg regio ";
+                                return "UWAGA! Pociąg TLK ";
                             }
-                            else if (przewoznik == "Szybka Kolej Miejska")
+                            else if (kategoriaWprowadzona == "IC")
                             {
-                                return "UWAGA! Pociąg SKM ";
+                                return "UWAGA! Pociąg Intercity ";
                             }
-                            else if (przewoznik == "Koleje Dolnośląskie")
+                            else if (kategoriaWprowadzona == "EIC")
                             {
-                                return "UWAGA! Pociąg Kolei Dolnośląskich ";
+                                return "UWAGA! Pociąg Express Intercity ";
                             }
-                            else if (przewoznik == "Koleje Mazowieckie")
+                            else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
                             {
-                                return "UWAGA! Pociąg Kolei Mazowieckich ";
+                                if (przewoznik == "Polregio")
+                                {
+                                    return "UWAGA! Pociąg regio ";
+                                }
+                                else if (przewoznik == "Szybka Kolej Miejska")
+                                {
+                                    return "UWAGA! Pociąg SKM ";
+                                }
+                                else if (przewoznik == "Koleje Dolnośląskie")
+                                {
+                                    return "UWAGA! Pociąg Kolei Dolnośląskich ";
+                                }
+                                else if (przewoznik == "Koleje Mazowieckie")
+                                {
+                                    return "UWAGA! Pociąg Kolei Mazowieckich ";
+                                }
+                                else if (przewoznik == "Koleje Małopolskie")
+                                {
+                                    return "UWAGA! Pociąg Kolei Małopolskich ";
+                                }
+                                else if (przewoznik == "Koleje Śląskie")
+                                {
+                                    return "UWAGA! Pociąg Kolei Śląskich ";
+                                }
+                                else if (przewoznik == "Koleje Wielkopolskie")
+                                {
+                                    return "UWAGA! Pociąg Kolei Wielkopolskich ";
+                                }
+                                else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
+                                {
+                                    return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                                }
+                                else
+                                {
+                                    return "BŁĄD PODCZAS GENEROWANIA";
+                                }
                             }
-                            else if (przewoznik == "Koleje Małopolskie")
+                            else if (kategoriaWprowadzona == "Sprinter")
                             {
-                                return "UWAGA! Pociąg Kolei Małopolskich ";
+                                if (przewoznik == "Koleje Dolnośląskie")
+                                {
+                                    return "UWAGA! Pociąg KD Sprinter ";
+                                }
+                                else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
+                                {
+                                    return "UWAGA! Pociąg ŁKA Sprinter ";
+                                }
+                                else
+                                {
+                                    return "BŁĄD PODCZAS GENEROWANIA";
+                                }
                             }
-                            else if (przewoznik == "Koleje Śląskie")
+                            else if (kategoriaWprowadzona == "superREGIO")
                             {
-                                return "UWAGA! Pociąg Kolei Śląskich ";
+                                return "Uwaga! Pociąg SUPERREGIO ";
                             }
-                            else if (przewoznik == "Koleje Wielkopolskie")
+                            else if (kategoriaWprowadzona == "interREGIO")
                             {
-                                return "UWAGA! Pociąg Kolei Wielkopolskich ";
-                            }
-                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
-                            {
-                                return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                                return "Uwaga! Pociąg INTERREGIO ";
                             }
                             else
                             {
-                                return "BŁĄD PODCZAS GENEROWANIA";
+                                return "NIEOBSŁUGIWANY WYJĄTEK!";
                             }
-                        }
-                        else if (kategoriaWprowadzona == "Sprinter")
-                        {
-                            if (przewoznik == "Koleje Dolnośląskie")
-                            {
-                                return "UWAGA! Pociąg KD Sprinter ";
-                            }
-                            else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
-                            {
-                                return "UWAGA! Pociąg ŁKA Sprinter ";
-                            }
-                            else
-                            {
-                                return "BŁĄD PODCZAS GENEROWANIA";
-                            }
-                        }
-                        else if (kategoriaWprowadzona == "superREGIO")
-                        {
-                            return "Pociąg SUPERREGIO ";
-                        }
-                        else if (kategoriaWprowadzona == "interREGIO")
-                        {
-                            return "Pociąg INTERREGIO ";
                         }
                         else
                         {
-                            return "NIEOBSŁUGIWANY WYJĄTEK!";
+                            if (kategoriaWprowadzona == "TLK")
+                            {
+                                return "Opóźniony pociąg TLK ";
+                            }
+                            else if (kategoriaWprowadzona == "IC")
+                            {
+                                return "Opóźniony pociąg Intercity ";
+                            }
+                            else if (kategoriaWprowadzona == "EIC")
+                            {
+                                return "Opóźniony pociąg Express Intercity ";
+                            }
+                            else if (kategoriaWprowadzona == "Osobowy" || kategoriaWprowadzona == "Os. Przyspieszony")
+                            {
+                                if (przewoznik == "Polregio")
+                                {
+                                    return "Opóźniony pociąg regio ";
+                                }
+                                else if (przewoznik == "Szybka Kolej Miejska")
+                                {
+                                    return "Opóźniony pociąg SKM ";
+                                }
+                                else if (przewoznik == "Koleje Dolnośląskie")
+                                {
+                                    return "Opóźniony pociąg Kolei Dolnośląskich ";
+                                }
+                                else if (przewoznik == "Koleje Mazowieckie")
+                                {
+                                    return "Opóźniony pociąg Kolei Mazowieckich ";
+                                }
+                                else if (przewoznik == "Koleje Małopolskie")
+                                {
+                                    return "Opóźniony pociąg Kolei Małopolskich ";
+                                }
+                                else if (przewoznik == "Koleje Śląskie")
+                                {
+                                    return "Opóźniony pociąg Kolei Śląskich ";
+                                }
+                                else if (przewoznik == "Koleje Wielkopolskie")
+                                {
+                                    return "Opóźniony pociąg Kolei Wielkopolskich ";
+                                }
+                                else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
+                                {
+                                    return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                                }
+                                else
+                                {
+                                    return "BŁĄD PODCZAS GENEROWANIA";
+                                }
+                            }
+                            else if (kategoriaWprowadzona == "Sprinter")
+                            {
+                                if (przewoznik == "Koleje Dolnośląskie")
+                                {
+                                    return "Opóźniony pociąg KD Sprinter ";
+                                }
+                                else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
+                                {
+                                    return "Opóźniony pociąg ŁKA Sprinter ";
+                                }
+                                else
+                                {
+                                    return "BŁĄD PODCZAS GENEROWANIA";
+                                }
+                            }
+                            else if (kategoriaWprowadzona == "superREGIO")
+                            {
+                                return "Opóźniony pociąg SUPERREGIO ";
+                            }
+                            else if (kategoriaWprowadzona == "interREGIO")
+                            {
+                                return "Opóźniony pociąg INTERREGIO ";
+                            }
+                            else
+                            {
+                                return "NIEOBSŁUGIWANY WYJĄTEK!";
+                            }
                         }
                     }
                 }
@@ -537,15 +629,23 @@ namespace PodmianaNazw
             }
         }
 
-        public static string TorIPeronSet(string PSO, string Peron, string Tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu)
+        public static string TorIPeronSet(string PSO, string peron, string tor, bool czyOpóźniony, string stacjaWRJ, string kategoriaPociagu, bool czyCzas)
         {
             if (czyOpóźniony && PSO == "Przyjedzie")
             {
+                if (czyCzas && stacjaWRJ.Equals("Pośrednia"))
+                {
+                    return ", wjedzie na tor " + tor + " przy peronie " + peron + ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
+                }
+                else if(czyCzas && stacjaWRJ.Equals("Końcowa"))
+                {
+                    return ", wjedzie na tor " + tor + " przy peronie " + peron + ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
+                }
                 return "";
             }
             else if (stacjaWRJ == "Końcowa" && PSO == "Stoi")
             {
-                return " wjechał na tor " + Tor + " przy peronie " + Peron;
+                return " wjechał na tor " + tor + " przy peronie " + peron;
             }
             else
             {
@@ -553,30 +653,30 @@ namespace PodmianaNazw
                 {
                     if ((kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO") && stacjaWRJ != "Końcowa")
                     {
-                        return ", wjedzie na tor " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                        return ", wjedzie na tor " + tor + " przy peronie " + peron + ". Pociąg zatrzymuje się na niektórych stacjach";
                     }
-                    return ", wjedzie na tor " + Tor + " przy peronie " + Peron;
+                    return ", wjedzie na tor " + tor + " przy peronie " + peron;
                 }
                 else if (PSO == "Stoi")
                 {
                     if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
                     {
-                        return ", stoi na torze " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                        return ", stoi na torze " + tor + " przy peronie " + peron + ". Pociąg zatrzymuje się na niektórych stacjach";
                     }
-                    return ", stoi na torze " + Tor + " przy peronie " + Peron;
+                    return ", stoi na torze " + tor + " przy peronie " + peron;
                 }
                 else
                 {
                     if (kategoriaPociagu == "Sprinter" || kategoriaPociagu == "interREGIO")
                     {
-                        return ", odjedzie z toru " + Tor + " przy peronie " + Peron + ". Pociąg zatrzymuje się na niektórych stacjach";
+                        return ", odjedzie z toru " + tor + " przy peronie " + peron + ". Pociąg zatrzymuje się na niektórych stacjach";
                     }
-                    return ", odjedzie z toru " + Tor + " przy peronie " + Peron;
+                    return ", odjedzie z toru " + tor + " przy peronie " + peron;
                 }
             }
         }
 
-        public static string GodzinaSet(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia)
+        public static string GodzinaSet(string godzinaOdj, string godzinaPrz, string minutaOdj, string minutaPrz, bool czyOpóźniony, string PSO, string stacjaWRJ, string czasOpóźnienia, bool czyCzas)
         {
             if (!czyOpóźniony)
             {
@@ -617,11 +717,11 @@ namespace PodmianaNazw
                 {
                     if (PSO == "Przyjedzie")
                     {
-                        return " odjeżdżający o godzinie " + godzinaOdj + ":" + minutaOdj + " z przyczyn technicznych zostanie podstawiony z opóźnieniem około " + czasOpóźnienia + " minut";
+                        return ", odjeżdżający o godzinie " + godzinaOdj + ":" + minutaOdj + " z przyczyn technicznych zostanie podstawiony z opóźnieniem około " + czasOpóźnienia + " minut";
                     }
                     else
                     {
-                        return " planowy odjazd o godzinie " + godzinaOdj + ":" + minutaOdj;
+                        return ", planowy odjazd o godzinie " + godzinaOdj + ":" + minutaOdj;
                     }
                 }
                 else if (stacjaWRJ == "Końcowa" && PSO == "Stoi")
@@ -632,19 +732,26 @@ namespace PodmianaNazw
                 {
                     if (PSO == "Przyjedzie")
                     {
-                        return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + " przyjedzie z opóźnieniem około " + czasOpóźnienia + " minut. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
+                        if (!czyCzas)
+                        {
+                            return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + ", przyjedzie z opóźnieniem około " + czasOpóźnienia + " minut. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
+                        }
+                        else
+                        {
+                            return ", planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz;
+                        }
                     }
                     else
                     {
-                        return " planowy odjazd o godzinie " + godzinaOdj + ":" + minutaOdj;
+                        return ", planowy odjazd o godzinie " + godzinaOdj + ":" + minutaOdj;
                     }
                 }
             }
         }
 
-        public static string RezerwacjaSet(bool CzyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
+        public static string RezerwacjaSet(bool czyRezerwacja, string Początek1, string Początek2, string Początek3, string Początek4, string Początek5, string Początek6, string Początek7, string Środek1, string Środek2, string Środek3, string Środek4, string Środek5, string Środek6, string Środek7, string Koniec1, string Koniec2, string Koniec3, string Koniec4, string Koniec5, string Koniec6, string Koniec7, string ileWagonówWSkładzie, string PSO, string stacjaWRJ)
         {
-            if (CzyRezerwacja)
+            if (czyRezerwacja)
             {
                 if (PSO == "Odjedzie" || stacjaWRJ == "Końcowa")
                 {
