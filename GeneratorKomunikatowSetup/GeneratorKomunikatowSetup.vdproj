@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8724433F1A3C4930BA4FC41B41B11C1D"
+        "MsmKey" = "8:_1BB398616D9044E98D081C5D6673AE5B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -168,7 +168,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8724433F1A3C4930BA4FC41B41B11C1D"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1BB398616D9044E98D081C5D6673AE5B"
             {
             "SourcePath" = "8:..\\Generator_komunikatow_dworcowych\\bin\\Release\\Generator_Komunikatow.exe"
             "TargetName" = "8:Generator_Komunikatow.exe"
@@ -287,7 +287,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GeneratorKomunikatow"
         "ProductCode" = "8:{528B76F1-4C0F-4752-8E49-39513CB67C44}"
-        "PackageCode" = "8:{2B46DE7E-DD7F-4102-A1EF-1A465B7B5A65}"
+        "PackageCode" = "8:{0C3E1142-FA01-4EF1-84E3-FE438F30FF68}"
         "UpgradeCode" = "8:{2E4EA750-02FF-4D45-9E6C-428EACD14E34}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -407,29 +407,29 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CECA81E5BB6C4983B5EDDB3D939F4DC7"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_167BEE156B354EC2B559E049067EED87"
             {
-            "Name" = "8:GeneratorKomunikatow.exe"
+            "Name" = "8:Generator_Komunikatow.exe"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_8724433F1A3C4930BA4FC41B41B11C1D"
+            "Target" = "8:_1BB398616D9044E98D081C5D6673AE5B"
             "Folder" = "8:_FA68108814FB4B12968446DED08B8C59"
             "WorkingFolder" = "8:_47D27C98F6D04EF0B300189BA905AE9C"
             "Icon" = "8:_D7CA4DF0BCC246F19CFDF67383CE6D48"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FA252624971D458F9DE8D42A24E7073D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E1F3E93865974E10887581D8E0072889"
             {
-            "Name" = "8:GeneratorKomunikatow.exe"
+            "Name" = "8:Generator_Komunikatow.exe"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_8724433F1A3C4930BA4FC41B41B11C1D"
+            "Target" = "8:_1BB398616D9044E98D081C5D6673AE5B"
             "Folder" = "8:_F1FC6187E2A342A9BD0887DA432DF554"
             "WorkingFolder" = "8:_47D27C98F6D04EF0B300189BA905AE9C"
             "Icon" = "8:_D7CA4DF0BCC246F19CFDF67383CE6D48"

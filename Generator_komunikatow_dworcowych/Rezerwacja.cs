@@ -1,5 +1,8 @@
-﻿namespace GeneratorKomunikatów
+﻿using System.Runtime.Versioning;
+
+namespace GeneratorKomunikatów
 {
+    [SupportedOSPlatform("windows")]
     class Rezerwacja
     {
         public static void PokazywanieWagonówRezerwacji(Generator_komunikatów_dworcowych.komunikaty current)

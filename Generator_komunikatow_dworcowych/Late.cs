@@ -5,6 +5,9 @@ using System.Windows.Forms;
 using System.Windows.Media;
 using System.Windows.Threading;
 using System.Runtime.Versioning;
+using System.IO;
+using NAudio.Wave;
+//using Windows.Media.SpeechSynthesis;
 
 namespace Generator
 {
@@ -23,9 +26,13 @@ namespace Generator
 
         }
 
-        public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja, string PSO)
+        public static string KomunikatLate(string początek, string relacja, string torIPeron, string godziny, string rezerwacja, string PSO, string naszaStacja, bool czyCzas)
         {
-            if (!PSO.Equals("Odjedzie"))
+            if(PSO.Equals("Przyjedzie") && !naszaStacja.Equals("Początkowa") && !czyCzas)
+            {
+                return początek + relacja + godziny + torIPeron + ".";
+            }
+            else if (!PSO.Equals("Odjedzie"))
             {
                 return początek + relacja + godziny + torIPeron + rezerwacja + ". Za opóźnienie pociągu przepraszamy.";
             }
@@ -39,7 +46,7 @@ namespace Generator
     [SupportedOSPlatform("windows")]
     class Gadanie
     {
-        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth)
+        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth, string naszaStacjaWRJ, bool czyCzas)
         {
             ButtonEnabled1(current);
             try
@@ -50,10 +57,10 @@ namespace Generator
                 }
                 else
                 {
-                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, PSO));
+                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, PSO, naszaStacjaWRJ, czyCzas));
                 }
             }
-            catch
+            catch (System.OperationCanceledException)
             {
 
             }
@@ -63,9 +70,9 @@ namespace Generator
                 {
                     synth.Dispose();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    MessageBox.Show(ex.ToString(), "Błąd 1", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
                 finally
                 {
@@ -93,6 +100,70 @@ namespace Generator
 
                 current.ButtonDisabled();
                 ButtonEnabled(current);
+            }
+        }
+
+        public void SyntezatorZapisz(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, string PSO, string naszaStacja, SpeechSynthesizer synth, string path, string path1, bool isGongOn, bool czyCzas, string path2)
+        {
+            try
+            {
+                if (!ifLate)
+                {
+                    synth.Speak(Late.Komunikat(początek, relacja, torIPeron, godziny, rezerwacja, PSO, naszaStacja));
+                }
+                else
+                {
+                    synth.Speak(Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, PSO, naszaStacja, czyCzas));
+                }
+            }
+            catch (System.OperationCanceledException)
+            {
+
+            }
+            finally
+            {
+                try
+                {
+                    synth.Dispose();
+                }
+                catch (Exception)
+                {
+
+                }
+                finally
+                {
+                    current.ButtonDisabled();
+                    ButtonEnabled(current);
+
+                    if (isGongOn)
+                    {
+                        Zapisz(path, path1, path2, current);
+                    }
+                }
+            }
+        }
+
+        public void SyntezatorBezPostojuZapisz(Generator_komunikatów_dworcowych.komunikaty current, SpeechSynthesizer synth, string path, string path1, bool isGongOn, string path2)
+        {
+            try
+            {
+                synth.Speak("Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!");
+            }
+            catch (System.OperationCanceledException)
+            {
+
+            }
+            finally
+            {
+                synth.Dispose();
+
+                current.ButtonDisabled();
+                ButtonEnabled(current);
+
+                if (isGongOn)
+                {
+                    Zapisz(path, path1, path2, current);
+                }
             }
         }
 
@@ -170,6 +241,47 @@ namespace Generator
                 changeState();
             }
         }
+
+        private void Zapisz(string path, string path1, string path2, Generator_komunikatów_dworcowych.komunikaty current)
+        {
+            MethodInvoker changeState = delegate ()
+            {
+                WaveFormat target = new WaveFormat(22050, 8, 1);
+                WaveStream stream = new WaveFileReader(path1);
+                WaveFormatConversionStream str = new WaveFormatConversionStream(target, stream);
+                WaveFileWriter.CreateWaveFile("temp.wav", str);
+
+                using (var first = new AudioFileReader(path))
+                using (var secound = new AudioFileReader("temp.wav"))
+                {
+                    //var playList = new ConcatenatingSampleProvider(new[] { secound, first });
+                    var playList = secound.FollowedBy(TimeSpan.FromMilliseconds(1000), first);
+                    WaveFileWriter.CreateWaveFile16(path2, playList);
+                }
+                stream.Close();
+                str.Close();
+
+                File.Delete(path);
+                File.Delete(path1);
+                File.Delete("temp.wav");
+            };
+
+            if (current.InvokeRequired)
+            {
+                try
+                {
+                    current.Invoke(changeState);
+                }
+                catch (ObjectDisposedException)
+                {
+
+                }
+            }
+            else
+            {
+                changeState();
+            }
+        }
     }
 
     [SupportedOSPlatform("windows")]
@@ -180,13 +292,13 @@ namespace Generator
         public MediaPlayer c;
         public SpeechSynthesizer synth;
 
-        public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu)
+        public void NewThread(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, int glosnosc, string PSO, string naszaStacja, int glosnoscGongu, bool czyCzas)
         {
             synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
 
-            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, glosnosc, PSO, naszaStacja, synth));
+            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, glosnosc, PSO, naszaStacja, synth, naszaStacja, czyCzas));
 
             if (isGongOn)
             {
@@ -219,6 +331,72 @@ namespace Generator
             OdtworzGong(NazwaGongu, glosnoscGongu, current);
 
             ButtonEnabled(current);
+        }
+
+        public void ThreadSaveSpeech(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, string PSO, string naszaStacja, bool czyCzas)
+        {
+            synth = new SpeechSynthesizer();
+
+            string path = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + DateTime.Now.Millisecond + ".wav";
+
+            string path1 = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + (DateTime.Now.Millisecond + 1) + ".wav";
+
+            string path2 = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                            + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + (DateTime.Now.Millisecond + 2) + ".wav";
+
+            if (isGongOn)
+            {
+                Uri uri = GongSet(NazwaGongu);
+                string tmpPath = uri.LocalPath;
+                File.Copy(tmpPath, path1);
+            }
+
+            synth.SetOutputToWaveFile(path);
+            synth.Volume = 100;
+
+            threadSyntezator = new Thread(() => gadanie.SyntezatorZapisz(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, PSO, naszaStacja, synth, path, path1, isGongOn, czyCzas, path2));
+            threadSyntezator.Start();
+
+            string path3 = path2.Remove(0, 2);
+            string filePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string directoryPath = System.IO.Path.GetDirectoryName(filePath);
+            string fullPath = Path.Combine(directoryPath, path3);
+            MessageBox.Show("Komunikat głosowy został zapisany do pliku " + fullPath, "Komunikat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void ThreadSaveSpeechBezZatrzymania(Generator_komunikatów_dworcowych.komunikaty current, string NazwaGongu, bool isGongOn)
+        {
+            synth = new SpeechSynthesizer();
+            //@".\Speech-"
+            string path = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + DateTime.Now.Millisecond + ".wav";
+
+            string path1 = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + (DateTime.Now.Millisecond + 1) + ".wav";
+
+            string path2 = @".\Speech-" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day + "_"
+                + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second + "_" + (DateTime.Now.Millisecond + 2) + ".wav";
+
+            if (isGongOn)
+            {
+                Uri uri = GongSet(NazwaGongu);
+                string tmpPath = uri.LocalPath;
+                File.Copy(tmpPath, path1);
+            }
+
+            synth.SetOutputToWaveFile(path);
+            synth.Volume = 100;
+
+            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostojuZapisz(current, synth, path, path1, isGongOn, path2));
+            threadSyntezator.Start();
+
+            string path3 = path2.Remove(0, 2);
+            string filePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string directoryPath = System.IO.Path.GetDirectoryName(filePath);
+            string fullPath = Path.Combine(directoryPath, path3);
+            MessageBox.Show("Komunikat głosowy został zapisany do pliku " + fullPath, "Komunikat", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private Uri GongSet(string NazwaGongu)
@@ -311,6 +489,8 @@ namespace Generator
             c.Play();
 
             Dispatcher.Run();
+
+            c.Close();
         }
 
         private void Zamknij(object sender, EventArgs e)

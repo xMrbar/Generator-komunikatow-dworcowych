@@ -637,7 +637,7 @@ namespace PodmianaNazw
                 {
                     return ", wjedzie na tor " + tor + " przy peronie " + peron + ". Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
                 }
-                else if(czyCzas && stacjaWRJ.Equals("Końcowa"))
+                else if (czyCzas && stacjaWRJ.Equals("Końcowa"))
                 {
                     return ", wjedzie na tor " + tor + " przy peronie " + peron + ". Pociąg kończy bieg. Prosimy zachować ostrożność i nie zbliżać się do krawędzi peronu";
                 }
@@ -717,7 +717,14 @@ namespace PodmianaNazw
                 {
                     if (PSO == "Przyjedzie")
                     {
-                        return ", odjeżdżający o godzinie " + godzinaOdj + ":" + minutaOdj + " z przyczyn technicznych zostanie podstawiony z opóźnieniem około " + czasOpóźnienia + " minut";
+                        if (czasOpóźnienia != "1")
+                        {
+                            return ", odjeżdżający o godzinie " + godzinaOdj + ":" + minutaOdj + " z przyczyn technicznych zostanie podstawiony z opóźnieniem około " + czasOpóźnienia + " minut";
+                        }
+                        else
+                        {
+                            return ", odjeżdżający o godzinie " + godzinaOdj + ":" + minutaOdj + " z przyczyn technicznych zostanie podstawiony z opóźnieniem około " + czasOpóźnienia + " minuty";
+                        }
                     }
                     else
                     {
@@ -734,7 +741,14 @@ namespace PodmianaNazw
                     {
                         if (!czyCzas)
                         {
-                            return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + ", przyjedzie z opóźnieniem około " + czasOpóźnienia + " minut. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
+                            if(czasOpóźnienia != "1")
+                            {
+                                return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + ", przyjedzie z opóźnieniem około " + czasOpóźnienia + " minut. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
+                            }
+                            else
+                            {
+                                return " planowy przyjazd o godzinie " + godzinaPrz + ":" + minutaPrz + ", przyjedzie z opóźnieniem około " + czasOpóźnienia + " minuty. Opóźnienie może ulec zmianie. Prosimy o zwracanie uwagi na komunikaty";
+                            }
                         }
                         else
                         {
@@ -1620,39 +1634,39 @@ namespace PodmianaNazw
             //cyfra setek
             if (czas.Length > 2)
             {
-                if (czas[2] == '0')
+                if (czas[0] == '0')
                 {
                     wynik += "";
                 }
-                else if (czas[2] == '1')
+                else if (czas[0] == '1')
                 {
                     wynik += "stu";
                 }
-                else if (czas[2] == '2')
+                else if (czas[0] == '2')
                 {
                     wynik += "dwustu";
                 }
-                else if (czas[2] == '3')
+                else if (czas[0] == '3')
                 {
                     wynik += "trzystu";
                 }
-                else if (czas[2] == '4')
+                else if (czas[0] == '4')
                 {
                     wynik += "czterystu";
                 }
-                else if (czas[2] == '5')
+                else if (czas[0] == '5')
                 {
                     wynik += "pięciuset";
                 }
-                else if (czas[2] == '6')
+                else if (czas[0] == '6')
                 {
                     wynik += "sześciuset";
                 }
-                else if (czas[2] == '7')
+                else if (czas[0] == '7')
                 {
                     wynik += "siedmiuset";
                 }
-                else if (czas[2] == '8')
+                else if (czas[0] == '8')
                 {
                     wynik += "ośmióset";
                 }
@@ -1665,45 +1679,51 @@ namespace PodmianaNazw
             //cyfra dziesiatek
             if (czas.Length > 1)
             {
-                if (czas[1] == '0')
+                int i = 0;
+                if (czas.Length > 2)
+                {
+                    i = 1;
+                }
+
+                if (czas[i] == '0')
                 {
                     wynik += "";
                 }
-                else if (czas[1] == '1')
+                else if (czas[i] == '1')
                 {
-                    if (czas[0] == '0')
+                    if (czas[i + 1] == '0')
                     {
                         wynik += "dziesięciu";
                     }
-                    else if (czas[0] == '1')
+                    else if (czas[i + 1] == '1')
                     {
                         wynik += "jedenastu";
                     }
-                    else if (czas[0] == '2')
+                    else if (czas[i + 1] == '2')
                     {
                         wynik += "dwunastu";
                     }
-                    else if (czas[0] == '3')
+                    else if (czas[i + 1] == '3')
                     {
                         wynik += "trzynastu";
                     }
-                    else if (czas[0] == '4')
+                    else if (czas[i + 1] == '4')
                     {
                         wynik += "czternatu";
                     }
-                    else if (czas[0] == '5')
+                    else if (czas[i + 1] == '5')
                     {
                         wynik += "piętnastu";
                     }
-                    else if (czas[0] == '6')
+                    else if (czas[i + 1] == '6')
                     {
                         wynik += "szesnastu";
                     }
-                    else if (czas[0] == '7')
+                    else if (czas[i + 1] == '7')
                     {
                         wynik += "siedemnastu";
                     }
-                    else if (czas[0] == '8')
+                    else if (czas[i + 1] == '8')
                     {
                         wynik += "osiemnastu";
                     }
@@ -1714,31 +1734,31 @@ namespace PodmianaNazw
 
                     return wynik;
                 }
-                else if (czas[1] == '2')
+                else if (czas[i] == '2')
                 {
                     wynik += "dwudziestu";
                 }
-                else if (czas[1] == '3')
+                else if (czas[i] == '3')
                 {
                     wynik += "trzydziestu";
                 }
-                else if (czas[1] == '4')
+                else if (czas[i] == '4')
                 {
                     wynik += "czterdziestu";
                 }
-                else if (czas[1] == '5')
+                else if (czas[i] == '5')
                 {
                     wynik += "pięćdziesięciu";
                 }
-                else if (czas[1] == '6')
+                else if (czas[i] == '6')
                 {
                     wynik += "sześćdziesięciu";
                 }
-                else if (czas[1] == '7')
+                else if (czas[i] == '7')
                 {
                     wynik += "siedemdziesięciu";
                 }
-                else if (czas[1] == '8')
+                else if (czas[i] == '8')
                 {
                     wynik += "osiemdziesięciu";
                 }
@@ -1751,39 +1771,56 @@ namespace PodmianaNazw
             //cyfra jedności
             if (true)
             {
-                if (czas[0] == '0')
+                int i = 0;
+                if (czas.Length > 1)
+                {
+                    i = 1;
+                }
+                else if(czas.Length > 2)
+                {
+                    i = 2;
+                }
+
+                if (czas[i] == '0')
                 {
                     wynik += "";
                 }
-                else if (czas[0] == '1')
+                else if (czas[i] == '1')
                 {
-                    wynik += "jeden";
+                    if (czas.Length != 1)
+                    {
+                        wynik += "jeden";
+                    }
+                    else
+                    {
+                        wynik += "jednej";
+                    }
                 }
-                else if (czas[0] == '2')
+                else if (czas[i] == '2')
                 {
                     wynik += "dwóch";
                 }
-                else if (czas[0] == '3')
+                else if (czas[i] == '3')
                 {
                     wynik += "trzech";
                 }
-                else if (czas[0] == '4')
+                else if (czas[i] == '4')
                 {
                     wynik += "czterech";
                 }
-                else if (czas[0] == '5')
+                else if (czas[i] == '5')
                 {
                     wynik += "pięciu";
                 }
-                else if (czas[0] == '6')
+                else if (czas[i] == '6')
                 {
                     wynik += "sześciu";
                 }
-                else if (czas[0] == '7')
+                else if (czas[i] == '7')
                 {
                     wynik += "siedmiu";
                 }
-                else if (czas[0] == '8')
+                else if (czas[i] == '8')
                 {
                     wynik += "ośmiu";
                 }

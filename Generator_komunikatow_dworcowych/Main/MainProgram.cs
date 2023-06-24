@@ -36,6 +36,7 @@ namespace Generator_komunikatów_dworcowych
             wygladStrony.SelectedIndex = 0;
         }
 
+
         private void generujButton_Click(object sender, EventArgs e)
         {
             if (box_stacja_początkowa.Text.Length > 0 && box_stacja_końcowa.Text.Length > 0 && comboPrzewoźnik.Text.Length > 0 && comboKategoriaHandlowa.Text.Length > 0 && naszaStacjaWRJ.Text.Length > 0 && boxPeron.Text.Length > 0 && boxTor.Text.Length > 0 && comboPrzyStOdj.Text.Length > 0)
@@ -44,8 +45,8 @@ namespace Generator_komunikatów_dworcowych
                 {
                     if (insideSF.SF.koniecTylkoPrzyjazd(naszaStacjaWRJ.Text, comboPrzyStOdj.Text) == "0")
                     {
-
-                        StringSet();
+                        bool czyCzas = roznicaCzasu();
+                        StringSet(czyCzas);
 
                         if (!pociągMaOpóźnienie.Checked)
                         {
@@ -55,7 +56,7 @@ namespace Generator_komunikatów_dworcowych
                         else
                         {
                             komunikatWygenerowanyBox.Clear();
-                            komunikatWygenerowanyBox.AppendText(Generator.Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, comboPrzyStOdj.Text));
+                            komunikatWygenerowanyBox.AppendText(Generator.Late.KomunikatLate(początek, relacja, torIPeron, godziny, rezerwacja, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, czyCzas));
                         }
 
                     }
@@ -133,12 +134,14 @@ namespace Generator_komunikatów_dworcowych
                         {
                             if (GongName.Text.Length > 0 || !isGongOn.Checked)
                             {
-                                StringSetMowa();
+                                bool czyCzas = roznicaCzasu();
+
+                                StringSetMowa(czyCzas);
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
 
-                                wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked, trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, trackBarGlosnoscGongu.Value);
+                                wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked, trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, trackBarGlosnoscGongu.Value, czyCzas);
                             }
                             else
                             {
@@ -235,10 +238,8 @@ namespace Generator_komunikatów_dworcowych
             }
         }
 
-        private void StringSet()
+        private void StringSet(bool czyCzas)
         {
-            bool czyCzas = roznicaCzasu();
-
             początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, czyCzas);
             relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked, czyCzas);
             torIPeron = PodmianaNazw.Podmiana.torIPeron(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text, comboKategoriaHandlowa.Text, czyCzas);
@@ -246,10 +247,8 @@ namespace Generator_komunikatów_dworcowych
             rezerwacja = PodmianaNazw.Podmiana.Rezerwacja(ifReserwation.Checked, Początek1.Value.ToString(), Początek2.Value.ToString(), Początek3.Value.ToString(), Początek4.Value.ToString(), Początek5.Value.ToString(), Początek6.Value.ToString(), Początek7.Value.ToString(), Środek1.Value.ToString(), Środek2.Value.ToString(), Środek3.Value.ToString(), Środek4.Value.ToString(), Środek5.Value.ToString(), Środek6.Value.ToString(), Środek7.Value.ToString(), Koniec1.Value.ToString(), Koniec2.Value.ToString(), Koniec3.Value.ToString(), Koniec4.Value.ToString(), Koniec5.Value.ToString(), Koniec6.Value.ToString(), Koniec7.Value.ToString(), ileWagonówWSkładzie.Value.ToString(), comboPrzyStOdj.Text, naszaStacjaWRJ.Text);
         }
 
-        private void StringSetMowa()
+        private void StringSetMowa(bool czyCzas)
         {
-            bool czyCzas = roznicaCzasu();
-
             początek = PodmianaNazw.Podmiana.Kategoria(comboKategoriaHandlowa.Text, pociągMaOpóźnienie.Checked, comboPrzewoźnik.Text, nazwaPociąguBox.Text, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, czyCzas);
             relacja = PodmianaNazw.Podmiana.Relacja(box_stacja_początkowa.Text, box_stacja_końcowa.Text, przezBox.Text, naszaStacjaWRJ.Text, comboPrzyStOdj.Text, pociągMaOpóźnienie.Checked, czyCzas);
             torIPeron = PodmianaNazw.Podmiana.torIPeronMowa(comboPrzyStOdj.Text, boxPeron.Text, boxTor.Text, pociągMaOpóźnienie.Checked, naszaStacjaWRJ.Text, comboKategoriaHandlowa.Text, czyCzas);
@@ -492,6 +491,73 @@ namespace Generator_komunikatów_dworcowych
         private void sprawdzanieWersji()
         {
             api.DeserilizeJsonVersion(this);
+        }
+
+        private void buttonTest_Click(object sender, EventArgs e)
+        {
+            return;
+        }
+
+        private void buttonSoundToFile_Click(object sender, EventArgs e)
+        {
+            if (komunikatWygenerowanyBox.Text == "Uwaga! Przez stację przejedzie pociąg, bez zatrzymania! Prosimy zachować ostrożność i odsunąć się od krawędzi peronu!")
+            {
+                if (GongName.Text.Length > 0 || !isGongOn.Checked)
+                {
+                    dźwiękButton.Enabled = false;
+                    dzwiekTestButton.Enabled = false;
+
+                    wielowatkowosc.ThreadSaveSpeechBezZatrzymania(this, GongName.Text, isGongOn.Checked);
+                }
+                else
+                {
+                    MessageBox.Show("Proszę wybrać gong rozpoczynający zapowiedź", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                if (box_stacja_początkowa.Text.Length > 0 && box_stacja_końcowa.Text.Length > 0 && comboPrzewoźnik.Text.Length > 0 && comboKategoriaHandlowa.Text.Length > 0 && naszaStacjaWRJ.Text.Length > 0 && boxPeron.Text.Length > 0 && boxTor.Text.Length > 0 && comboPrzyStOdj.Text.Length > 0)
+                {
+                    if (insideSF.SF.KategoriaAPrzewoźnik(comboKategoriaHandlowa.Text, comboPrzewoźnik.Text) == "0")
+                    {
+                        if (insideSF.SF.koniecTylkoPrzyjazd(naszaStacjaWRJ.Text, comboPrzyStOdj.Text) == "0")
+                        {
+                            if (GongName.Text.Length > 0 || !isGongOn.Checked)
+                            {
+                                bool czyCzas = roznicaCzasu();
+                                StringSetMowa(czyCzas);
+
+                                dźwiękButton.Enabled = false;
+                                dzwiekTestButton.Enabled = false;
+
+                                wielowatkowosc.ThreadSaveSpeech(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, czyCzas);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Proszę wybrać gong rozpoczynający zapowiedź", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Na stację końcową nie może zostać wygenerowany odjazd pociągu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Podany przewoźnik nie pasuje do podanej kategorii składu!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Proszę wprowadzić wszystkie wymagane parametry!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            GC.Collect();
+        }
+
+        private void buttonTextToFile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
