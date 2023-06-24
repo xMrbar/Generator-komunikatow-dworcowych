@@ -50,6 +50,8 @@
             this.Pomoc1_1 = new System.Windows.Forms.Label();
             this.Pomoc1 = new System.Windows.Forms.Label();
             this.tabPageKomunikaty = new System.Windows.Forms.TabPage();
+            this.buttonTextToFile = new System.Windows.Forms.Button();
+            this.buttonSoundToFile = new System.Windows.Forms.Button();
             this.buttonWypelnijZAPI = new System.Windows.Forms.Button();
             this.anulujSyntezator = new System.Windows.Forms.Button();
             this.wznowSyntezator = new System.Windows.Forms.Button();
@@ -129,8 +131,6 @@
             this.stacjaPoczątkowa = new System.Windows.Forms.Label();
             this.NumerPociągu = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.buttonSoundToFile = new System.Windows.Forms.Button();
-            this.buttonTextToFile = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabPageOpcje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGlosnoscGongu)).BeginInit();
@@ -404,6 +404,22 @@
             this.tabPageKomunikaty.Controls.Add(this.stacjaPoczątkowa);
             this.tabPageKomunikaty.Controls.Add(this.NumerPociągu);
             this.tabPageKomunikaty.Name = "tabPageKomunikaty";
+            // 
+            // buttonTextToFile
+            // 
+            this.buttonTextToFile.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.buttonTextToFile, "buttonTextToFile");
+            this.buttonTextToFile.Name = "buttonTextToFile";
+            this.buttonTextToFile.UseVisualStyleBackColor = false;
+            this.buttonTextToFile.Click += new System.EventHandler(this.buttonTextToFile_Click);
+            // 
+            // buttonSoundToFile
+            // 
+            this.buttonSoundToFile.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.buttonSoundToFile, "buttonSoundToFile");
+            this.buttonSoundToFile.Name = "buttonSoundToFile";
+            this.buttonSoundToFile.UseVisualStyleBackColor = false;
+            this.buttonSoundToFile.Click += new System.EventHandler(this.buttonSoundToFile_Click);
             // 
             // buttonWypelnijZAPI
             // 
@@ -1405,22 +1421,6 @@
             resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            // 
-            // buttonSoundToFile
-            // 
-            this.buttonSoundToFile.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.buttonSoundToFile, "buttonSoundToFile");
-            this.buttonSoundToFile.Name = "buttonSoundToFile";
-            this.buttonSoundToFile.UseVisualStyleBackColor = false;
-            this.buttonSoundToFile.Click += new System.EventHandler(this.buttonSoundToFile_Click);
-            // 
-            // buttonTextToFile
-            // 
-            this.buttonTextToFile.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.buttonTextToFile, "buttonTextToFile");
-            this.buttonTextToFile.Name = "buttonTextToFile";
-            this.buttonTextToFile.UseVisualStyleBackColor = false;
-            this.buttonTextToFile.Click += new System.EventHandler(this.buttonTextToFile_Click);
             // 
             // komunikaty
             // 
