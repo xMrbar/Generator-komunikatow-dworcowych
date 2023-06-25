@@ -62,10 +62,10 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 17</value>
+    <value>97, 17</value>
   </data>
   <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.6.1</value>
+    <value>wersja 0.7.0 [dev]</value>
   </data>
   <data name="podpis.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 17</value>
@@ -3203,16 +3203,16 @@
     <value>NoControl</value>
   </data>
   <data name="comboKategoriaHandlowa.Items" xml:space="preserve">
-    <value>interREGIO</value>
-  </data>
-  <data name="comboKategoriaHandlowa.Items1" xml:space="preserve">
-    <value>superREGIO</value>
-  </data>
-  <data name="comboKategoriaHandlowa.Items2" xml:space="preserve">
     <value>Osobowy</value>
   </data>
-  <data name="comboKategoriaHandlowa.Items3" xml:space="preserve">
+  <data name="comboKategoriaHandlowa.Items1" xml:space="preserve">
     <value>Os. Przyspieszony</value>
+  </data>
+  <data name="comboKategoriaHandlowa.Items2" xml:space="preserve">
+    <value>interREGIO</value>
+  </data>
+  <data name="comboKategoriaHandlowa.Items3" xml:space="preserve">
+    <value>superREGIO</value>
   </data>
   <data name="comboKategoriaHandlowa.Items4" xml:space="preserve">
     <value>Sprinter</value>
@@ -3461,7 +3461,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>57</value>
+    <value>52</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
