@@ -46,7 +46,7 @@ namespace Generator
     [SupportedOSPlatform("windows")]
     class Gadanie
     {
-        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, int glosnosc, string PSO, string naszaStacja, SpeechSynthesizer synth, string naszaStacjaWRJ, bool czyCzas)
+        public void Syntezator(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string rezerwacja, string PSO, string naszaStacja, SpeechSynthesizer synth, string naszaStacjaWRJ, bool czyCzas)
         {
             ButtonEnabled1(current);
             try
@@ -82,7 +82,7 @@ namespace Generator
             }
         }
 
-        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, int glosnosc, SpeechSynthesizer synth)
+        public void SyntezatorBezPostoju(Generator_komunikatów_dworcowych.komunikaty current, SpeechSynthesizer synth)
         {
             ButtonEnabled1(current);
 
@@ -167,6 +167,29 @@ namespace Generator
             }
         }
 
+        public void SyntezatorTest(Generator_komunikatów_dworcowych.komunikaty current, SpeechSynthesizer synth)
+        {
+            try
+            {
+                synth.Speak("Jest to testowa wiadomość syntezatora.");
+            }
+            catch (System.OperationCanceledException)
+            {
+
+            }
+            catch (System.ObjectDisposedException)
+            {
+
+            }
+            finally
+            {
+                synth.Dispose();
+
+                current.ButtonDisabled();
+                ButtonEnabled(current);
+            }
+        }
+
 
         public static void ButtonEnabled(Generator_komunikatów_dworcowych.komunikaty current)
         {
@@ -174,6 +197,7 @@ namespace Generator
             {
                 current.dźwiękButton.Enabled = true;
                 current.dzwiekTestButton.Enabled = true;
+                current.syntezatorTestButton.Enabled = true;
             };
 
             if (current.InvokeRequired)
@@ -298,7 +322,7 @@ namespace Generator
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
 
-            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, glosnosc, PSO, naszaStacja, synth, naszaStacja, czyCzas));
+            threadSyntezator = new Thread(() => gadanie.Syntezator(początek, relacja, torIPeron, godziny, current, ifLate, rezerwacja, PSO, naszaStacja, synth, naszaStacja, czyCzas));
 
             if (isGongOn)
             {
@@ -315,7 +339,7 @@ namespace Generator
             synth.SetOutputToDefaultAudioDevice();
             synth.Volume = glosnosc;
 
-            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostoju(current, glosnosc, synth));
+            threadSyntezator = new Thread(() => gadanie.SyntezatorBezPostoju(current, synth));
 
             if (isGongOn)
             {
@@ -331,6 +355,16 @@ namespace Generator
             OdtworzGong(NazwaGongu, glosnoscGongu, current);
 
             ButtonEnabled(current);
+        }
+
+        public void NewThread3(Generator_komunikatów_dworcowych.komunikaty current, int glosnosc)
+        {
+            synth = new SpeechSynthesizer();
+            synth.SetOutputToDefaultAudioDevice();
+            synth.Volume = glosnosc;
+
+            threadSyntezator = new Thread(() => gadanie.SyntezatorTest(current, synth));
+            threadSyntezator.Start();
         }
 
         public void ThreadSaveSpeech(string początek, string relacja, string torIPeron, string godziny, Generator_komunikatów_dworcowych.komunikaty current, bool ifLate, string NazwaGongu, string rezerwacja, bool isGongOn, string PSO, string naszaStacja, bool czyCzas)
@@ -506,6 +540,7 @@ namespace Generator
         {
             current.dźwiękButton.Enabled = true;
             current.dzwiekTestButton.Enabled = true;
+            current.syntezatorTestButton.Enabled = true;
         }
 
 

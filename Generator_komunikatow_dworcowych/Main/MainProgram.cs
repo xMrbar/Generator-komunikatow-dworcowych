@@ -116,6 +116,7 @@ namespace Generator_komunikatów_dworcowych
                 {
                     dźwiękButton.Enabled = false;
                     dzwiekTestButton.Enabled = false;
+                    syntezatorTestButton.Enabled = false;
 
                     wielowatkowosc.NewThread1(this, GongName.Text, isGongOn.Checked, trackBarGlosnoscOgolna.Value, trackBarGlosnoscGongu.Value);
                 }
@@ -140,6 +141,7 @@ namespace Generator_komunikatów_dworcowych
 
                                 dźwiękButton.Enabled = false;
                                 dzwiekTestButton.Enabled = false;
+                                syntezatorTestButton.Enabled = false;
 
                                 wielowatkowosc.NewThread(początek, relacja, torIPeron, godziny, this, pociągMaOpóźnienie.Checked, GongName.Text, rezerwacja, isGongOn.Checked, trackBarGlosnoscOgolna.Value, comboPrzyStOdj.Text, naszaStacjaWRJ.Text, trackBarGlosnoscGongu.Value, czyCzas);
                             }
@@ -230,6 +232,7 @@ namespace Generator_komunikatów_dworcowych
             {
                 dźwiękButton.Enabled = false;
                 dzwiekTestButton.Enabled = false;
+                syntezatorTestButton.Enabled = false;
                 wielowatkowosc.NewThread2(this, GongName.Text, trackBarGlosnoscGongu.Value);
             }
             else
@@ -555,9 +558,12 @@ namespace Generator_komunikatów_dworcowych
             GC.Collect();
         }
 
-        private void buttonTextToFile_Click(object sender, EventArgs e)
+        private void syntezatorTestButton_Click(object sender, EventArgs e)
         {
-
+            dźwiękButton.Enabled = false;
+            dzwiekTestButton.Enabled = false;
+            syntezatorTestButton.Enabled = false;
+            wielowatkowosc.NewThread3(this, trackBarGlosnoscOgolna.Value);
         }
     }
 }
