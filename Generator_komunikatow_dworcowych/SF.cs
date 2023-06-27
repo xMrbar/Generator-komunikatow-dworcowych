@@ -17,6 +17,17 @@ namespace insideSF
                     return "1";
                 }
             }
+            else if (przewoźnik == "Arriva")
+            {
+                if (kategoria == "Osobowy")
+                {
+                    return "0";
+                }
+                else
+                {
+                    return "1";
+                }
+            }
             else if (przewoźnik == "Koleje Mazowieckie" || przewoźnik == "Koleje Małopolskie" || przewoźnik == "Koleje Śląskie" || przewoźnik == "Koleje Wielkopolskie")
             {
                 if (kategoria == "Osobowy" || kategoria == "Os. Przyspieszony")

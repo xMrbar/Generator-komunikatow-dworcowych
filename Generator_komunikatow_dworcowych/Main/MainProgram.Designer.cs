@@ -33,6 +33,7 @@
             wersja = new System.Windows.Forms.ToolStripStatusLabel();
             podpis = new System.Windows.Forms.ToolStripStatusLabel();
             tabPageOpcje = new System.Windows.Forms.TabPage();
+            syntezatorTestButton = new System.Windows.Forms.Button();
             buttonTest = new System.Windows.Forms.Button();
             trackBarGlosnoscGongu = new System.Windows.Forms.TrackBar();
             GlosnoscGonguTXT = new System.Windows.Forms.Label();
@@ -131,7 +132,6 @@
             stacjaPoczątkowa = new System.Windows.Forms.Label();
             NumerPociągu = new System.Windows.Forms.Label();
             tabControl = new System.Windows.Forms.TabControl();
-            syntezatorTestButton = new System.Windows.Forms.Button();
             statusStrip1.SuspendLayout();
             tabPageOpcje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarGlosnoscGongu).BeginInit();
@@ -209,6 +209,14 @@
             tabPageOpcje.Controls.Add(Pomoc1);
             resources.ApplyResources(tabPageOpcje, "tabPageOpcje");
             tabPageOpcje.Name = "tabPageOpcje";
+            // 
+            // syntezatorTestButton
+            // 
+            syntezatorTestButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(syntezatorTestButton, "syntezatorTestButton");
+            syntezatorTestButton.Name = "syntezatorTestButton";
+            syntezatorTestButton.UseVisualStyleBackColor = false;
+            syntezatorTestButton.Click += syntezatorTestButton_Click;
             // 
             // buttonTest
             // 
@@ -923,7 +931,7 @@
             comboPrzewoźnik.BackColor = System.Drawing.SystemColors.Window;
             comboPrzewoźnik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboPrzewoźnik.FormattingEnabled = true;
-            comboPrzewoźnik.Items.AddRange(new object[] { resources.GetString("comboPrzewoźnik.Items"), resources.GetString("comboPrzewoźnik.Items1"), resources.GetString("comboPrzewoźnik.Items2"), resources.GetString("comboPrzewoźnik.Items3"), resources.GetString("comboPrzewoźnik.Items4"), resources.GetString("comboPrzewoźnik.Items5"), resources.GetString("comboPrzewoźnik.Items6"), resources.GetString("comboPrzewoźnik.Items7"), resources.GetString("comboPrzewoźnik.Items8") });
+            comboPrzewoźnik.Items.AddRange(new object[] { resources.GetString("comboPrzewoźnik.Items"), resources.GetString("comboPrzewoźnik.Items1"), resources.GetString("comboPrzewoźnik.Items2"), resources.GetString("comboPrzewoźnik.Items3"), resources.GetString("comboPrzewoźnik.Items4"), resources.GetString("comboPrzewoźnik.Items5"), resources.GetString("comboPrzewoźnik.Items6"), resources.GetString("comboPrzewoźnik.Items7"), resources.GetString("comboPrzewoźnik.Items8"), resources.GetString("comboPrzewoźnik.Items9") });
             resources.ApplyResources(comboPrzewoźnik, "comboPrzewoźnik");
             comboPrzewoźnik.Name = "comboPrzewoźnik";
             // 
@@ -950,14 +958,6 @@
             resources.ApplyResources(tabControl, "tabControl");
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
-            // 
-            // syntezatorTestButton
-            // 
-            syntezatorTestButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(syntezatorTestButton, "syntezatorTestButton");
-            syntezatorTestButton.Name = "syntezatorTestButton";
-            syntezatorTestButton.UseVisualStyleBackColor = false;
-            syntezatorTestButton.Click += syntezatorTestButton_Click;
             // 
             // komunikaty
             // 

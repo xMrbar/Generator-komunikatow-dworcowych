@@ -1,5 +1,4 @@
 ﻿using GeneratorKomunikatów;
-using System;
 
 namespace PodmianaNazw
 {
@@ -226,6 +225,10 @@ namespace PodmianaNazw
                     {
                         return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                     }
+                    else if (przewoznik == "Arriva")
+                    {
+                        return "Pociąg osobowy Arrivy ";
+                    }
                     else
                     {
                         return "BŁĄD PODCZAS GENEROWANIA";
@@ -346,6 +349,10 @@ namespace PodmianaNazw
                             {
                                 return "Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                             }
+                            else if (przewoznik == "Arriva")
+                            {
+                                return "Pociąg osobowy Arrivy ";
+                            }
                             else
                             {
                                 return "BŁĄD PODCZAS GENEROWANIA";
@@ -429,6 +436,10 @@ namespace PodmianaNazw
                                 {
                                     return "UWAGA! Pociąg Łódzkiej Kolei Aglomeracyjnej ";
                                 }
+                                else if (przewoznik == "Arriva")
+                                {
+                                    return "UWAGA! Pociąg osobowy Arrivy ";
+                                }
                                 else
                                 {
                                     return "BŁĄD PODCZAS GENEROWANIA";
@@ -509,6 +520,10 @@ namespace PodmianaNazw
                                 else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                                 {
                                     return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                                }
+                                else if (przewoznik == "Arriva")
+                                {
+                                    return "Opóźniony pociąg osobowy Arrivy ";
                                 }
                                 else
                                 {
@@ -592,6 +607,10 @@ namespace PodmianaNazw
                         else if (przewoznik == "Łódzka Kolej Aglomeracyjna")
                         {
                             return "Opóźniony pociąg Łódzkiej Kolei Aglomeracyjnej ";
+                        }
+                        else if (przewoznik == "Arriva")
+                        {
+                            return "Opóźniony pociąg osobowy Arrivy ";
                         }
                         else
                         {
