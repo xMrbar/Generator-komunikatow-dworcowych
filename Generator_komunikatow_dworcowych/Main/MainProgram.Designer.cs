@@ -106,9 +106,9 @@
             boxTor = new System.Windows.Forms.TextBox();
             box_stacja_końcowa = new System.Windows.Forms.TextBox();
             box_stacja_początkowa = new System.Windows.Forms.TextBox();
-            pociągMaOpóźnienie = new System.Windows.Forms.CheckBox();
-            OpóźnienieTXT = new System.Windows.Forms.Label();
-            opóźnienieBox = new System.Windows.Forms.NumericUpDown();
+            pociągPrzyjedzieOpoznienie = new System.Windows.Forms.CheckBox();
+            OpoznieniePrzyjTXT = new System.Windows.Forms.Label();
+            opoznieniePrzyjBox = new System.Windows.Forms.NumericUpDown();
             nazwaPociąguTXT = new System.Windows.Forms.Label();
             generujBezZatrzymaniaButton = new System.Windows.Forms.Button();
             generujButton = new System.Windows.Forms.Button();
@@ -132,6 +132,9 @@
             stacjaPoczątkowa = new System.Windows.Forms.Label();
             NumerPociągu = new System.Windows.Forms.Label();
             tabControl = new System.Windows.Forms.TabControl();
+            pociągOdjedzieOpoznienie = new System.Windows.Forms.CheckBox();
+            OpoznienieOdjTXT = new System.Windows.Forms.Label();
+            opoznienieOdjBox = new System.Windows.Forms.NumericUpDown();
             statusStrip1.SuspendLayout();
             tabPageOpcje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarGlosnoscGongu).BeginInit();
@@ -160,12 +163,13 @@
             ((System.ComponentModel.ISupportInitialize)Początek3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Początek2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ileWagonówWSkładzie).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)opóźnienieBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)opoznieniePrzyjBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)minutyOdjazdu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)godzinyOdjazdu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)minutyPrzyjazdu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)godzinaPrzyjazdu).BeginInit();
             tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)opoznienieOdjBox).BeginInit();
             SuspendLayout();
             // 
             // statusStrip1
@@ -326,6 +330,9 @@
             // 
             tabPageKomunikaty.BackColor = System.Drawing.Color.RosyBrown;
             resources.ApplyResources(tabPageKomunikaty, "tabPageKomunikaty");
+            tabPageKomunikaty.Controls.Add(pociągOdjedzieOpoznienie);
+            tabPageKomunikaty.Controls.Add(OpoznienieOdjTXT);
+            tabPageKomunikaty.Controls.Add(opoznienieOdjBox);
             tabPageKomunikaty.Controls.Add(buttonTextToFile);
             tabPageKomunikaty.Controls.Add(buttonSoundToFile);
             tabPageKomunikaty.Controls.Add(buttonWypelnijZAPI);
@@ -378,9 +385,9 @@
             tabPageKomunikaty.Controls.Add(boxTor);
             tabPageKomunikaty.Controls.Add(box_stacja_końcowa);
             tabPageKomunikaty.Controls.Add(box_stacja_początkowa);
-            tabPageKomunikaty.Controls.Add(pociągMaOpóźnienie);
-            tabPageKomunikaty.Controls.Add(OpóźnienieTXT);
-            tabPageKomunikaty.Controls.Add(opóźnienieBox);
+            tabPageKomunikaty.Controls.Add(pociągPrzyjedzieOpoznienie);
+            tabPageKomunikaty.Controls.Add(OpoznieniePrzyjTXT);
+            tabPageKomunikaty.Controls.Add(opoznieniePrzyjBox);
             tabPageKomunikaty.Controls.Add(nazwaPociąguTXT);
             tabPageKomunikaty.Controls.Add(generujBezZatrzymaniaButton);
             tabPageKomunikaty.Controls.Add(generujButton);
@@ -795,25 +802,25 @@
             resources.ApplyResources(box_stacja_początkowa, "box_stacja_początkowa");
             box_stacja_początkowa.Name = "box_stacja_początkowa";
             // 
-            // pociągMaOpóźnienie
+            // pociągPrzyjedzieOpoznienie
             // 
-            resources.ApplyResources(pociągMaOpóźnienie, "pociągMaOpóźnienie");
-            pociągMaOpóźnienie.Name = "pociągMaOpóźnienie";
-            pociągMaOpóźnienie.UseVisualStyleBackColor = true;
-            pociągMaOpóźnienie.CheckedChanged += pociągMaOpóźnienie_CheckedChanged;
+            resources.ApplyResources(pociągPrzyjedzieOpoznienie, "pociągPrzyjedzieOpoznienie");
+            pociągPrzyjedzieOpoznienie.Name = "pociągPrzyjedzieOpoznienie";
+            pociągPrzyjedzieOpoznienie.UseVisualStyleBackColor = true;
+            pociągPrzyjedzieOpoznienie.CheckedChanged += pociągMaOpóźnienie_CheckedChanged;
             // 
-            // OpóźnienieTXT
+            // OpoznieniePrzyjTXT
             // 
-            resources.ApplyResources(OpóźnienieTXT, "OpóźnienieTXT");
-            OpóźnienieTXT.Name = "OpóźnienieTXT";
+            resources.ApplyResources(OpoznieniePrzyjTXT, "OpoznieniePrzyjTXT");
+            OpoznieniePrzyjTXT.Name = "OpoznieniePrzyjTXT";
             // 
-            // opóźnienieBox
+            // opoznieniePrzyjBox
             // 
-            resources.ApplyResources(opóźnienieBox, "opóźnienieBox");
-            opóźnienieBox.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
-            opóźnienieBox.Minimum = new decimal(new int[] { 5, 0, 0, 0 });
-            opóźnienieBox.Name = "opóźnienieBox";
-            opóźnienieBox.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            resources.ApplyResources(opoznieniePrzyjBox, "opoznieniePrzyjBox");
+            opoznieniePrzyjBox.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
+            opoznieniePrzyjBox.Minimum = new decimal(new int[] { 5, 0, 0, 0 });
+            opoznieniePrzyjBox.Name = "opoznieniePrzyjBox";
+            opoznieniePrzyjBox.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
             // nazwaPociąguTXT
             // 
@@ -959,6 +966,26 @@
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
             // 
+            // pociągOdjedzieOpoznienie
+            // 
+            resources.ApplyResources(pociągOdjedzieOpoznienie, "pociągOdjedzieOpoznienie");
+            pociągOdjedzieOpoznienie.Name = "pociągOdjedzieOpoznienie";
+            pociągOdjedzieOpoznienie.UseVisualStyleBackColor = true;
+            pociągOdjedzieOpoznienie.CheckedChanged += pociągOdjedzieOpoznienie_CheckedChanged;
+            // 
+            // OpoznienieOdjTXT
+            // 
+            resources.ApplyResources(OpoznienieOdjTXT, "OpoznienieOdjTXT");
+            OpoznienieOdjTXT.Name = "OpoznienieOdjTXT";
+            // 
+            // opoznienieOdjBox
+            // 
+            resources.ApplyResources(opoznienieOdjBox, "opoznienieOdjBox");
+            opoznienieOdjBox.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
+            opoznienieOdjBox.Minimum = new decimal(new int[] { 5, 0, 0, 0 });
+            opoznienieOdjBox.Name = "opoznienieOdjBox";
+            opoznienieOdjBox.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            // 
             // komunikaty
             // 
             resources.ApplyResources(this, "$this");
@@ -1002,12 +1029,13 @@
             ((System.ComponentModel.ISupportInitialize)Początek3).EndInit();
             ((System.ComponentModel.ISupportInitialize)Początek2).EndInit();
             ((System.ComponentModel.ISupportInitialize)ileWagonówWSkładzie).EndInit();
-            ((System.ComponentModel.ISupportInitialize)opóźnienieBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)opoznieniePrzyjBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)minutyOdjazdu).EndInit();
             ((System.ComponentModel.ISupportInitialize)godzinyOdjazdu).EndInit();
             ((System.ComponentModel.ISupportInitialize)minutyPrzyjazdu).EndInit();
             ((System.ComponentModel.ISupportInitialize)godzinaPrzyjazdu).EndInit();
             tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)opoznienieOdjBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1068,9 +1096,9 @@
         public System.Windows.Forms.TextBox boxTor;
         public System.Windows.Forms.TextBox box_stacja_końcowa;
         public System.Windows.Forms.TextBox box_stacja_początkowa;
-        public System.Windows.Forms.CheckBox pociągMaOpóźnienie;
-        public System.Windows.Forms.Label OpóźnienieTXT;
-        public System.Windows.Forms.NumericUpDown opóźnienieBox;
+        public System.Windows.Forms.CheckBox pociągPrzyjedzieOpoznienie;
+        public System.Windows.Forms.Label OpoznieniePrzyjTXT;
+        public System.Windows.Forms.NumericUpDown opoznieniePrzyjBox;
         public System.Windows.Forms.Label nazwaPociąguTXT;
         public System.Windows.Forms.Button generujBezZatrzymaniaButton;
         public System.Windows.Forms.Button generujButton;
@@ -1116,6 +1144,9 @@
         public System.Windows.Forms.Button buttonTextToFile;
         public System.Windows.Forms.Button buttonSoundToFile;
         public System.Windows.Forms.Button syntezatorTestButton;
+        public System.Windows.Forms.CheckBox pociągOdjedzieOpoznienie;
+        public System.Windows.Forms.Label OpoznienieOdjTXT;
+        public System.Windows.Forms.NumericUpDown opoznienieOdjBox;
     }
 }
 

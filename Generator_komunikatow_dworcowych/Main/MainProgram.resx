@@ -121,18 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
-  </data>
-  <data name="wersja.Text" xml:space="preserve">
-    <value>wersja 0.7.0 [dev]</value>
-  </data>
-  <data name="podpis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 17</value>
-  </data>
-  <data name="podpis.Text" xml:space="preserve">
-    <value>Create with quills by Mr_bar &lt;3</value>
-  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 625</value>
   </data>
@@ -161,6 +149,252 @@
   </data>
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="wersja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="wersja.Text" xml:space="preserve">
+    <value>wersja 0.7.0 [dev]</value>
+  </data>
+  <data name="podpis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 17</value>
+  </data>
+  <data name="podpis.Text" xml:space="preserve">
+    <value>Create with quills by Mr_bar &lt;3</value>
+  </data>
+  <data name="&gt;&gt;syntezatorTestButton.Name" xml:space="preserve">
+    <value>syntezatorTestButton</value>
+  </data>
+  <data name="&gt;&gt;syntezatorTestButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;syntezatorTestButton.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;syntezatorTestButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonTest.Name" xml:space="preserve">
+    <value>buttonTest</value>
+  </data>
+  <data name="&gt;&gt;buttonTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTest.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;buttonTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Name" xml:space="preserve">
+    <value>trackBarGlosnoscGongu</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscGongu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Name" xml:space="preserve">
+    <value>GlosnoscGonguTXT</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscGonguTXT.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Name" xml:space="preserve">
+    <value>GlosnoscSyntezatoraTXT</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GlosnoscSyntezatoraTXT.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Name" xml:space="preserve">
+    <value>trackBarGlosnoscOgolna</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;trackBarGlosnoscOgolna.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Name" xml:space="preserve">
+    <value>dzwiekTestButton</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;dzwiekTestButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Name" xml:space="preserve">
+    <value>wygladStrony</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;wygladStrony.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Name" xml:space="preserve">
+    <value>wygladtxt</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;wygladtxt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;GongName.Name" xml:space="preserve">
+    <value>GongName</value>
+  </data>
+  <data name="&gt;&gt;GongName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GongName.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GongName.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Name" xml:space="preserve">
+    <value>GongTxt</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;GongTxt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Name" xml:space="preserve">
+    <value>Pomoc1_5</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_5.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Name" xml:space="preserve">
+    <value>Pomoc1_4</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Name" xml:space="preserve">
+    <value>Pomoc1_3</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Name" xml:space="preserve">
+    <value>Pomoc1_2</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Name" xml:space="preserve">
+    <value>Pomoc1_1</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1_1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Name" xml:space="preserve">
+    <value>Pomoc1</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.Parent" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tabPageOpcje.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageOpcje.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tabPageOpcje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1373, 592</value>
+  </data>
+  <data name="tabPageOpcje.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageOpcje.Text" xml:space="preserve">
+    <value>Opcje</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Name" xml:space="preserve">
+    <value>tabPageOpcje</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageOpcje.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="syntezatorTestButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -736,38 +970,107 @@
   <data name="&gt;&gt;Pomoc1.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="tabPageOpcje.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="tabPageOpcje.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageOpcje.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tabPageOpcje.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1373, 592</value>
-  </data>
-  <data name="tabPageOpcje.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageOpcje.Text" xml:space="preserve">
-    <value>Opcje</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Name" xml:space="preserve">
-    <value>tabPageOpcje</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageOpcje.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tabPageKomunikaty.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 341</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 19</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="pociągOdjedzieOpoznienie.Text" xml:space="preserve">
+    <value>Pociąg odjedzie z opóźnieniem</value>
+  </data>
+  <data name="&gt;&gt;pociągOdjedzieOpoznienie.Name" xml:space="preserve">
+    <value>pociągOdjedzieOpoznienie</value>
+  </data>
+  <data name="&gt;&gt;pociągOdjedzieOpoznienie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pociągOdjedzieOpoznienie.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;pociągOdjedzieOpoznienie.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="OpoznienieOdjTXT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpoznienieOdjTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OpoznienieOdjTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 363</value>
+  </data>
+  <data name="OpoznienieOdjTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="OpoznienieOdjTXT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 15</value>
+  </data>
+  <data name="OpoznienieOdjTXT.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="OpoznienieOdjTXT.Text" xml:space="preserve">
+    <value>Opóźnienie [W Minutach]</value>
+  </data>
+  <data name="OpoznienieOdjTXT.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;OpoznienieOdjTXT.Name" xml:space="preserve">
+    <value>OpoznienieOdjTXT</value>
+  </data>
+  <data name="&gt;&gt;OpoznienieOdjTXT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpoznienieOdjTXT.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;OpoznienieOdjTXT.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="opoznienieOdjBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 381</value>
+  </data>
+  <data name="opoznienieOdjBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="opoznienieOdjBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 23</value>
+  </data>
+  <data name="opoznienieOdjBox.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="opoznienieOdjBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="opoznienieOdjBox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;opoznienieOdjBox.Name" xml:space="preserve">
+    <value>opoznienieOdjBox</value>
+  </data>
+  <data name="&gt;&gt;opoznienieOdjBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;opoznienieOdjBox.Parent" xml:space="preserve">
+    <value>tabPageKomunikaty</value>
+  </data>
+  <data name="&gt;&gt;opoznienieOdjBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buttonTextToFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -797,7 +1100,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;buttonTextToFile.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="buttonSoundToFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -827,7 +1130,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;buttonSoundToFile.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="buttonWypelnijZAPI.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -857,7 +1160,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;buttonWypelnijZAPI.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="anulujSyntezator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -887,7 +1190,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;anulujSyntezator.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="wznowSyntezator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -917,7 +1220,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;wznowSyntezator.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="zatrzymajModulator.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -947,25 +1250,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;zatrzymajModulator.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Numer</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Stacja początkowa</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Stacja Końcowa</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>8</value>
   </data>
   <data name="listaPociagowZapisanych.Location" type="System.Drawing.Point, System.Drawing">
     <value>1033, 346</value>
@@ -986,7 +1271,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowZapisanych.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="listaPociagowUsun.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 437</value>
@@ -1010,7 +1295,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowUsun.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="listaPociagowWczytaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 408</value>
@@ -1034,7 +1319,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowWczytaj.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="listaPociagowDodaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>952, 379</value>
@@ -1058,7 +1343,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;listaPociagowDodaj.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="numerPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 27</value>
@@ -1082,7 +1367,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;numerPociąguBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="isGongOn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1115,7 +1400,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;isGongOn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="Koniec5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 252</value>
@@ -1142,7 +1427,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="Koniec7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 252</value>
@@ -1169,7 +1454,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec7.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="Koniec6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 252</value>
@@ -1196,7 +1481,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec6.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="Koniec4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 252</value>
@@ -1223,7 +1508,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="Koniec1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 222</value>
@@ -1250,7 +1535,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="Koniec3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 222</value>
@@ -1277,7 +1562,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec3.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="Koniec2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 222</value>
@@ -1304,7 +1589,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Koniec2.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>21</value>
   </data>
   <data name="Środek1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 163</value>
@@ -1331,7 +1616,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>22</value>
   </data>
   <data name="Początek1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 106</value>
@@ -1358,7 +1643,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>23</value>
   </data>
   <data name="Środek3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 163</value>
@@ -1385,7 +1670,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek3.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>24</value>
   </data>
   <data name="Środek2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 163</value>
@@ -1412,7 +1697,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek2.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>25</value>
   </data>
   <data name="Środek5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 193</value>
@@ -1439,7 +1724,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek5.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>26</value>
   </data>
   <data name="Środek7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 193</value>
@@ -1466,7 +1751,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek7.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>27</value>
   </data>
   <data name="Środek6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 193</value>
@@ -1493,7 +1778,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek6.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>28</value>
   </data>
   <data name="Środek4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 193</value>
@@ -1520,7 +1805,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Środek4.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>29</value>
   </data>
   <data name="Początek5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1128, 134</value>
@@ -1547,7 +1832,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek5.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>30</value>
   </data>
   <data name="Początek7.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 134</value>
@@ -1574,7 +1859,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek7.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>31</value>
   </data>
   <data name="Początek6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 134</value>
@@ -1601,7 +1886,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek6.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>32</value>
   </data>
   <data name="Początek4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1058, 134</value>
@@ -1628,7 +1913,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek4.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>33</value>
   </data>
   <data name="Początek3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1268, 106</value>
@@ -1655,7 +1940,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek3.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>34</value>
   </data>
   <data name="Początek2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1198, 106</value>
@@ -1682,7 +1967,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;Początek2.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>35</value>
   </data>
   <data name="WagonyKoniecTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1718,7 +2003,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyKoniecTXT.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>36</value>
   </data>
   <data name="WagonyŚrodekTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1754,7 +2039,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyŚrodekTXT.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>37</value>
   </data>
   <data name="ileWagonówWSkładzie.Location" type="System.Drawing.Point, System.Drawing">
     <value>1234, 63</value>
@@ -1781,7 +2066,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ileWagonówWSkładzie.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>38</value>
   </data>
   <data name="ileWagonowTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1817,7 +2102,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ileWagonowTXT.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>39</value>
   </data>
   <data name="WagonyPoczątekTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1853,7 +2138,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;WagonyPoczątekTXT.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>40</value>
   </data>
   <data name="ifReserwation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1886,7 +2171,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;ifReserwation.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>41</value>
   </data>
   <data name="dźwiękButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1916,7 +2201,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;dźwiękButton.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>42</value>
   </data>
   <data name="PrzyStOdjTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1949,7 +2234,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;PrzyStOdjTXT.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>43</value>
   </data>
   <data name="comboPrzyStOdj.Items" xml:space="preserve">
     <value>Przyjedzie</value>
@@ -1982,7 +2267,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboPrzyStOdj.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>44</value>
   </data>
   <data name="labelTor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2015,7 +2300,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;labelTor.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>45</value>
   </data>
   <data name="labelPeron.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2048,7 +2333,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;labelPeron.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>46</value>
   </data>
   <data name="przezTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2081,7 +2366,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przezTXT.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>47</value>
   </data>
   <data name="przezBox.AutoCompleteCustomSource" xml:space="preserve">
     <value>Aleksandrów Kujawski</value>
@@ -2213,7 +2498,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przezBox.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>48</value>
   </data>
   <data name="komunikatWygenerowanyBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>888, 466</value>
@@ -2240,7 +2525,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;komunikatWygenerowanyBox.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>49</value>
   </data>
   <data name="nazwaPociąguBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 346</value>
@@ -2267,7 +2552,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguBox.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>50</value>
   </data>
   <data name="boxPeron.AutoCompleteCustomSource" xml:space="preserve">
     <value>1</value>
@@ -2327,7 +2612,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;boxPeron.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>51</value>
   </data>
   <data name="boxTor.AutoCompleteCustomSource" xml:space="preserve">
     <value>1</value>
@@ -2390,7 +2675,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;boxTor.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>52</value>
   </data>
   <data name="box_stacja_końcowa.AutoCompleteCustomSource" xml:space="preserve">
     <value>Aleksandrów Kujawski</value>
@@ -2528,7 +2813,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;box_stacja_końcowa.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>53</value>
   </data>
   <data name="box_stacja_początkowa.AutoCompleteCustomSource" xml:space="preserve">
     <value>Aleksandrów Kujawski</value>
@@ -2666,106 +2951,106 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;box_stacja_początkowa.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>54</value>
   </data>
-  <data name="pociągMaOpóźnienie.AutoSize" type="System.Boolean, mscorlib">
+  <data name="pociągPrzyjedzieOpoznienie.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pociągMaOpóźnienie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pociągPrzyjedzieOpoznienie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pociągMaOpóźnienie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 324</value>
+  <data name="pociągPrzyjedzieOpoznienie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 341</value>
   </data>
-  <data name="pociągMaOpóźnienie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pociągPrzyjedzieOpoznienie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
-  <data name="pociągMaOpóźnienie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 19</value>
+  <data name="pociągPrzyjedzieOpoznienie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 19</value>
   </data>
-  <data name="pociągMaOpóźnienie.TabIndex" type="System.Int32, mscorlib">
+  <data name="pociągPrzyjedzieOpoznienie.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="pociągMaOpóźnienie.Text" xml:space="preserve">
-    <value>Pociąg ma opóźnienie</value>
+  <data name="pociągPrzyjedzieOpoznienie.Text" xml:space="preserve">
+    <value>Pociąg przyjedzie z opóźnieniem</value>
   </data>
-  <data name="&gt;&gt;pociągMaOpóźnienie.Name" xml:space="preserve">
-    <value>pociągMaOpóźnienie</value>
+  <data name="&gt;&gt;pociągPrzyjedzieOpoznienie.Name" xml:space="preserve">
+    <value>pociągPrzyjedzieOpoznienie</value>
   </data>
-  <data name="&gt;&gt;pociągMaOpóźnienie.Type" xml:space="preserve">
+  <data name="&gt;&gt;pociągPrzyjedzieOpoznienie.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pociągMaOpóźnienie.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pociągPrzyjedzieOpoznienie.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
   </data>
-  <data name="&gt;&gt;pociągMaOpóźnienie.ZOrder" xml:space="preserve">
-    <value>52</value>
+  <data name="&gt;&gt;pociągPrzyjedzieOpoznienie.ZOrder" xml:space="preserve">
+    <value>55</value>
   </data>
-  <data name="OpóźnienieTXT.AutoSize" type="System.Boolean, mscorlib">
+  <data name="OpoznieniePrzyjTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="OpóźnienieTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="OpoznieniePrzyjTXT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="OpóźnienieTXT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 346</value>
+  <data name="OpoznieniePrzyjTXT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 363</value>
   </data>
-  <data name="OpóźnienieTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="OpoznieniePrzyjTXT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="OpóźnienieTXT.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="OpoznieniePrzyjTXT.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 15</value>
   </data>
-  <data name="OpóźnienieTXT.TabIndex" type="System.Int32, mscorlib">
+  <data name="OpoznieniePrzyjTXT.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
-  <data name="OpóźnienieTXT.Text" xml:space="preserve">
+  <data name="OpoznieniePrzyjTXT.Text" xml:space="preserve">
     <value>Opóźnienie [W Minutach]</value>
   </data>
-  <data name="OpóźnienieTXT.Visible" type="System.Boolean, mscorlib">
+  <data name="OpoznieniePrzyjTXT.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;OpóźnienieTXT.Name" xml:space="preserve">
-    <value>OpóźnienieTXT</value>
+  <data name="&gt;&gt;OpoznieniePrzyjTXT.Name" xml:space="preserve">
+    <value>OpoznieniePrzyjTXT</value>
   </data>
-  <data name="&gt;&gt;OpóźnienieTXT.Type" xml:space="preserve">
+  <data name="&gt;&gt;OpoznieniePrzyjTXT.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OpóźnienieTXT.Parent" xml:space="preserve">
+  <data name="&gt;&gt;OpoznieniePrzyjTXT.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
   </data>
-  <data name="&gt;&gt;OpóźnienieTXT.ZOrder" xml:space="preserve">
-    <value>53</value>
+  <data name="&gt;&gt;OpoznieniePrzyjTXT.ZOrder" xml:space="preserve">
+    <value>56</value>
   </data>
-  <data name="opóźnienieBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 364</value>
+  <data name="opoznieniePrzyjBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 381</value>
   </data>
-  <data name="opóźnienieBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="opoznieniePrzyjBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
-  <data name="opóźnienieBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="opoznieniePrzyjBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 23</value>
   </data>
-  <data name="opóźnienieBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="opoznieniePrzyjBox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="opóźnienieBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="opoznieniePrzyjBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="opóźnienieBox.Visible" type="System.Boolean, mscorlib">
+  <data name="opoznieniePrzyjBox.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;opóźnienieBox.Name" xml:space="preserve">
-    <value>opóźnienieBox</value>
+  <data name="&gt;&gt;opoznieniePrzyjBox.Name" xml:space="preserve">
+    <value>opoznieniePrzyjBox</value>
   </data>
-  <data name="&gt;&gt;opóźnienieBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;opoznieniePrzyjBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;opóźnienieBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;opoznieniePrzyjBox.Parent" xml:space="preserve">
     <value>tabPageKomunikaty</value>
   </data>
-  <data name="&gt;&gt;opóźnienieBox.ZOrder" xml:space="preserve">
-    <value>54</value>
+  <data name="&gt;&gt;opoznieniePrzyjBox.ZOrder" xml:space="preserve">
+    <value>57</value>
   </data>
   <data name="nazwaPociąguTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2798,7 +3083,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;nazwaPociąguTXT.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>58</value>
   </data>
   <data name="generujBezZatrzymaniaButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2828,7 +3113,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;generujBezZatrzymaniaButton.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>59</value>
   </data>
   <data name="generujButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2858,7 +3143,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;generujButton.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>60</value>
   </data>
   <data name="wyczyscButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2888,7 +3173,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;wyczyscButton.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>61</value>
   </data>
   <data name="GodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2921,7 +3206,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;GodzinaTXT.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>62</value>
   </data>
   <data name="OdjazdGodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2954,7 +3239,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;OdjazdGodzinaTXT.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>63</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2990,7 +3275,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>64</value>
   </data>
   <data name="minutyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>596, 284</value>
@@ -3014,7 +3299,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;minutyOdjazdu.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>65</value>
   </data>
   <data name="godzinyOdjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 284</value>
@@ -3038,7 +3323,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;godzinyOdjazdu.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>66</value>
   </data>
   <data name="PrzyjazdGodzinaTXT.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3071,7 +3356,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;PrzyjazdGodzinaTXT.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>67</value>
   </data>
   <data name="oddzieleniePrzyjazd.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3107,7 +3392,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;oddzieleniePrzyjazd.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>68</value>
   </data>
   <data name="minutyPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>596, 254</value>
@@ -3131,7 +3416,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;minutyPrzyjazdu.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>69</value>
   </data>
   <data name="godzinaPrzyjazdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 254</value>
@@ -3155,7 +3440,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;godzinaPrzyjazdu.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>70</value>
   </data>
   <data name="naszaStacjaWRJtxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3188,7 +3473,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJtxt.ZOrder" xml:space="preserve">
-    <value>68</value>
+    <value>71</value>
   </data>
   <data name="naszaStacjaWRJ.Items" xml:space="preserve">
     <value>Początkowa</value>
@@ -3221,7 +3506,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;naszaStacjaWRJ.ZOrder" xml:space="preserve">
-    <value>69</value>
+    <value>72</value>
   </data>
   <data name="kategoriaHandlowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3254,7 +3539,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;kategoriaHandlowa.ZOrder" xml:space="preserve">
-    <value>70</value>
+    <value>73</value>
   </data>
   <data name="przewoźnik.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3287,7 +3572,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;przewoźnik.ZOrder" xml:space="preserve">
-    <value>71</value>
+    <value>74</value>
   </data>
   <data name="comboKategoriaHandlowa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3338,7 +3623,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboKategoriaHandlowa.ZOrder" xml:space="preserve">
-    <value>72</value>
+    <value>75</value>
   </data>
   <data name="comboPrzewoźnik.Items" xml:space="preserve">
     <value>Arriva</value>
@@ -3392,7 +3677,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;comboPrzewoźnik.ZOrder" xml:space="preserve">
-    <value>73</value>
+    <value>76</value>
   </data>
   <data name="stacjaKońcowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3425,7 +3710,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;stacjaKońcowa.ZOrder" xml:space="preserve">
-    <value>74</value>
+    <value>77</value>
   </data>
   <data name="stacjaPoczątkowa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3458,7 +3743,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;stacjaPoczątkowa.ZOrder" xml:space="preserve">
-    <value>75</value>
+    <value>78</value>
   </data>
   <data name="NumerPociągu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3491,7 +3776,7 @@
     <value>tabPageKomunikaty</value>
   </data>
   <data name="&gt;&gt;NumerPociągu.ZOrder" xml:space="preserve">
-    <value>76</value>
+    <value>79</value>
   </data>
   <data name="tabPageKomunikaty.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
@@ -3522,6 +3807,24 @@
   </data>
   <data name="&gt;&gt;tabPageKomunikaty.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Numer</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Stacja początkowa</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Stacja Końcowa</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <metadata name="tabControl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

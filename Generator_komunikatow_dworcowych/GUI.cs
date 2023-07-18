@@ -12,8 +12,8 @@
             current.WagonyPoczątekTXT.ForeColor = System.Drawing.Color.White;
             current.WagonyŚrodekTXT.ForeColor = System.Drawing.Color.White;
             current.WagonyKoniecTXT.ForeColor = System.Drawing.Color.White;
-            current.pociągMaOpóźnienie.ForeColor = System.Drawing.Color.White;
-            current.OpóźnienieTXT.ForeColor = System.Drawing.Color.White;
+            current.pociągPrzyjedzieOpoznienie.ForeColor = System.Drawing.Color.White;
+            current.OpoznieniePrzyjTXT.ForeColor = System.Drawing.Color.White;
             current.labelPeron.ForeColor = System.Drawing.Color.White;
             current.labelTor.ForeColor = System.Drawing.Color.White;
             current.GodzinaTXT.ForeColor = System.Drawing.Color.White;
@@ -48,8 +48,8 @@
             current.WagonyPoczątekTXT.ForeColor = System.Drawing.Color.Black;
             current.WagonyŚrodekTXT.ForeColor = System.Drawing.Color.Black;
             current.WagonyKoniecTXT.ForeColor = System.Drawing.Color.Black;
-            current.pociągMaOpóźnienie.ForeColor = System.Drawing.Color.Black;
-            current.OpóźnienieTXT.ForeColor = System.Drawing.Color.Black;
+            current.pociągPrzyjedzieOpoznienie.ForeColor = System.Drawing.Color.Black;
+            current.OpoznieniePrzyjTXT.ForeColor = System.Drawing.Color.Black;
             current.labelPeron.ForeColor = System.Drawing.Color.Black;
             current.labelTor.ForeColor = System.Drawing.Color.Black;
             current.GodzinaTXT.ForeColor = System.Drawing.Color.Black;
@@ -84,8 +84,8 @@
             current.WagonyPoczątekTXT.ForeColor = System.Drawing.Color.Gold;
             current.WagonyŚrodekTXT.ForeColor = System.Drawing.Color.Gold;
             current.WagonyKoniecTXT.ForeColor = System.Drawing.Color.Gold;
-            current.pociągMaOpóźnienie.ForeColor = System.Drawing.Color.Gold;
-            current.OpóźnienieTXT.ForeColor = System.Drawing.Color.Gold;
+            current.pociągPrzyjedzieOpoznienie.ForeColor = System.Drawing.Color.Gold;
+            current.OpoznieniePrzyjTXT.ForeColor = System.Drawing.Color.Gold;
             current.labelPeron.ForeColor = System.Drawing.Color.Gold;
             current.labelTor.ForeColor = System.Drawing.Color.Gold;
             current.GodzinaTXT.ForeColor = System.Drawing.Color.Gold;
@@ -130,7 +130,7 @@
             current.minutyOdjazdu.BackColor = System.Drawing.Color.White;
             current.boxPeron.BackColor = System.Drawing.Color.White;
             current.boxTor.BackColor = System.Drawing.Color.White;
-            current.opóźnienieBox.BackColor = System.Drawing.Color.White;
+            current.opoznieniePrzyjBox.BackColor = System.Drawing.Color.White;
             current.ileWagonówWSkładzie.BackColor = System.Drawing.Color.White;
             current.Początek1.BackColor = System.Drawing.Color.White;
             current.Początek2.BackColor = System.Drawing.Color.White;
@@ -173,7 +173,7 @@
             current.minutyOdjazdu.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
             current.boxPeron.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
             current.boxTor.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
-            current.opóźnienieBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
+            current.opoznieniePrzyjBox.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
             current.ileWagonówWSkładzie.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
             current.Początek1.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
             current.Początek2.BackColor = System.Drawing.Color.FromArgb(255, 28, 28, 28);
